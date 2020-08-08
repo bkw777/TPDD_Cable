@@ -1,0 +1,64 @@
+14202360833602
+000_LOCAL
+1x7x2mm
+Through hole straight pin header, 1x07, 1.27mm pitch, single row
+Through hole pin header THT 1x07 1.27mm single row
+0
+7
+7
+000_LOCAL
+2-6-2_tpdd
+
+
+0
+8
+8
+000_LOCAL
+D7_1.5mm_wirepads
+Through hole straight pin header, 1x07, 1.27mm pitch, single row
+Through hole pin header THT 1x07 1.27mm single row
+0
+7
+7
+000_LOCAL
+DSUB-25_Male_EdgeMount_P2.77mm
+25-pin D-Sub connector, solder-cups edge-mounted, male, x-pin-pitch 2.77mm, distance of mounting holes 47.1mm, see https://disti-assets.s3.amazonaws.com/tonar/files/datasheets/16730.pdf
+25-pin D-Sub connector edge mount solder cup male x-pin-pitch 2.77mm mounting holes distance 47.1mm
+0
+25
+25
+000_LOCAL
+M25D
+<b>SUB-D</b>
+
+0
+25
+25
+000_LOCAL
+Pin_Header_1x7
+Through hole straight pin header, 1x07, 2.54mm pitch, single row
+Through hole pin header THT 1x07 2.54mm single row
+0
+7
+7
+000_LOCAL
+SC-59
+SC-59, https://lib.chipdip.ru/images/import_diod/original/SOT-23_SC-59.jpg
+SC-59
+0
+3
+3
+000_LOCAL
+hole
+
+
+0
+0
+0
+000_LOCAL
+pins_1x7_2mm
+Through hole straight pin header, 1x07, 2.00mm pitch, single row
+Through hole pin header THT 1x07 2.00mm single row
+0
+7
+7
