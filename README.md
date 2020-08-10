@@ -6,7 +6,7 @@ TTL-RS232 level-shifting cable for Tandy Portable Disk Drive
 
 <http://tandy.wiki/TPDD>
 
-# Credits/history
+# Credits/History
 In the beginning, there was the [Marty Goodman Document](http://www.club100.org/library/ups/tpdd.do), and it was good.
 <!-- ftp://salsa.net/pub/M100SIG/Lib-09-PERIFERALS/TPDD.DO -->
 
