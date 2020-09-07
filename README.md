@@ -8,6 +8,7 @@ TTL-RS232 level-shifting cable for Tandy Portable Disk Drive
 <http://tandy.wiki/TPDD>
 
 # Alternative version for Cambridge Z88
+([TPDD_Cable_Z88.sch](TPDD_Cable_Z88.sch) & [TPDD_Cable_Z88.kicad_pcb](TPDD_Cable_Z88.kicad_pcb))  
 ![](TPDD_Cable_1_Z88.jpg)
 ![](TPDD_Cable_2_Z88.jpg)
 ![](TPDD_Cable_Z88.svg)
