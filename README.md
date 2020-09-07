@@ -7,6 +7,11 @@ TTL-RS232 level-shifting cable for Tandy Portable Disk Drive
 
 <http://tandy.wiki/TPDD>
 
+# Alternative version for Cambridge Z88
+![](TPDD_Cable_1_Z88.jpg)
+![](TPDD_Cable_2_Z88.jpg)
+![](TPDD_Cable_Z88.svg)
+
 # Credits/History
 In the beginning, there was the [Marty Goodman Document](http://www.club100.org/library/ups/tpdd.do), and it was good.
 <!-- ftp://salsa.net/pub/M100SIG/Lib-09-PERIFERALS/TPDD.DO -->
