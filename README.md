@@ -1,6 +1,7 @@
 # TPDD_Cable
 ![](TPDD_Cable_1.jpg)
 ![](TPDD_Cable_2.jpg)
+![](TPDD_Cable.svg)
 
 TTL-RS232 level-shifting cable for Tandy Portable Disk Drive
 

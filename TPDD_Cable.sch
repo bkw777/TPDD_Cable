@@ -77,7 +77,7 @@ Wire Wire Line
 Wire Wire Line
 	4700 4050 5100 4050
 Text Notes 7780 3140 2    100  ~ 0
-Model 100
+"Model T"
 Text Notes 4050 3300 2    100  ~ 0
 TPDD
 Wire Wire Line
@@ -219,8 +219,8 @@ Wire Wire Line
 Connection ~ 4700 3050
 Wire Wire Line
 	3490 3050 3490 3800
-Text Notes 6660 4530 0    50   ~ 0
-9-25 Modem cable\nCut off DE9F plug.\nSolder wires to J1.
+Text Notes 6550 4740 0    50   ~ 0
+DE9F-DB25M Modem cable\nCut off DE9F plug.\nSolder wires to J1.\nMatch numbers on pcb silkscreen\nto pin numbers on DB25M connector.
 Wire Wire Line
 	4500 3800 4100 3800
 Wire Wire Line
