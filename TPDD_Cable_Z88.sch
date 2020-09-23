@@ -167,8 +167,8 @@ Text Notes 6840 3890 0    50   ~ 0
 cable
 Text Label 4100 3900 0    50   ~ 0
 CTS_TTL
-Text Notes 7150 3230 0    50   ~ 0
-RS-232 DTE
+Text Notes 6960 3290 0    50   ~ 0
+       RS-232\n(non-standard pinout)
 Wire Wire Line
 	4900 3400 3400 3400
 Wire Wire Line
@@ -201,7 +201,7 @@ Wire Wire Line
 Connection ~ 4700 3050
 Wire Wire Line
 	3490 3050 3490 3800
-Text Notes 6780 4750 0    50   ~ 0
+Text Notes 6280 4730 0    50   ~ 0
 DE9M-DE9F extension cable\nCut off female plug.\nSolder wires to J1.\nMatch numbers on pcb silkscreen\nto pin numbers on male connector.
 Wire Wire Line
 	4500 3800 4100 3800
@@ -213,8 +213,8 @@ Wire Wire Line
 	4500 4000 4100 4000
 Wire Wire Line
 	4500 4000 4500 4400
-Text Notes 7230 3130 0    100  ~ 0
-Z88
+Text Notes 6810 3080 0    100  ~ 0
+Cambridge Z88
 Text Notes 7170 3520 0    50   ~ 0
 DE9 Male
 Text Notes 7270 3640 0    50   ~ 0
@@ -231,4 +231,16 @@ Text Notes 7270 4140 0    50   ~ 0
 2 TX
 Text Notes 7270 4240 0    50   ~ 0
 3 RX
+Text Label 4100 4100 0    50   ~ 0
+EB+
+Text Notes 4030 4220 0    30   ~ 0
+External Batt\n+4.8v to +6v
+Wire Notes Line
+	3200 2820 3200 2810
+Wire Notes Line
+	3200 2810 3210 2810
+Wire Notes Line
+	8020 4810 8030 4810
+Wire Notes Line
+	8030 4810 8030 4800
 $EndSCHEMATC

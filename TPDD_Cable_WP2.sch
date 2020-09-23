@@ -76,8 +76,6 @@ Wire Wire Line
 	5300 3400 5800 3400
 Wire Wire Line
 	4700 4050 5100 4050
-Text Notes 7780 3140 2    100  ~ 0
-"Model T"
 Text Notes 4050 3300 2    100  ~ 0
 TPDD
 Wire Wire Line
@@ -151,22 +149,6 @@ Wire Wire Line
 	3500 4100 3500 4500
 Wire Wire Line
 	4500 2950 4500 3800
-Text Notes 7160 3510 0    50   ~ 0
-DB25 Male
-Text Notes 7260 3630 0    50   ~ 0
-7 SG
-Text Notes 7260 3730 0    50   ~ 0
-4 CTS
-Text Notes 7260 3830 0    50   ~ 0
-6 DTR
-Text Notes 7260 3930 0    50   ~ 0
-5 RTS
-Text Notes 7250 4030 0    50   ~ 0
-20 DSR
-Text Notes 7260 4130 0    50   ~ 0
-3 TX
-Text Notes 7260 4230 0    50   ~ 0
-2 RX
 Wire Notes Line
 	6500 3600 7230 3600
 Wire Notes Line
@@ -219,8 +201,8 @@ Wire Wire Line
 Connection ~ 4700 3050
 Wire Wire Line
 	3490 3050 3490 3800
-Text Notes 6290 4780 0    50   ~ 0
-DE9F-DB25M Modem cable\nCut off DE9F plug.\nSolder wires to J1.\nMatch numbers on pcb silkscreen\nto pin numbers on DB25M connector.
+Text Notes 6360 4770 0    50   ~ 0
+DE9M-DE9F extension cable\nCut off the male plug.\nSolder wires to J1.\nMatch numbers on pcb silkscreen\nto pin numbers on female connector.
 Wire Wire Line
 	4500 3800 4100 3800
 Wire Wire Line
@@ -231,16 +213,34 @@ Wire Wire Line
 	4500 4000 4100 4000
 Wire Wire Line
 	4500 4000 4500 4400
+Text Notes 6930 3130 0    100  ~ 0
+TANDY WP-2
+Text Notes 7170 3520 0    50   ~ 0
+DE9 Female
+Text Notes 7270 3640 0    50   ~ 0
+5 SG
+Text Notes 7270 3740 0    50   ~ 0
+8 CTS
+Text Notes 7270 3840 0    50   ~ 0
+4 DTR
+Text Notes 7270 3940 0    50   ~ 0
+7 RTS
+Text Notes 7270 4040 0    50   ~ 0
+6 DSR
+Text Notes 7270 4140 0    50   ~ 0
+3 TX
+Text Notes 7270 4240 0    50   ~ 0
+2 RX
 Text Label 4100 4100 0    50   ~ 0
 EB+
-Wire Notes Line
-	3230 2870 3230 2860
-Wire Notes Line
-	3230 2860 3240 2860
-Wire Notes Line
-	7840 4850 7850 4850
-Wire Notes Line
-	7850 4850 7850 4840
-Text Notes 4040 4210 0    30   ~ 0
+Text Notes 4030 4220 0    30   ~ 0
 External Batt\n+4.8v to +6v
+Wire Notes Line
+	3120 2800 3120 2820
+Wire Notes Line
+	3120 2800 3140 2800
+Wire Notes Line
+	7960 4880 7980 4880
+Wire Notes Line
+	7980 4880 7980 4860
 $EndSCHEMATC

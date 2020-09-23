@@ -1,4 +1,4 @@
-(module 2-6-2_tpdd (layer F.Cu) (tedit 5F2DA709)
+(module 2-6-2_tpdd (layer F.Cu) (tedit 5F6AA4E4)
   (attr smd)
   (fp_text reference REF** (at -1.27 -0.127 -90 unlocked) (layer F.SilkS)
     (effects (font (size 0.6096 0.6096) (thickness 0.0508)))
@@ -26,10 +26,10 @@
   (pad 6 smd oval (at -5.08 0) (size 0.8 2.7) (layers B.Cu B.Mask))
   (pad 4 smd oval (at -2.54 0) (size 0.8 2.7) (layers B.Cu B.Mask))
   (pad 2 smd oval (at 0 0) (size 0.8 2.7) (layers B.Cu B.Mask))
-  (model ${KIPRJMOD}/000_LOCAL.pretty/3dshapes/PinSocket_2x03_P2.54mm_Vertical.step
-    (offset (xyz -2.54 1.47 -2.15))
+  (model ${KIPRJMOD}/000_LOCAL.pretty/3dshapes/PinSocket_2x03_P2.54mm_Vertical_2pulled.step
+    (offset (xyz -5.08 1.47 2.93))
     (scale (xyz 1 1 1))
-    (rotate (xyz 90 0 0))
+    (rotate (xyz 90 180 0))
   )
   (model ${KIPRJMOD}/000_LOCAL.pretty/3dshapes/PinSocket_1x02_P2.54mm_Vertical.step
     (offset (xyz 0 1.47 -2.15))
