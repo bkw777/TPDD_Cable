@@ -28,7 +28,7 @@ This fits the TANDY WP-2, and also most modern PCs and usb-serial adapters.
 
 The only difference to this version is the cable ends in a 9-pin male plug with custom pinout.  
 This fits the Cambridge Z88.  
-*The Cambridge Z88 RS-232 port has a non-standard pinout.*
+*The Cambridge Z88 RS-232 port has a non-standard pinout.*  
 *Do not connect this cable to anything but a Cambridge Z88.*
 
 # Credits / History
