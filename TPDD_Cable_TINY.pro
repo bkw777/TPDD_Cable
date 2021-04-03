@@ -1,6 +1,6 @@
-update=Sun 09 Aug 2020 03:55:36 AM EDT
+update=Sat 20 Mar 2021 10:20:19 AM EDT
 version=1
-last_client=pcbnew
+last_client=kicad
 [general]
 version=1
 RootSch=
@@ -33,8 +33,8 @@ TrackWidth2=0.3
 TrackWidth3=0.5
 ViaDiameter1=0.42
 ViaDrill1=0.26
-ViaDiameter2=0.42
-ViaDrill2=0.26
+ViaDiameter2=0.5
+ViaDrill2=0.3
 dPairWidth1=0.16
 dPairGap1=0.16
 dPairViaGap1=0.25
