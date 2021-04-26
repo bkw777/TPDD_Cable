@@ -4,9 +4,9 @@ EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
-Title "TPDD-RS-232"
-Date "2020-08-07"
-Rev ""
+Title "TPDD to WP-2 Cable"
+Date "2021-04-26"
+Rev "003"
 Comp "Brian K. White"
 Comment1 ""
 Comment2 ""
