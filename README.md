@@ -1,5 +1,5 @@
 # TPDD_Cable
-![](TPDD_Cable_1.jpg)
+![](TPDD_Cable.jpg)
 ![](TPDD_Cable_2.jpg)
 ![](TPDD_Cable.svg)
 
@@ -14,16 +14,14 @@ Assembly pictures: <http://tandy.wiki/TPDD#Cable>
 There are a few other versions of the PCB for other machines, but the only difference is the silkscreen. In all cases it's the same circuit and the same connector on the drive end, with different plugs and pinouts on the computer end, and different silkscreen text to show different connector types and pin numbers. You could actually use the same standard PCB for any machine, just ignore the silkscreen and solder the kind of cable you need with the pinout you need.
 
 ## For TANDY WP-2 and most modern PCs and usb-serial adapters
-![](TPDD_Cable_WP2_1.jpg)
-![](TPDD_Cable_WP2_2.jpg)
+![](TPDD_Cable_WP2.jpg)
 ![](TPDD_Cable_WP2.svg)
 
 The only difference to this version is the cable ends in a 9-pin female plug to connect to a 9-pin male DTE RS-232 port.  
 This fits the TANDY WP-2, and also most modern PCs and usb-serial adapters.
 
 ## Version for Cambridge Z88
-![](TPDD_Cable_Z88_1.jpg)
-![](TPDD_Cable_Z88_2.jpg)
+![](TPDD_Cable_Z88.jpg)
 ![](TPDD_Cable_Z88.svg)
 
 The only difference to this version is the cable ends in a 9-pin male plug with custom pinout.  
