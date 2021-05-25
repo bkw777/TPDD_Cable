@@ -5,10 +5,25 @@
 
 TTL-RS232 level-shifting cable for Tandy Portable Disk Drive
 
-This version has a cable that ends in a male 25-pin plug to connect to a "Model T"s female 25-pin DTE RS-232 port.  
-This is the same as the original cable that came with the drive.
+The cable ends in a male 25-pin plug to connect to the female 25-pin DTE RS-232 port on a "Model T" computer (Kyotronic KC-85, TRS-80 Model 100, TANDY Model 102 200 600, NEC PC-8201 PC-8300 PC-8401 PC-8500, Olivettin M10).  
+This is the same arrangement as the original cable that came with the drive.
 
 Assembly pictures: <http://tandy.wiki/TPDD#Cable>
+
+# Wiring
+This is the normal wiring for connecting to a "Model T" computer, the same as the original cable that came with the drive.  
+This is the wiring that the silkscreen right on the PCB describes, so this table is somewhat redundant. IE, pad #20 goes to DB25M pin #20.
+<table>
+<tr><td rowspan="0"><img src="TPDD_Cable_PCB_pads.jpg"></td><th>Signal</th><th>PCB pad</th><th>DE9M pin</th><th>Signal</th><td rowspan="0"><img src="DB25M_to_Model_T.jpg"></td></tr>
+<tr><td>GND</td><td>7</td><td>7</td><td>GND</td></tr>
+<tr><td>RTS</td><td>4</td><td>4</td><td>CTS</td></tr>
+<tr><td>DSR</td><td>6</td><td>6</td><td>DTR</td></tr>
+<tr><td>CTS</td><td>5</td><td>5</td><td>RTS</td></tr>
+<tr><td>DTR</td><td>20</td><td>20</td><td>DSR</td></tr>
+<tr><td>RXD</td><td>3</td><td>3</td><td>TXD</td></tr>
+<tr><td>TXD</td><td>2</td><td>2</td><td>RXD</td></tr>
+</table>
+
 
 # Alternate Wiring
 There are a few other machines besides "Model T"'s that can use a TPDD, but their serial ports are different and usually need one or more adapters to work with the normal TPDD cable.
