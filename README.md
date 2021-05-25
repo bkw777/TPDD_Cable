@@ -66,7 +66,7 @@ For convenience, the table below shows the colors for a couple of specific cable
 Solder the wires on the bottom side of the pcb, the side with the transistors.  
 Flush-cut the opposite side after soldering and briefly touch each cut wire-end with the soldering iron to re-melt the solder into a smooth dome.  
 
-Place the end of the cable on the top side of the PCB, and zip-tie the cable to the pcb. Make sure the zip-tie knot is on the top side of the pcb so that the heat-shrink will be able to slide over the end later. Ideally, add some hot-glue first, and add more to the other side to immobilize the wires where they enter to the pcb.
+Place the end of the cable on the top side of the PCB, and zip-tie the cable to the pcb. Make sure the zip-tie knot is on the top side of the pcb to the left or right, so that the heat-shrink will be able to slide over the end later. Ideally, add some hot-glue to the PCB first, and add more to the other side to immobilize the wires where they enter the pcb.
 
 Slide the heat-shrink over the cable end, up to the back of the connector but not over it. It's a tight fit but the heat-shrink can be worked over the zip-tie knot but just rubbing and pushing. If the bulge is really too big, put a small amount of alcohol on the knot and then the heat-shrink can be slid right over.
 
