@@ -233,14 +233,6 @@ Wire Wire Line
 	4500 4000 4500 4400
 Text Label 4100 4100 0    50   ~ 0
 EB+
-Wire Notes Line
-	3230 2870 3230 2860
-Wire Notes Line
-	3230 2860 3240 2860
-Wire Notes Line
-	7840 4850 7850 4850
-Wire Notes Line
-	7850 4850 7850 4840
 Text Notes 4040 4210 0    30   ~ 0
 External Batt\n+4.8v to +6v
 $EndSCHEMATC
