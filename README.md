@@ -21,17 +21,17 @@ The cable in the BOM link above has both a DB25M on one end and a DE9F on the ot
 
 The numbers next to the wire solder pads on the PCB normally indicate the pin# on a DB25M to connect to that pad.  
 In this case ignore the meaning of the numbers and just treat them as arbitrary labels.  
-IE: connect the wire solder pad with a 20 next to it, to pin# 6 of a DE9F.
+<table>
+<tr><td rowspan="0"><img src="TPDD_Cable_PCB_pads.jpg"></td><th>Signal</th><th>PCB pad</th><th>DE9M pin</th><th>Signal</th><td rowspan="0"><img src="DE9F_to_PC.jpg"></td></tr>
+<tr><td>GND</td><td>7</td><td>5</td><td>GND</td></tr>
+<tr><td>RTS</td><td>4</td><td>8</td><td>CTS</td></tr>
+<tr><td>DSR</td><td>6</td><td>4</td><td>DTR</td></tr>
+<tr><td>CTS</td><td>5</td><td>7</td><td>RTS</td></tr>
+<tr><td>DTR</td><td>20</td><td>6</td><td>DSR</td></tr>
+<tr><td>RXD</td><td>3</td><td>3</td><td>TXD</td></tr>
+<tr><td>TXD</td><td>2</td><td>2</td><td>RXD</td></tr>
+</table>
 
-|Signal|PCB pad|DE9F pin|Signal|
-|:---:|:---:|:---:|:---:|
-|GND|7|5|GND|
-|RTS|4|8|CTS|
-|DSR|6|4|DTR|
-|CTS|5|7|RTS|
-|DTR|20|6|DSR|
-|RXD|3|3|TXD|
-|TXD|2|2|RXD|
 
 ## For Cambridge Z88
 *The Cambridge Z88 RS-232 port has a non-standard pinout.*  
@@ -39,17 +39,16 @@ IE: connect the wire solder pad with a 20 next to it, to pin# 6 of a DE9F.
 
 You need a different cable than what's in the BOM links. You need a cable with a DE9M on one end.
 Delete the cable in the pre-loaded cart, search for "AE9869-ND" and add that instead.  
-
-|Signal|PCB pad|DE9M pin|Signal|
-|:---:|:---:|:---:|:---:|
-|GND|7|7|GND|
-|RTS|4|5|CTS|
-|DSR|6|9|DTR|
-|CTS|5|4|RTS|
-|DTR|20|8|DSR|
-|RXD|3|2|TXD|
-|TXD|2|3|RXD|
-
+<table>
+<tr><td rowspan="0"><img src="TPDD_Cable_PCB_pads.jpg"></td><th>Signal</th><th>PCB pad</th><th>DE9M pin</th><th>Signal</th><td rowspan="0"><img src="DE9M_to_Z88.jpg"></td></tr>
+<tr><td>GND</td><td>7</td><td>7</td><td>GND</td></tr>
+<tr><td>RTS</td><td>4</td><td>5</td><td>CTS</td></tr>
+<tr><td>DSR</td><td>6</td><td>9</td><td>DTR</td></tr>
+<tr><td>CTS</td><td>5</td><td>4</td><td>RTS</td></tr>
+<tr><td>DTR</td><td>20</td><td>8</td><td>DSR</td></tr>
+<tr><td>RXD</td><td>3</td><td>2</td><td>TXD</td></tr>
+<tr><td>TXD</td><td>2</td><td>3</td><td>RXD</td></tr>
+</table>
 
 # Credits / History
 In the beginning, there was the [Marty Goodman Document](http://www.club100.org/library/ups/tpdd.do), and it was good.
