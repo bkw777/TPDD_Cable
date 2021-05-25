@@ -10,24 +10,46 @@ This is the same as the original cable that came with the drive.
 
 Assembly pictures: <http://tandy.wiki/TPDD#Cable>
 
-# Alternate Versions
-There are a few other versions of the PCB for other machines, but the only difference is the silkscreen. In all cases it's the same circuit and the same connector on the drive end, with different plugs and pinouts on the computer end, and different silkscreen text to show different connector types and pin numbers. You could actually use the same standard PCB for any machine, just ignore the silkscreen and solder the kind of cable you need with the pinout you need.
+# Alternate Wiring
+There are a few other machines besides "Model T"'s that can use a TPDD, but their serial ports are different and usually need one or more adapters to work with the normal TPDD cable.
+ 
+You can make a custom cable to connect to other kinds of machines by just ignoring the silkscreen on the PCB and use one the following wiring tables instead.
 
-## For TANDY WP-2 and most modern PCs and usb-serial adapters
-![](TPDD_Cable_WP2.jpg)
-![](TPDD_Cable_WP2.svg)
+## For TANDY WP-2, most modern PCs, most usb-serial adapters, and anything else with a DE9M DTE port.
+You need a cable with a DE9F on the end instead of DB25M.  
+The cable in the BOM link above has both a DB25M on one end and a DE9F on the other end, so you can use the same BOM to make this cable. Just keep the 9-pin connector instead of the the 25-pin.
 
-The only difference to this version is the cable ends in a 9-pin female plug to connect to a 9-pin male DTE RS-232 port.  
-This fits the TANDY WP-2, and also most modern PCs and usb-serial adapters.
+The numbers next to the wire solder pads on the PCB normally indicate the pin# on a DB25M to connect to that pad.  
+In this case ignore the meaning of the numbers and just treat them as arbitrary labels.  
+IE: connect the wire solder pad with a 20 next to it, to pin# 6 of a DE9F.
 
-## Version for Cambridge Z88
-![](TPDD_Cable_Z88.jpg)
-![](TPDD_Cable_Z88.svg)
+|Signal|PCB pad|DE9F pin|Signal|
+|:---:|:---:|:---:|:---:|
+|GND|7|5|GND|
+|RTS|4|8|CTS|
+|DSR|6|4|DTR|
+|CTS|5|7|RTS|
+|DTR|20|6|DSR|
+|RXD|3|3|TXD|
+|TXD|2|2|RXD|
 
-The only difference to this version is the cable ends in a 9-pin male plug with custom pinout.  
-This fits the Cambridge Z88.  
+## For Cambridge Z88
 *The Cambridge Z88 RS-232 port has a non-standard pinout.*  
 *Do not connect this cable to anything but a Cambridge Z88.*
+
+You need a different cable than what's in the BOM links. You need a cable with a DE9M on one end.
+Delete the cable in the pre-loaded cart, search for "AE9869-ND" and add that instead.  
+
+|Signal|PCB pad|DE9M pin|Signal|
+|:---:|:---:|:---:|:---:|
+|GND|7|7|GND|
+|RTS|4|5|CTS|
+|DSR|6|9|DTR|
+|CTS|5|4|RTS|
+|DTR|20|8|DSR|
+|RXD|3|2|TXD|
+|TXD|2|3|RXD|
+
 
 # Credits / History
 In the beginning, there was the [Marty Goodman Document](http://www.club100.org/library/ups/tpdd.do), and it was good.
