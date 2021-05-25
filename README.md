@@ -53,7 +53,7 @@ Strip about 1/8" of insulation from all the remaining wires.
 For convenience, the table below shows the colors for a couple of specific cables from DigiKey (The grey cable and a black cables from the BOM links above). If you buy one of the same cables, then your cable should have the same mapping. But don't trust it without verifying.
 
 <table>
-<tr><td rowspan="0"><img src="TPDD_Cable_PCB_pads.jpg"></td><th>Signal</th><th>PCB pad</th><th>DE9M pin</th><th>Signal</th><th><a href="https://www.digikey.com/short/w8zz83q5">GREY CABLE</a></th><th><a href="https://www.digikey.com/short/wbpp81nt">BLACK CABLE</a></th><td rowspan="0"><img src="DB25M_to_Model_T.jpg"></td></tr>
+<tr><td rowspan="0"><img src="TPDD_Cable_PCB_pads.jpg"></td><th>Signal</th><th>PCB pad</th><th>DB25M pin</th><th>Signal</th><th><a href="https://www.digikey.com/short/w8zz83q5">GREY CABLE</a></th><th><a href="https://www.digikey.com/short/wbpp81nt">BLACK CABLE</a></th><td rowspan="0"><img src="DB25M_to_Model_T.jpg"></td></tr>
 <tr><td>GND</td><td>7</td><td>7</td><td>GND</td><td>Green</td><td>Yellow</td></tr>
 <tr><td>RTS</td><td>4</td><td>4</td><td>CTS</td><td>Purple</td><td>Blue</td></tr>
 <tr><td>DSR</td><td>6</td><td>6</td><td>DTR</td><td>Blue</td><td>Green</td></tr>
