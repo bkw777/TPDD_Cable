@@ -73,7 +73,7 @@ Flush-cut the top side after soldering and briefly touch each wire with the sold
 
 Lay the wires down flat on the bottom side of the pcb, pulled away from the connector, and cover the ends of the wires with hot-glue to keep them from flexing at the solder joint.
 
-Place the end of the cable on the top side of the PCB, and zip-tie the cable to the pcb. Make sure the zip-tie knot is on the top side of the pcb to the left or right, so that the heat-shrink will be able to get over the end later. Ideally, add some hot-glue to the PCB first, and add more to the other side to immobilize the wires where they enter the pcb.
+Put some hot-glue on the top sire of the PCB and place the end of the cable on the top side of the PCB, and zip-tie the cable to the pcb. Make sure the zip-tie knot is on the top side of the pcb to the left or right, so that the heat-shrink will be able to get over the end later. It's a tight fit, but the heat-shrink can be worked over the knot usually.
 
 Slide the heat-shrink over the cable end, up to the back of the connector but not over it. It's a tight fit but the heat-shrink can be worked over the zip-tie knot but just rubbing and pushing. If the bulge is really too big, put a small amount of alcohol on the knot and then the heat-shrink can be slid right over.
 
