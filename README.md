@@ -6,6 +6,7 @@
 ![](TPDD_Cable.svg)
 ![](TPDD_Cable_complete.jpg)
 ![](TPDD_Cable_use.jpg)
+![](TPDD_Cable_running.jpg)
 
 # Parts
 PCB: [OSHPark](https://oshpark.com/shared_projects/Vseg3jxr) or [PCBWAY](https://www.pcbway.com/project/shareproject/TANDY_Portable_Disk_Drive_Cable.html)  
