@@ -118,7 +118,8 @@ Delete the cable in the pre-loaded cart, search for "AE9869-ND" and add that ins
 </table>
 
 # Credits / History
-In the beginning, there was the [Marty Goodman Document](http://www.club100.org/library/ups/tpdd.do), and it was good.
+In the beginning, there was the [Marty Goodman Document](https://archive.org/download/M100SIG/M100SIG.zip/Lib-09-PERIFERALS%2FTPDD.DO), and it was good.
+<!-- http://www.club100.org/library/ups/tpdd.do -->
 <!-- ftp://salsa.net/pub/M100SIG/Lib-09-PERIFERALS/TPDD.DO -->
 
 More recently, Rick Shear has taken a new and very careful look at a real cable, and the Marty Goodman doc, and has probably identified the "mystery" components that Marty Goodman talks about. It looks right, and the circuit does indeed work.<br>
