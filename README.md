@@ -23,7 +23,7 @@ The BOM includes a grey cable. This [black cable](https://www.digikey.com/short/
 
 # Directions
 
-Assembly pictures: <http://tandy.wiki/TPDD#Cable>
+Assembly pictures: <https://photos.app.goo.gl/TdYxGhzK94KT9rS78>
 
 First, solder the 3 transistors onto the pcb.
 
