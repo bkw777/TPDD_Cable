@@ -125,4 +125,5 @@ More recently, Rick Shear has taken a new and very careful look at a real cable,
 [Rick's initial post](https://rsmicro.wordpress.com/2018/08/26/tpdd-cable/)<br>
 [Rick's follow-up](https://rsmicro.wordpress.com/2018/09/08/built-tpdd-cable-comparison-to-oem/)
 
-This cable uses the same transistors, but a different physical construction.
+This cable uses the same transistors, but a different physical construction.<br>
+TPDD_Cable_PITA is an updated version of a PCB that goes into a DB25 backshell like Rick's original.
