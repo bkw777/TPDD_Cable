@@ -104,8 +104,8 @@ In this case ignore the meaning of the numbers and just treat them as arbitrary 
 *The Cambridge Z88 RS-232 port has a non-standard pinout.*  
 *Do not connect this cable to anything but a Cambridge Z88.*
 
-You need a different cable than what's in the BOM links. You need a cable with a DE9M on one end.
-Delete the cable in the pre-loaded cart, search for "AE9869-ND" and add that instead.  
+You need a different cable than what's in the BOM links above. You need a cable with a DE9M on one end.
+Delete the cable in the pre-loaded cart, and add [this one](https://www.digikey.com/short/mrf9n7nh) instead.  
 <table>
 <tr><td rowspan="0"><img src="TPDD_Cable_PCB_pads.jpg"></td><th>Signal</th><th>PCB pad</th><th>DE9M pin</th><th>Signal</th><td rowspan="0"><img src="DE9M_to_Z88.jpg"></td></tr>
 <tr><td>GND</td><td>7</td><td>7</td><td>GND</td></tr>
