@@ -58,7 +58,7 @@ This is the wiring that the silkscreen on the PCB describes, so this table is so
 For convenience, the table below shows the colors for a couple of specific cables from DigiKey (The grey cable and a black cables from the BOM links above). If you buy one of the same cables, then your cable should match this table. But don't trust it without verifying.
 
 <table>
-<tr><td rowspan="0"><img src="TPDD_Cable_PCB_pads.jpg"></td><th>Signal</th><th>PCB pad</th><th>DB25M pin</th><th>Signal</th><th><a href="https://www.digikey.com/short/w8zz83q5">GREY CABLE</a></th><th><a href="https://www.digikey.com/short/wbpp81nt">BLACK CABLE</a></th><td rowspan="0"><img src="DB25M_to_Model_T.jpg"></td></tr>
+<tr><td rowspan="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><img src="TPDD_Cable_PCB_pads.jpg"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><th>Signal</th><th>PCB pad</th><th>DB25M pin</th><th>Signal</th><th><a href="https://www.digikey.com/short/w8zz83q5">GREY CABLE</a></th><th><a href="https://www.digikey.com/short/wbpp81nt">BLACK CABLE</a></th><td rowspan="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><img src="DB25M_to_Model_T.jpg"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
 <tr><td>GND</td><td>7</td><td>7</td><td>GND</td><td>Green</td><td>Yellow</td></tr>
 <tr><td>RTS</td><td>4</td><td>4</td><td>CTS</td><td>Purple</td><td>Blue</td></tr>
 <tr><td>DSR</td><td>6</td><td>6</td><td>DTR</td><td>Blue</td><td>Green</td></tr>
@@ -89,7 +89,7 @@ The cable in the BOM has both a DB25M on one end and a DE9F on the other end, so
 The numbers next to the wire solder pads on the PCB normally indicate the pin# on a DB25M to connect to that pad.  
 In this case ignore the meaning of the numbers and just treat them as arbitrary labels.  
 <table>
-<tr><td rowspan="0"><img src="TPDD_Cable_PCB_pads.jpg"></td><th>Signal</th><th>PCB pad</th><th>DE9M pin</th><th>Signal</th><td rowspan="0"><img src="DE9F_to_PC.jpg"></td></tr>
+<tr><td rowspan="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><img src="TPDD_Cable_PCB_pads.jpg"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><th>Signal</th><th>PCB pad</th><th>DE9M pin</th><th>Signal</th><td rowspan="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><img src="DE9F_to_PC.jpg"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
 <tr><td>GND</td><td>7</td><td>5</td><td>GND</td></tr>
 <tr><td>RTS</td><td>4</td><td>8</td><td>CTS</td></tr>
 <tr><td>DSR</td><td>6</td><td>4</td><td>DTR</td></tr>
@@ -107,7 +107,7 @@ In this case ignore the meaning of the numbers and just treat them as arbitrary 
 You need a different cable than what's in the BOM links above.<br>
 Delete the cable in the pre-loaded cart, and add [this one](https://www.digikey.com/short/mrf9n7nh) instead.  
 <table>
-<tr><td rowspan="0"><img src="TPDD_Cable_PCB_pads.jpg"></td><th>Signal</th><th>PCB pad</th><th>DE9M pin</th><th>Signal</th><td rowspan="0"><img src="DE9M_to_Z88.jpg"></td></tr>
+<tr><td rowspan="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><img src="TPDD_Cable_PCB_pads.jpg"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><th>Signal</th><th>PCB pad</th><th>DE9M pin</th><th>Signal</th><td rowspan="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><img src="DE9M_to_Z88.jpg"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
 <tr><td>GND</td><td>7</td><td>7</td><td>GND</td></tr>
 <tr><td>RTS</td><td>4</td><td>5</td><td>CTS</td></tr>
 <tr><td>DSR</td><td>6</td><td>9</td><td>DTR</td></tr>
@@ -117,8 +117,16 @@ Delete the cable in the pre-loaded cart, and add [this one](https://www.digikey.
 <tr><td>TXD</td><td>2</td><td>3</td><td>RXD</td></tr>
 </table>
 
+# Alternate "PITA" version
+**TPDD_Cable_PITA** is a version of the cable that uses a PCB that goes into a DB25 backshell instead of a tiny pcb on the TPDD end of the cable, and a "dupont" style connector is used for the TPDD end.
+
+It's called "PITA" because making the dupont end of the cable is a pain in the ass. All in all, the PITA version requires more parts, more tools, and more steps, ... but LESS skill. So if the tiny pcb looks intimidating, or if it's confusing about which wires need to go to which numbers on the tiny pcb, the PITA version is simpler and easier on both counts.
+
+The PITA version BOM specifies a particular model/design of backshell for a reason. The common grey backshell like in Rick Shear's original version below,  and almost all other backshell models, actually interferes with the case on the Model 100 and prevents the connector from inserting all the way. Molded cables and this particular backshell don't interfere and they insert all the way.
+
 # Credits / History
-In the beginning, there was the [Marty Goodman Document](https://archive.org/download/M100SIG/M100SIG.zip/Lib-09-PERIFERALS%2FTPDD.DO), and it was good.
+In the beginning, there was the [Marty Goodman Document](https://raw.githubusercontent.com/LivingM100SIG/Living_M100SIG/main/M100SIG/Lib-09-PERIFERALS/TPDD.DO), and it was good.
+<!-- https://archive.org/download/M100SIG/M100SIG.zip/Lib-09-PERIFERALS%2FTPDD.DO -->
 <!-- http://www.club100.org/library/ups/tpdd.do -->
 <!-- ftp://salsa.net/pub/M100SIG/Lib-09-PERIFERALS/TPDD.DO -->
 
@@ -126,5 +134,4 @@ More recently, Rick Shear has taken a new and very careful look at a real cable,
 [Rick's initial post](https://rsmicro.wordpress.com/2018/08/26/tpdd-cable/)<br>
 [Rick's follow-up](https://rsmicro.wordpress.com/2018/09/08/built-tpdd-cable-comparison-to-oem/)
 
-This cable uses the same transistors, but a different physical construction.<br>
-TPDD_Cable_PITA is an updated version of a PCB that goes into a DB25 backshell like Rick's original.
+This cable uses the same transistors, but a different physical construction.
