@@ -12,6 +12,11 @@ K connector
 F ~
 $ENDCMP
 #
+$CMP GND
+D Power symbol creates a global label with name "GND" , ground
+K power-flag
+$ENDCMP
+#
 $CMP WirePads_01x07
 D Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
