@@ -25,22 +25,26 @@ The BOM includes a grey cable. This [black cable](https://www.digikey.com/short/
 
 Assembly pictures: <https://photos.app.goo.gl/TdYxGhzK94KT9rS78>
 
-First, solder the 3 transistors onto the pcb.
+First, solder the 3 transistors onto the pcb.  
+Do the center one first, otherwise alignment errors may accumulate and you may not be able to solder the last one.
 
-Next place the pin sockets onto the male pin header in a 1x2-2x3-1x2 arrangement and pull the two un-used pins out of the 2x3 socket, to match the pictures.
+Next place the pin sockets onto the male pin header in a 1x2-2x3-1x2 arrangement and pull the two un-used pins out of the 2x3 socket.  
+This is hard to verbalize clearly. Consult the pictiures.
 
-Solder the pcb to the socket pins with the transistors facing DOWN and the polarity bump facing UP. Again see the pictures.
+Solder the pcb to the socket pins with the transistors facing DOWN and the polarity bump facing UP.  
+Again see the pictures.
 
-Cut the the cable either exactly in half to keep the un-used connector for something else, or cut off the un-used connector to make one longer cable.
+Cut the the cable either exactly in half to make 2 cables, or just cut off the un-used connector to make one longer cable.
 
-Cut the jacket back to expose about 1.5 inches of wires.
+Cut the jacket back to expose about 1.5" of wires.
 
-Use a multimeter continuity tester to identify which color wires go to which pins on the DB25M connector.
+Use a multimeter continuity tester to identify which color wires go to which pin #s on the DB25M connector.
 
 Consult the table below to determine which wires will not be used.  
 Cut the un-used wires flush with the outer jacket.  
-Cover the end of the jacket and cut wires with a short 3/4" length of 1/4" heat-shrink.  
-You don't need to insulate each individual wire, just prevent the un-insulated shield ground wire and the ends of the other un-used wires from touching any part of the PCB.   Have the heat-shrink extend only about 1/8" beyond the end of the jacket, just enough to cover the cut wires, no more than that.  
+Cover the end of the jacket with a short 3/4" length of 1/4" heat-shrink.  
+You don't need to insulate each individual wire, just prevent the un-insulated shield ground wire and the ends of the cut-short un-used wires from touching any part of the PCB.  
+Have the heat-shrink extend only about 1/8" beyond the end of the jacket, just enough to cover the un-used cut wires, no more than that.  
 Any extra length of heat-shrink will get in the way later.  
 Shrink the heat-shrink.
 
