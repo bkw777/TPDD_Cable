@@ -37,13 +37,18 @@ Cut the jacket back to expose about 1.5 inches of wires.
 
 Use a multimeter continuity tester to identify which color wires go to which pins on the DB25M connector.
 
-Consult the table below and cut the un-used wires flush with the outer jacket, and cover the end of the jacket and cut wires with a short 3/4" length of 1/4" heat-shrink. You don't need to insulate each individual wire, just prevent the un-insulated shield ground wire and the ends of the other wires from touching any part of the PCB. Have the heat-shrink extend only about 1/8" beyond the end of the jacket. It needs to cover the cut wire ends, but not be any longer than that. Later, the cable end will need to be zip-tied to the pcb and the end of the cabel will need to be able to go up past the zip-tie area, so you don't want 1/2" of heat-shrink past the end of the jacket.
+Consult the table below to determine which wires will not be used.  
+Cut the un-used wires flush with the outer jacket.  
+Cover the end of the jacket and cut wires with a short 3/4" length of 1/4" heat-shrink.  
+You don't need to insulate each individual wire, just prevent the un-insulated shield ground wire and the ends of the other un-used wires from touching any part of the PCB.   Have the heat-shrink extend only about 1/8" beyond the end of the jacket, just enough to cover the cut wires, no more than that.  
+Any extra length of heat-shrink will get in the way later.  
+Shrink the heat-shrink.
 
-Put a 1 1/2" length of 3/8" heat-shrink on the cable for later.
+Thread a 1 1/2" length of 3/8" heat-shrink onto the cable for later. (Don't shrink it yet)
 
 Strip about 1/8" of insulation from all the remaining wires.
 
-Lastly solder the wires to the pcb following one of the sections below.
+Lastly solder the wires to the pcb following one of the tables below.
 
 # Standard Wiring, for a "Model T", like the original cable
 The standard version of the cable ends in a male 25-pin plug to connect to the female 25-pin DTE RS-232 port on any of the following machines:  
@@ -53,9 +58,9 @@ The standard version of the cable ends in a male 25-pin plug to connect to the f
  Olivetti M10  
 This is the same arrangement as the original cable that came with the drive.
 
-This is the wiring that the silkscreen on the PCB describes, so this table is somewhat redundant. IE, pad #20 goes to DB25M pin #20, and so on.
+This is the wiring that the silkscreen on the PCB describes, so this table is somewhat redundant. IE, PCB pad #3 goes to DB25M pin #3, PCB pad #20 goes to DB25M pin #20, and so on.
 
-For convenience, the table below shows the colors for a couple of specific cables from DigiKey (The grey cable and a black cables from the BOM links above). If you buy one of the same cables, then your cable should match this table. But don't trust it without verifying.
+For convenience, the table below also shows the colors for a couple of specific cables from DigiKey from the BOM links above. If you buy one of the same cables, then your cable should match this table. But don't trust it without verifying. If you buy any other cable that isn't specifically exactly the one from one of these BOM links, then ignore the colors and map out your cable yourself.
 
 <table>
 <tr><td rowspan="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><img src="TPDD_Cable_PCB_pads.jpg"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><th>Signal</th><th>PCB pad</th><th>DB25M pin</th><th>Signal</th><th><a href="https://www.digikey.com/short/w8zz83q5">GREY CABLE</a></th><th><a href="https://www.digikey.com/short/wbpp81nt">BLACK CABLE</a></th><td rowspan="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><img src="DB25M_to_Model_T.jpg"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
@@ -68,28 +73,30 @@ For convenience, the table below shows the colors for a couple of specific cable
 <tr><td>TXD</td><td>2</td><td>2</td><td>RXD</td><td>Orange</td><td>Red</td></tr>
 </table>
 
-Solder the wires on the bottom side of the pcb, the side with the transistors.  
-Flush-cut the top side after soldering and briefly touch each wire with the soldering iron to re-melt the solder into a smooth dome that won't pierce wire insulation.
+Solder the wires on the bottom side of the pcb, with the wire on same side with the transistors, the cut ends on the top side without the transistors.  
+
+Flush-cut the top side after soldering, and re-melt each wire end into a smooth dome that won't pierce wire insulation.
 
 Lay the wires down flat on the bottom side of the pcb, pulled away from the connector, and cover the ends of the wires with hot-glue to keep them from flexing at the solder joint.
 
-Put some hot-glue on the top sire of the PCB and place the end of the cable on the top side of the PCB, and zip-tie the cable to the pcb. Make sure the zip-tie knot is on the top side of the pcb to the left or right, so that the heat-shrink will be able to get over the end later. It's a tight fit, but the heat-shrink can be worked over the knot usually.
+Hot-glue the end of the cable on the top side of the PCB, and zip-tie the cable to the pcb.  
+Make sure the zip-tie knot is on the top side of the pcb to the left or right, so that the heat-shrink will be able to get over the bulge. It's a tight fit, but the heat-shrink can be worked over the knot usually.
 
-Slide the heat-shrink over the cable end, up to the back of the connector but not over it. It's a tight fit but the heat-shrink can be worked over the zip-tie knot but just rubbing and pushing. If the bulge is really too big, put a small amount of alcohol on the knot and then the heat-shrink can be slid right over.
+Slide the heat-shrink over the cable end, up to the back of the connector but not over it. It's a tight fit but the heat-shrink can be worked over the zip-tie knot by just rubbing and pushing repeatedly, and it works a little further along each time. If the bulge is really too big, put a small amount of distilled water or alcohol on the knot and then the heat-shrink can be slid right over. (If you use alcohol, then you may want to heat the whole area for an extra long time when shrinking the heat-shrink, to re-melt the hot-glue, because alcohol seperates hot-glue surface bonds.)
 
 # Alternate Wiring
 There are a few other machines besides "Model T"'s that can use a TPDD, but their serial ports are different and usually need one or more adapters to work with the normal TPDD cable.
  
-You can make a custom cable that will need no adapters to connect to other kinds of machines by just ignoring the silkscreen on the PCB and use one the following wiring tables instead of the standard wiring above.
+You can make a custom cable that will need no adapters to connect to other kinds of machines by just ignoring the silkscreen on the PCB and use one the following wiring tables instead of the standard wiring table above.
 
 ## For TANDY WP-2, most modern PCs, most usb-serial adapters, and anything else with a DE9M DTE port.
 You need a cable with a DE9F on the end instead of DB25M.  
-The cable in the BOM has both a DB25M on one end and a DE9F on the other end, so you can use the same BOM to make either a "Model T" cable or a PC cable, or cut the cable exactly in half and make one of each. Also true for the grey and black cable links in the table above.
+The cable in the BOM has both a DB25M on one end and a DE9F on the other end, so you can use the same BOM to make either a "Model T" cable, or a WP-2/PC cable, both.
 
 The numbers next to the wire solder pads on the PCB normally indicate the pin# on a DB25M to connect to that pad.  
-In this case ignore the meaning of the numbers and just treat them as arbitrary labels.  
+In this case ignore that original meaning and just treat the numbers as arbitrary identifiers. IE, PCB pad #3 is just pad #3, not DB25M pin #3 in this case. Use the table below to find what DE9F pin # each pad should connect to.  
 <table>
-<tr><td rowspan="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><img src="TPDD_Cable_PCB_pads.jpg"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><th>Signal</th><th>PCB pad</th><th>DE9M pin</th><th>Signal</th><td rowspan="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><img src="DE9F_to_PC.jpg"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td rowspan="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><img src="TPDD_Cable_PCB_pads.jpg"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><th>Signal</th><th>PCB pad</th><th>DE9F pin</th><th>Signal</th><td rowspan="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><img src="DE9F_to_PC.jpg"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
 <tr><td>GND</td><td>7</td><td>5</td><td>GND</td></tr>
 <tr><td>RTS</td><td>4</td><td>8</td><td>CTS</td></tr>
 <tr><td>DSR</td><td>6</td><td>4</td><td>DTR</td></tr>
@@ -104,7 +111,7 @@ In this case ignore the meaning of the numbers and just treat them as arbitrary 
 *The Cambridge Z88 RS-232 port has a non-standard pinout.*  
 *Do not connect this cable to anything but a Cambridge Z88.*
 
-You need a different cable than what's in the BOM links above.<br>
+You need a different cable than what's in the BOM links above.  
 Delete the cable in the pre-loaded cart, and add [this one](https://www.digikey.com/short/mrf9n7nh) instead.  
 <table>
 <tr><td rowspan="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><img src="TPDD_Cable_PCB_pads.jpg"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><th>Signal</th><th>PCB pad</th><th>DE9M pin</th><th>Signal</th><td rowspan="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><img src="DE9M_to_Z88.jpg"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
@@ -122,16 +129,13 @@ Delete the cable in the pre-loaded cart, and add [this one](https://www.digikey.
 
 It's called "PITA" because making the dupont end of the cable is a pain in the ass. All in all, the PITA version requires more parts, more tools, and more steps, ... but LESS skill. So if the tiny pcb looks intimidating, or if it's confusing about which wires need to go to which numbers on the tiny pcb, the PITA version is simpler and easier on both counts.
 
-The PITA version BOM specifies a particular model/design of backshell for a reason. The common grey backshell like in Rick Shear's original version below,  and almost all other backshell models, actually interferes with the case on the Model 100 and prevents the connector from inserting all the way. Molded cables and this particular backshell don't interfere and they insert all the way.
+The PITA version BOM specifies a particular model/design of backshell for a reason. The common grey backshell like in Rick Shear's original version below, and almost all other backshell models, actually interferes with the case on the Model 100 and prevents the connector from inserting all the way. Molded cables and this particular backshell don't interfere and they insert all the way.
 
 # Credits / History
 In the beginning, there was the [Marty Goodman Document](https://raw.githubusercontent.com/LivingM100SIG/Living_M100SIG/main/M100SIG/Lib-09-PERIFERALS/TPDD.DO), and it was good.
-<!-- https://archive.org/download/M100SIG/M100SIG.zip/Lib-09-PERIFERALS%2FTPDD.DO -->
-<!-- http://www.club100.org/library/ups/tpdd.do -->
-<!-- ftp://salsa.net/pub/M100SIG/Lib-09-PERIFERALS/TPDD.DO -->
 
-More recently, Rick Shear has taken a new and very careful look at a real cable, and the Marty Goodman doc, and has probably identified the "mystery" components that Marty Goodman talks about. It looks right, and the circuit does indeed work.<br>
-[Rick's initial post](https://rsmicro.wordpress.com/2018/08/26/tpdd-cable/)<br>
+More recently, Rick Shear has taken a new and very careful look at a real cable, and the Marty Goodman doc, and has probably identified the "mystery" components that Marty Goodman talks about. It looks right, and the circuit does indeed work.  
+[Rick's initial post](https://rsmicro.wordpress.com/2018/08/26/tpdd-cable/)  
 [Rick's follow-up](https://rsmicro.wordpress.com/2018/09/08/built-tpdd-cable-comparison-to-oem/)
 
 This cable uses the same transistors, but a different physical construction.
