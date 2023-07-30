@@ -95,7 +95,7 @@ You can make a custom cable that will need no adapters to connect to other kinds
 
 ## For TANDY WP-2, most modern PCs, most usb-serial adapters, and anything else with a DE9M DTE port.
 You need a cable with a DE9F on the end instead of DB25M.  
-The cable in the BOM has both a DB25M on one end and a DE9F on the other end, so you can use the same BOM to make either a "Model T" cable, or a WP-2/PC cable, both.
+The cable in the BOM has both a DB25M on one end and a DE9F on the other end, so you can use the same BOM to make either a "Model T" cable, or a WP-2/PC cable, or both.
 
 The numbers next to the wire solder pads on the PCB normally indicate the pin# on a DB25M to connect to that pad.  
 In this case ignore that original meaning and just treat the numbers as arbitrary identifiers. IE, PCB pad #3 is just pad #3, not DB25M pin #3 in this case. Use the table below to find what DE9F pin # each pad should connect to.  
