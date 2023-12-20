@@ -77,6 +77,19 @@ For convenience, the table below also shows the colors for a couple of specific 
 <tr><td>TXD</td><td>2</td><td>2</td><td>RXD</td><td>Orange</td><td>Red</td></tr>
 </table>
 
+To verify the final result, check the following with a DMM in Continuity and Diode modes.
+
+<table>
+<tr><td rowspan="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><img src="TPDD_plug.jpg"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><th>BLACK</th><th>CONT</th><th>DIODE</th><th>RED</th><td rowspan="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><img src="DB25M_to_Model_T.jpg"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td>1</td><td>BEEP</td><td></td><td>7</td></tr>
+<tr><td>2</td><td>BEEP</td><td></td><td>4</td></tr>
+<tr><td>3</td><td></td><td>1.7v</td><td>6</td></tr>
+<tr><td>4</td><td></td><td>1.7v</td><td>5</td></tr>
+<tr><td>5</td><td>BEEP</td><td></td><td>20</td></tr>
+<tr><td>6</td><td></td><td>1.7v</td><td>3</td></tr>
+<tr><td>7</td><td>BEEP</td><td></td><td>2</td></tr>
+</table>
+
 Solder the wires on the bottom side of the pcb, with the wire on same side with the transistors, the cut ends on the top side without the transistors.  
 
 Flush-cut the top side after soldering, and re-melt each wire end into a smooth dome that won't pierce wire insulation.
@@ -110,6 +123,18 @@ In this case ignore that original meaning and just treat the numbers as arbitrar
 <tr><td>TXD</td><td>2</td><td>2</td><td>RXD</td></tr>
 </table>
 
+To verify the final result, check the following with a DMM in Continuity and Diode modes.
+
+<table>
+<tr><td rowspan="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><img src="TPDD_plug.jpg"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><th>BLACK</th><th>CONT</th><th>DIODE</th><th>RED</th><td rowspan="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><img src="DE9F_to_PC.jpg"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td>1</td><td>BEEP</td><td></td><td>5</td></tr>
+<tr><td>2</td><td>BEEP</td><td></td><td>7</td></tr>
+<tr><td>3</td><td></td><td>1.7v</td><td>6</td></tr>
+<tr><td>4</td><td></td><td>1.7v</td><td>8</td></tr>
+<tr><td>5</td><td>BEEP</td><td></td><td>4</td></tr>
+<tr><td>6</td><td></td><td>1.7v</td><td>2</td></tr>
+<tr><td>7</td><td>BEEP</td><td></td><td>3</td></tr>
+</table>
 
 ## For Cambridge Z88
 *The Cambridge Z88 RS-232 port has a non-standard pinout.*  
