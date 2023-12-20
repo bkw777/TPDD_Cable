@@ -64,7 +64,7 @@ This is the same arrangement as the original cable that came with the drive.
 
 This is the wiring that the silkscreen on the PCB describes, so this table is somewhat redundant. IE, PCB pad #3 goes to DB25M pin #3, PCB pad #20 goes to DB25M pin #20, and so on.
 
-For convenience, the table below also shows the colors for a couple of specific cables from DigiKey from the BOM links above. If you buy one of the same cables, then your cable should match this table. But don't trust it without verifying. If you buy any other cable that isn't specifically exactly the one from one of these BOM links, then ignore the colors and map out your cable yourself.
+For convenience, the table below also shows the colors for a couple of specific cable options from DigiKey from the BOM links above. If you buy one of the same cables, then your cable should match this table. But don't trust the colors without verifying. If you buy any other cable that isn't specifically exactly the one from one of these BOM links, then ignore the colors and map out your cable yourself.
 
 <table>
 <tr>
