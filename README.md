@@ -102,13 +102,14 @@ Make sure the zip-tie knot is on the top side of the pcb to the left or right, s
 Slide the heat-shrink over the cable end, up to the back of the connector but not over it. It's a tight fit but the heat-shrink can be worked over the zip-tie knot by just rubbing and pushing repeatedly, and it works a little further along each time. If the bulge is really too big, put a small amount of distilled water or alcohol on the knot and then the heat-shrink can be slid right over. (If you use alcohol, then you may want to heat the whole area for an extra long time when shrinking the heat-shrink, to re-melt the hot-glue, because alcohol seperates hot-glue surface bonds.)
 
 # Alternate Wiring
-There are a few other machines besides "Model T"'s that can use a TPDD, but their serial ports are different and usually need one or more adapters to work with the normal TPDD cable.
+Other machines besides "Model T"'s like the TRS-80 Model 100 can use a TPDD, but their serial ports are different and usually need one or more adapters to work with the 25-pin cable for Model 100/200.
  
 You can make a custom cable that will need no adapters to connect to other kinds of machines by just ignoring the silkscreen on the PCB and use one the following wiring tables instead of the standard wiring table above.
 
-## For TANDY WP-2, most modern PCs, most usb-serial adapters, and anything else with a DE9M DTE port.
+## PC / TANDY WP-2 / Atari Portfolio
+For Modern PCs and usb-serial adapters, TANDY WP-2, Atari Portfolio, and anything else with a standard DE9M DTE port.  
 You need a cable with a DE9F on the end instead of DB25M.  
-The cable in the BOM has both a DB25M on one end and a DE9F on the other end, so you can use the same BOM to make either a "Model T" cable, or a WP-2/PC cable, or both.
+The cable in the BOM has both a DB25M on one end and a DE9F on the other end, so you can use the same BOM to make either a "Model T" cable, or a PC cable, or both.
 
 The numbers next to the wire solder pads on the PCB normally indicate the pin# on a DB25M to connect to that pad.  
 In this case ignore that original meaning and just treat the numbers as arbitrary identifiers. IE, PCB pad #3 is just pad #3, not DB25M pin #3 in this case. Use the table below to find what DE9F pin # each pad should connect to.  
@@ -136,7 +137,7 @@ To verify the final result, check the following with a DMM in Continuity and Dio
 <tr><td>7</td><td>BEEP</td><td></td><td>3</td></tr>
 </table>
 
-## For Cambridge Z88
+## Cambridge Z88
 *The Cambridge Z88 RS-232 port has a non-standard pinout.*  
 *Do not connect this cable to anything but a Cambridge Z88.*
 
@@ -153,12 +154,12 @@ Delete the cable in the pre-loaded cart, and add [this one](https://www.digikey.
 <tr><td>TXD</td><td>2</td><td>3</td><td>RXD</td></tr>
 </table>
 
-# Alternate "PITA" version
+# Alternate "PITA" pcb
 **TPDD_Cable_PITA** is a version of the cable that uses a PCB that goes into a DB25 backshell instead of a tiny pcb on the TPDD end of the cable, and a "dupont" style connector is used for the TPDD end.
 
 It's called "PITA" because making the dupont end of the cable is a pain in the ass. All in all, the PITA version requires more parts, more tools, and more steps, ... but LESS skill. So if the tiny pcb looks intimidating, or if it's confusing about which wires need to go to which numbers on the tiny pcb, the PITA version is simpler and easier on both counts.
 
-The PITA version BOM specifies a particular model/design of backshell for a reason. The common grey backshell like in Rick Shear's original version below, and almost all other backshell models, actually interferes with the case on the Model 100 and prevents the connector from inserting all the way. Molded cables and this particular backshell don't interfere and they insert all the way.
+The PITA version BOM.csv specifies a particular model/design of backshell for a reason. The common grey backshell like in Rick Shear's original version below, and almost all other backshell models, actually interferes with the case on the Model 100 and prevents the connector from inserting all the way. Molded cables and this particular backshell don't interfere and they insert all the way.
 
 # Credits / History
 In the beginning, there was the [Marty Goodman Document](https://raw.githubusercontent.com/LivingM100SIG/Living_M100SIG/main/M100SIG/Lib-09-PERIFERALS/TPDD.DO), and it was good.
