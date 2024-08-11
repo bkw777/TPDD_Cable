@@ -1,58 +1,64 @@
 # Cable for [Tandy Portable Disk Drive](http://tandy.wiki/TPDD)
 (and TPDD2)
 
-![](TPDD_Cable.jpg)
-![](TPDD_Cable_2.jpg)
-![](TPDD_Cable.svg)
+<!--
+![](PCB/out/TPDD_Cable.jpg)
+![](PCB/out/TPDD_Cable_2.jpg)
+-->
+![](PCB/out/TPDD_Cable.1.jpg)
+![](PCB/out/TPDD_Cable.2.jpg)
+![](PCB/out/TPDD_Cable.3.jpg)
+![](PCB/out/TPDD_Cable.4.jpg)
+![](PCB/out/TPDD_Cable.5.jpg)
+![](PCB/out/TPDD_Cable.6.jpg)
+![](PCB/out/TPDD_Cable.svg)
 ![](TPDD_Cable_complete.jpg)
 ![](TPDD_Cable_use.jpg)
 ![](TPDD_Cable_running.jpg)
 
 # Parts
 PCB: [OSHPark](https://oshpark.com/shared_projects/Vseg3jxr) or [PCBWAY](https://www.pcbway.com/project/shareproject/TANDY_Portable_Disk_Drive_Cable.html)  
-BOM: [DigiKey](https://www.digikey.com/short/pbc3pp)  
+BOM: [DigiKey](https://www.digikey.com/short/chqvhvb7)  
 
-You will also need:
-* 2x4 or longer double-row 2.5mm male pin header (used as an alignment/holder tool while soldering)
-* 3/4" length of 1/4" diameter heat-shrink
-* 1 1/2" length of 3/8" diameter heat-shrink
-* one 0.1" x 4" / 3mm x 100mm zip-tie
-* optionally, hot glue
+also:
+* 20-40mm of 6mm heat-shrink
+* M3 cable tie
 
 The BOM includes a grey cable. This [black cable](https://www.digikey.com/short/wbpp81nt) can be substituted if you want.
+
+If using Elecrow, PCBWAY, or JLCPCB, you can upload the [housing STL file](HOUSING/TPDD_Cable_Housing.stl) to have it printed at the same time as the PCBs are being made. Choose nylon/PA11/PA12 material, SLS or MJF print method.
+The model source SCAD file has a variable parameter for fitment clearance, and the STL file was generated with a fitment clearance setting of 0.1mm, which is suitable for high accuracy printing like SLS.  
+If you want to try to print the part at home with an FDM printer, then open the scad file in openscad and change `fc=0.1;` to `fc=0.2;` and export a new stl.  
 
 # Directions
 
 Assembly pictures: <https://photos.app.goo.gl/TdYxGhzK94KT9rS78>
+(old method before the 3d-printed housing)
 
-First, solder the 3 transistors onto the pcb.  
-Do the center one first, otherwise alignment errors may accumulate and you may not be able to solder the last one.
+If you want to make 2 cables, one for "Model T" clones and one for PC & WP-2, then cut the cable in half in the middle. (and buy double the transistors and connectors)  
+Otherwise just cut the 9-pn plug off the cable to make one longer cable for Model 100 & clones.
 
-Next place the pin sockets onto the male pin header in a 1x2-2x3-1x2 arrangement and pull the two un-used pins out of the 2x3 socket.  
-This is hard to verbalize clearly. Consult the pictiures.
+## prepare the cable
+Strip about 40-50mm of the the cable jacket.  
+Strip about 4mm of each wire.  
+Use a DMM in continuity mode to identify which color wires go to which pin numbers on the DB25M connector.  
+The table should be correct for the exact cables linked here, but verify it before soldering.  
+Otherwise, fill in your own table like the ones below for your particular cable.  
+Cut the unused wires as short. (anything not mentioned in the tables below)  
+Thread the 3d-printed housing onto the cable, with the rectangular opening facing the cut end of the cable.  
+Thread the heatshrink onto the cable.
 
-Solder the pcb to the socket pins with the transistors facing DOWN and the polarity bump facing UP.  
-Again see the pictures.
+## solder the pcb
+Solder the center transistor first, then the left & right transistors to minimize alignment errors.  
+Then solder the 2x4 connector.  
+Solder the wires to the pcb, with the solder on the transistor side of the pcb and the wires on the other side. Consult one of the tables below, or the one you made yourself. If your cable has say, purple goes to pin# 20, then solder the purple wire to the pad labelled 20 on the PCB, etc.
 
-Cut the the cable either exactly in half to make 2 cables, or just cut off the un-used connector to make one longer cable.
-
-Cut the jacket back to expose about 1.5" of wires.
-
-Use a multimeter continuity tester to identify which color wires go to which pin #s on the DB25M connector.
-
-Consult the table below to determine which wires will not be used.  
-Cut the un-used wires flush with the outer jacket.  
-Cover the end of the jacket with a short 3/4" length of 1/4" heat-shrink.  
-You don't need to insulate each individual wire, just prevent the un-insulated shield ground wire and the ends of the cut-short un-used wires from touching any part of the PCB.  
-Have the heat-shrink extend only about 1/8" beyond the end of the jacket, just enough to cover the un-used cut wires, no more than that.  
-Any extra length of heat-shrink will get in the way later.  
-Shrink the heat-shrink.
-
-Thread a 1 1/2" length of 3/8" heat-shrink onto the cable for later. (Don't shrink it yet)
-
-Strip about 1/8" of insulation from all the remaining wires.
-
-Lastly solder the wires to the pcb following one of the tables below.
+## assemble the housing
+Slide the heat-shrink up flush with the end of the end of the cable jacket and shrink it.  
+Slide the housing up over the pcb. Make sure the transistors face down, and the polarity key points up.  
+Push the cable into the pocket as far as possible. Make sure the jacket goes far enough in to be grabbed by the cable tie. It may require some "squishing" of the cable to fit.  
+Insert a cable tie in the opening, flat side of the strap facing the cable, pointing straght down on the side with the opening. Push the tie down and in so that it fishes under the pcb, up the other side, back over the top, and back out the opening on top, and thread into the head.  
+Seat the cable as far in as possible and cinch the cable tie tight. Flush-cut the cable tie at the head.
 
 # Standard Wiring, for a "Model T", like the original cable
 The standard version of the cable ends in a male 25-pin plug to connect to the female 25-pin DTE RS-232 port on any of the following machines:  
@@ -62,9 +68,9 @@ The standard version of the cable ends in a male 25-pin plug to connect to the f
  Olivetti M10  
 This is the same arrangement as the original cable that came with the drive.
 
-This is the wiring that the silkscreen on the PCB describes, so this table is somewhat redundant. IE, PCB pad #3 goes to DB25M pin #3, PCB pad #20 goes to DB25M pin #20, and so on.
+This is the wiring that matches the numbers on the the silkscreen. IE, the via labelled 3 on the PCB goes to DB25M pin 3, via 20 goes to DB25M pin 20, and so on.
 
-For convenience, the table below also shows the colors for a couple of specific cable options from DigiKey from the BOM links above. If you buy one of the same cables, then your cable should match this table. But don't trust the colors without verifying. If you buy any other cable that isn't specifically exactly the one from one of these BOM links, then ignore the colors and map out your cable yourself.
+For convenience, the table below also shows the colors for a couple of specific cable options from DigiKey from the BOM links above. If you buy one of these exact specific cables, then your cable should match this table. But don't trust the colors without verifying. If you buy any other cable that isn't specifically exactly the one from one of these BOM links, then ignore the colors and map out your cable yourself to find out which color goes to DB25M pin 3 etc.
 
 <table>
 <tr>
