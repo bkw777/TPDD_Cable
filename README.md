@@ -17,18 +17,18 @@
 ![](TPDD_Cable_running.jpg)
 
 # Parts
-PCB: [OSHPark](https://oshpark.com/shared_projects/Vseg3jxr) or [PCBWAY](https://www.pcbway.com/project/shareproject/TANDY_Portable_Disk_Drive_Cable.html)  
-BOM: [DigiKey](https://www.digikey.com/short/chqvhvb7)  
+<!-- PCB: [OSHPark](https://oshpark.com/shared_projects/Vseg3jxr) or [PCBWAY](https://www.pcbway.com/project/shareproject/TANDY_Portable_Disk_Drive_Cable.html) -->  
+BOM: [DigiKey](https://www.digikey.com/short/t9b9h4vq)  
 
+<!-- 
 also:
 * 20-40mm of 6mm heat-shrink
 * M3 cable tie
+-->
 
 The BOM includes a grey cable. This [black cable](https://www.digikey.com/short/wbpp81nt) can be substituted if you want.
 
-If using Elecrow, PCBWAY, or JLCPCB, you can upload the [housing STL file](HOUSING/TPDD_Cable_Housing.stl) to have it printed at the same time as the PCBs are being made. Choose nylon/PA11/PA12 material, SLS or MJF print method.
-The model source SCAD file has a variable parameter for fitment clearance, and the STL file was generated with a fitment clearance setting of 0.1mm, which is suitable for high accuracy printing like SLS.  
-If you want to try to print the part at home with an FDM printer, then open the scad file in openscad and change `fc=0.1;` to `fc=0.2;` and export a new stl.  
+If using Elecrow, PCBWAY, or JLCPCB, you can upload the [housing](HOUSING) STL file to have it printed at the same time as the PCBs are being made. Choose nylon/PA11/PA12 material, SLS or MJF print method.  
 
 # Directions
 
@@ -39,14 +39,14 @@ If you want to make 2 cables, one for "Model T" clones and one for PC & WP-2, th
 Otherwise just cut the 9-pn plug off the cable to make one longer cable for Model 100 & clones.
 
 ## prepare the cable
-Strip about 40-50mm of the the cable jacket.  
-Strip about 4mm of each wire.  
+Strip about 40mm of the the cable jacket.  
+Strip about 3mm of each wire.  
 Use a DMM in continuity mode to identify which color wires go to which pin numbers on the DB25M connector.  
-The table should be correct for the exact cables linked here, but verify it before soldering.  
+The table below should be correct for the exact cables linked here, but verify it before soldering.  
 Otherwise, fill in your own table like the ones below for your particular cable.  
-Cut the unused wires as short. (anything not mentioned in the tables below)  
+Cut the unused wires short.  
 Thread the 3d-printed housing onto the cable, with the rectangular opening facing the cut end of the cable.  
-Thread the heatshrink onto the cable.
+Thread 40mm of heatshrink onto the cable.
 
 ## solder the pcb
 Solder the center transistor first, then the left & right transistors to minimize alignment errors.  
