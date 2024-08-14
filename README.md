@@ -11,10 +11,60 @@
 ![](PCB/out/TPDD_Cable.4.jpg)
 ![](PCB/out/TPDD_Cable.5.jpg)
 ![](PCB/out/TPDD_Cable.6.jpg)
+![](PCB/out/TPDD_Cable.top.jpg)
+![](PCB/out/TPDD_Cable.bottom.jpg)
 ![](PCB/out/TPDD_Cable.svg)
 ![](TPDD_Cable_complete.jpg)
 ![](TPDD_Cable_use.jpg)
 ![](TPDD_Cable_running.jpg)
+
+The OpenSCAD model for the housing has several parametric options,  
+and several of those are collected into a single option named "style",  
+to generate a few different versions of the housing.
+
+Until some actual prints are tested, it's unclear what will be practical.  
+Example, style "a" is the smallest and the one I would like the most,  
+but it might be actually too small. Maybe the cable won't actually fit,  
+or maybe the handle body is too small to be easily grabbed, etc.
+
+So here are a few reasonable candidates that address different points.
+
+There is also a special "jig" style which is a soldering jig to hold the board and connector in perfect alignment while soldering. It's not really neccessary but it's easy to generate so why not?
+
+* Style A - The smallest body possible.
+  
+* Style B - Compromise between A and C.
+  The cable is allowed to be off-center vertically, and the handle height is increased just enough to give a little more room for the cable.
+  
+* Style C - Full unrestricted cable opening, even allowing a larger cable or a 2nd layer of heat-shrink.
+  The handle is taller but actually perfectly square and centered around the cable.
+  
+* Style D - Wider and longer handle body.
+  Should be easier to grab.
+  Only as tall as needed to fit the cable without trying to be centered, so it's shorter than C and the cable is not centered vertically.
+
+![](HOUSING/out/TPDD_Cable_Housing.A.1.png)
+![](HOUSING/out/TPDD_Cable_Housing.B.1.png)
+![](HOUSING/out/TPDD_Cable_Housing.C.1.png)
+![](HOUSING/out/TPDD_Cable_Housing.D.1.png)
+
+![](HOUSING/out/TPDD_Cable_Housing.A.2.png)
+![](HOUSING/out/TPDD_Cable_Housing.B.2.png)
+![](HOUSING/out/TPDD_Cable_Housing.C.2.png)
+![](HOUSING/out/TPDD_Cable_Housing.D.2.png)
+
+![](HOUSING/out/TPDD_Cable_Housing.A.3.png)
+![](HOUSING/out/TPDD_Cable_Housing.B.3.png)
+![](HOUSING/out/TPDD_Cable_Housing.C.3.png)
+![](HOUSING/out/TPDD_Cable_Housing.D.3.png)
+
+![](HOUSING/out/TPDD_Cable_Housing.A.4.png)
+![](HOUSING/out/TPDD_Cable_Housing.B.4.png)
+![](HOUSING/out/TPDD_Cable_Housing.C.4.png)
+![](HOUSING/out/TPDD_Cable_Housing.D.4.png)
+
+Soldering jig
+![](HOUSING/out/TPDD_Cable_Housing.JIG.1.png)
 
 # Parts
 <!-- PCB: [OSHPark](https://oshpark.com/shared_projects/Vseg3jxr) or [PCBWAY](https://www.pcbway.com/project/shareproject/TANDY_Portable_Disk_Drive_Cable.html) -->  
