@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.65,
-          "height": 1.2,
-          "width": 1.2
+          "drill": 2.8,
+          "height": 2.8,
+          "width": 2.8
         },
         "silk_line_width": 0.0508,
         "silk_text_italic": false,
@@ -496,7 +496,7 @@
       "plot": "GERBER_${TITLE}_${REVISION}",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "out/pcb.step",
+      "step": "out/pcb2.step",
       "svg": "",
       "vrml": ""
     },
