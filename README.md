@@ -43,6 +43,7 @@ There is also a special "jig" style which is a soldering jig to hold the board a
   Should be easier to grab.
   Only as tall as needed to fit the cable without trying to be centered, so it's shorter than C and the cable is not centered vertically.
 
+<!-- 
 ![](HOUSING/out/TPDD_Cable_Housing.A.1.png)
 ![](HOUSING/out/TPDD_Cable_Housing.B.1.png)
 ![](HOUSING/out/TPDD_Cable_Housing.C.1.png)
@@ -62,19 +63,21 @@ There is also a special "jig" style which is a soldering jig to hold the board a
 ![](HOUSING/out/TPDD_Cable_Housing.B.4.png)
 ![](HOUSING/out/TPDD_Cable_Housing.C.4.png)
 ![](HOUSING/out/TPDD_Cable_Housing.D.4.png)
+-->
+
+Style "C"  
+![](HOUSING/out/TPDD_Cable_Housing.C.1.png)
+![](HOUSING/out/TPDD_Cable_Housing.C.2.png)
+![](HOUSING/out/TPDD_Cable_Housing.C.3.png)
+![](HOUSING/out/TPDD_Cable_Housing.C.4.png)
 
 Soldering jig
-![](HOUSING/out/TPDD_Cable_Housing.JIG.1.png)
+![](HOUSING/out/TPDD_Cable_Housing.JIG.png)
 
 # Parts
 <!-- PCB: [OSHPark](https://oshpark.com/shared_projects/Vseg3jxr) or [PCBWAY](https://www.pcbway.com/project/shareproject/TANDY_Portable_Disk_Drive_Cable.html) -->  
 BOM: [DigiKey](https://www.digikey.com/short/t9b9h4vq)  
-
-<!-- 
-also:
-* 20-40mm of 6mm heat-shrink
-* M3 cable tie
--->
+( replace the M3 cable tie in the BOM with a M4 cable tie )
 
 The BOM includes a grey cable. This [black cable](https://www.digikey.com/short/wbpp81nt) can be substituted if you want.
 
