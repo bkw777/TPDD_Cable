@@ -1,9 +1,10 @@
 # Cable for [Tandy Portable Disk Drive](http://tandy.wiki/TPDD)
 (and TPDD2)
 
-![](TPDD_Cable.jpg)
-![](TPDD_Cable_2.jpg)
-![](TPDD_Cable.svg)
+![](PCB/out/TPDD_Cable.jpg)
+![](PCB/out/TPDD_Cable.2.jpg)
+![](PCB/out/TPDD_Cable.3.jpg)
+![](PCB/out/TPDD_Cable.svg)
 ![](TPDD_Cable_complete.jpg)
 ![](TPDD_Cable_use.jpg)
 ![](TPDD_Cable_running.jpg)

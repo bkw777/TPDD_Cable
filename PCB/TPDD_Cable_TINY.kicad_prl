@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 0,
+    "active_layer": 37,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -67,8 +67,14 @@
     "visible_layers": "0001030_80000001",
     "zone_display_mode": 0
   },
+  "git": {
+    "repo_password": "",
+    "repo_type": "",
+    "repo_username": "",
+    "ssh_key": ""
+  },
   "meta": {
-    "filename": "TPDD_Cable.kicad_prl",
+    "filename": "TPDD_Cable_TINY.kicad_prl",
     "version": 3
   },
   "project": {
