@@ -25,18 +25,19 @@ The BOM includes a grey cable. This [black cable](https://www.digikey.com/short/
 
 Work in progress: [3d-printable plug housing](HOUSING)  
 Style "A"
-![](HOUSING/out/TPDD_Cable_Housing.1A.1.png
-![](HOUSING/out/TPDD_Cable_Housing.1A.2.png
-![](HOUSING/out/TPDD_Cable_Housing.1A.rear.png
-![](HOUSING/out/TPDD_Cable_Housing.1A.side.png
-![](HOUSING/out/TPDD_Cable_Housing.1A.top.png
+![](HOUSING/out/TPDD_Cable_Housing.1A.1.png)
+![](HOUSING/out/TPDD_Cable_Housing.1A.2.png)
+![](HOUSING/out/TPDD_Cable_Housing.1A.rear.png)
+![](HOUSING/out/TPDD_Cable_Housing.1A.side.png)
+![](HOUSING/out/TPDD_Cable_Housing.1A.top.png)
 
 Style "D"
-![](HOUSING/out/TPDD_Cable_Housing.1D.1.png
-![](HOUSING/out/TPDD_Cable_Housing.1D.2.png
+![](HOUSING/out/TPDD_Cable_Housing.1D.1.png)
+![](HOUSING/out/TPDD_Cable_Housing.1D.2.png)
 
-Soldering jig
-![](HOUSING/out/TPDD_Cable_Housing.1D.2.png
+Soldering jig  
+To ensure perfect alignment when soldering the 2x4 connector to the pcb edge.
+![](HOUSING/out/TPDD_Cable_Housing.1JIG.png)
 
 See also the `fancy2` and `fancy3` branches for other pcb versions.  
 Particularly, `fancy3` takes a larger M4 size cable tie.
