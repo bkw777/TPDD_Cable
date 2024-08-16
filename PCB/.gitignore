@@ -6,4 +6,5 @@ fp-info-cache
 *.sch-bak
 *-cache.lib
 *-backups/
+*.lck
 GERBER*
