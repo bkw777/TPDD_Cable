@@ -22,6 +22,26 @@ You will also need:
 
 The BOM includes a grey cable. This [black cable](https://www.digikey.com/short/wbpp81nt) can be substituted if you want.
 
+
+Work in progress: [3d-printable plug housing](HOUSING)  
+Style "A"
+![](HOUSING/out/TPDD_Cable_Housing.1A.1.png
+![](HOUSING/out/TPDD_Cable_Housing.1A.2.png
+![](HOUSING/out/TPDD_Cable_Housing.1A.rear.png
+![](HOUSING/out/TPDD_Cable_Housing.1A.side.png
+![](HOUSING/out/TPDD_Cable_Housing.1A.top.png
+
+Style "D"
+![](HOUSING/out/TPDD_Cable_Housing.1D.1.png
+![](HOUSING/out/TPDD_Cable_Housing.1D.2.png
+
+Soldering jig
+![](HOUSING/out/TPDD_Cable_Housing.1D.2.png
+
+See also the `fancy2` and `fancy3` branches for other pcb versions.  
+Particularly, `fancy3` takes a larger M4 size cable tie.
+But this branch has the latest scad model.
+
 # Directions
 
 Assembly pictures: <https://photos.app.goo.gl/TdYxGhzK94KT9rS78>
