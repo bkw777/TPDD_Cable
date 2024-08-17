@@ -3121,7 +3121,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "datasheets/dta114ee3-e.pdf"
 			(at 0 0 0)
 			(effects
 				(font

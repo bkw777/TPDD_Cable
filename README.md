@@ -23,15 +23,11 @@ and several of those are collected into a single option named "style",
 to generate a few different versions of the housing.
 
 Until some actual prints are tested, it's unclear what will be practical.  
-Example, style "a" is the smallest and the one I would like the most,  
-but it might be actually too small. Maybe the cable won't actually fit,  
-or maybe the handle body is too small to be easily grabbed, etc.
-
-So here are a few reasonable candidates that address different points.
-
 There is also a special "jig" style which is a soldering jig to hold the board and connector in perfect alignment while soldering. It's not really neccessary but it's easy to generate so why not?
 
 * Style A - The smallest body possible.
+  Should accept a 4mm cable (Cables2Go #03019) without heat-shrink without needing to compress.
+  May possibly accept 5mm with heat-shrink by compressing with crimper pliers first.
   
 * Style B - Compromise between A and C.
   The cable is allowed to be off-center vertically, and the handle height is increased just enough to give a little more room for the cable.
@@ -65,14 +61,18 @@ There is also a special "jig" style which is a soldering jig to hold the board a
 ![](HOUSING/out/TPDD_Cable_Housing.D.4.png)
 -->
 
-Style "C"  
-![](HOUSING/out/TPDD_Cable_Housing.C.1.png)
-![](HOUSING/out/TPDD_Cable_Housing.C.2.png)
-![](HOUSING/out/TPDD_Cable_Housing.C.3.png)
-![](HOUSING/out/TPDD_Cable_Housing.C.4.png)
-
-Soldering jig
-![](HOUSING/out/TPDD_Cable_Housing.JIG.png)
+## PCB version 3,
+![](HOUSING/out/TPDD_Cable_Housing.3A.1.png)
+![](HOUSING/out/TPDD_Cable_Housing.3A.2.png)
+![](HOUSING/out/TPDD_Cable_Housing.3B.1.png)
+![](HOUSING/out/TPDD_Cable_Housing.3B.2.png)
+![](HOUSING/out/TPDD_Cable_Housing.3C.1.png)
+![](HOUSING/out/TPDD_Cable_Housing.3C.2.png)
+![](HOUSING/out/TPDD_Cable_Housing.3D.1.png)
+![](HOUSING/out/TPDD_Cable_Housing.3D.2.png)
+Soldering jigs, full or tray
+![](HOUSING/out/TPDD_Cable_Housing.3JIG.png)
+![](HOUSING/out/TPDD_Cable_Housing.3TRAY.png)
 
 # Parts
 <!-- PCB: [OSHPark](https://oshpark.com/shared_projects/Vseg3jxr) or [PCBWAY](https://www.pcbway.com/project/shareproject/TANDY_Portable_Disk_Drive_Cable.html) -->  
