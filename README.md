@@ -61,16 +61,19 @@ There is also a special "jig" style which is a soldering jig to hold the board a
 ![](HOUSING/out/TPDD_Cable_Housing.D.4.png)
 -->
 
-## PCB version 3,
+## PCB 3, Housing A
 ![](HOUSING/out/TPDD_Cable_Housing.3A.1.png)
 ![](HOUSING/out/TPDD_Cable_Housing.3A.2.png)
+## PCB 3, Housing B
 ![](HOUSING/out/TPDD_Cable_Housing.3B.1.png)
 ![](HOUSING/out/TPDD_Cable_Housing.3B.2.png)
+## PCB 3, Housing C
 ![](HOUSING/out/TPDD_Cable_Housing.3C.1.png)
 ![](HOUSING/out/TPDD_Cable_Housing.3C.2.png)
+## PCB 3, Housing D
 ![](HOUSING/out/TPDD_Cable_Housing.3D.1.png)
 ![](HOUSING/out/TPDD_Cable_Housing.3D.2.png)
-Soldering jigs, full or tray
+Soldering jigs, full & tray
 ![](HOUSING/out/TPDD_Cable_Housing.3JIG.png)
 ![](HOUSING/out/TPDD_Cable_Housing.3TRAY.png)
 
