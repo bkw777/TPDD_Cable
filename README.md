@@ -18,26 +18,43 @@
 ![](TPDD_Cable_use.jpg)
 ![](TPDD_Cable_running.jpg)
 
-The OpenSCAD model for the housing has several parametric options,  
-and several of those are collected into a single option named "style",  
-to generate a few different versions of the housing.
+There are currently 3 slightly different versions of the pcb, not counting the "tiny" and "pita" versions. 
 
-Until some actual prints are tested, it's unclear what will be practical.  
-There is also a special "jig" style which is a soldering jig to hold the board and connector in perfect alignment while soldering. It's not really neccessary but it's easy to generate so why not?
+## PCB 1
+v1 is the original design meant to be used with a M3 zip-tie.  
+The SCAD file generates a housing that fits this pcb, but this pcb was not designed originally to work with a housing, just heat-shrink.
 
-* Style A - The smallest body possible.
-  Should accept a 4mm cable (Cables2Go #03019) without heat-shrink without needing to compress.
-  May possibly accept 5mm with heat-shrink by compressing with crimper pliers first.
-  
-* Style B - Compromise between A and C.
-  The cable is allowed to be off-center vertically, and the handle height is increased just enough to give a little more room for the cable.
-  
-* Style C - Full unrestricted cable opening, even allowing a larger cable or a 2nd layer of heat-shrink.
-  The handle is taller but actually perfectly square and centered around the cable.
-  
-* Style D - Wider and longer handle body.
-  Should be easier to grab.
-  Only as tall as needed to fit the cable without trying to be centered, so it's shorter than C and the cable is not centered vertically.
+## PCB 2
+v2 is a new version that takes a M3 zip-tie and has a matching 3d-printable housing.  
+The board outline is simpler and the cable tie arrangement should be better, and the wire pads are re-arranged so that the cable can lay down the center with no wires directly under it.
+
+## PCB 3
+v3 accepts a M4 zip-tie, which is a lot stronger tha the tiny M3 size.
+
+There are also currently 4 versions of the housing.
+
+## HOUSING A
+The tiniest version.  
+Nominally only accepts a 4mm cable if you don't count deforming.  
+Most cables are thicker but at least C2G 03019 and C2G 02518 are both only 3.8mm and yet have all the wires for full handshaking.  
+It should also be possible to get 5mm cables to fit by just squeezing with crimper pliers a little. There is only 4mm of vertical gap between the pcb and the top of the hole, but there is plenty of horizontal space.
+
+## HOUSING B
+Compromize between A and C. Accepts cables over 5mm, still pretty small, and the cable is not centered vertically in the body.
+
+## HOUSING C
+Accepts cables over 6mm. Handle body is extended vertically enough to make the handle perfectly square from the back, and extended lengthwise enough so that the zip-tie lands in the center from front to back.
+
+## HOUSING D
+Accepts cables over 6mm. Handle is shortened vertically similar to B (taller to allow bigger cables, but not as tall as C, cable is not centered vertically), and lengthened and widened to make an intentionally larger handle that is easier to grab.
+
+## JIG & TRAY
+JIG & TRAY are two styles of soldering jig to hold the pcb and the 2x4 connector in perfect alignment when soldering, so that the board will fit in the housing without problems.
+
+Each of the different housing body styles is available for each of the pcb styles.
+
+In the HOUSING directory, the names indicate the body style and which pcb it supports.
+IE: TPDD_Cable.3B.stl is the "B" body size for the v3 pcb shape.
 
 <!-- 
 ![](HOUSING/out/TPDD_Cable_Housing.A.1.png)

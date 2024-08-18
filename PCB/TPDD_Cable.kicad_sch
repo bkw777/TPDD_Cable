@@ -1907,7 +1907,7 @@
 	)
 	(text "4 CTS"
 		(exclude_from_sim no)
-		(at 200.914 97.282 0)
+		(at 200.914 99.822 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1940,7 +1940,7 @@
 	)
 	(text "6 DTR"
 		(exclude_from_sim no)
-		(at 200.914 99.822 0)
+		(at 200.914 97.282 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2308,6 +2308,24 @@
 					(unit 1)
 				)
 			)
+			(project "TPDD_Cable"
+				(path "/8c978a26-63bd-42ef-84db-2107e27041da/837a9c0d-b7a0-4105-85d5-9798010a27dd"
+					(reference "Q1")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/986b52ed-82cf-41a9-ad50-db87029ee716/3fbf3e3a-40ac-438d-ad9a-93da7f6d3cd8"
+					(reference "Q1")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/ba170158-4c4f-42cb-93c0-19f9db137efa/13d96d16-1294-4374-955d-2c3025a494f8"
+					(reference "Q1")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2384,6 +2402,24 @@
 					(unit 1)
 				)
 			)
+			(project "TPDD_Cable"
+				(path "/8c978a26-63bd-42ef-84db-2107e27041da/837a9c0d-b7a0-4105-85d5-9798010a27dd"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/986b52ed-82cf-41a9-ad50-db87029ee716/3fbf3e3a-40ac-438d-ad9a-93da7f6d3cd8"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/ba170158-4c4f-42cb-93c0-19f9db137efa/13d96d16-1294-4374-955d-2c3025a494f8"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2455,6 +2491,24 @@
 		(instances
 			(project "TPDD_Cable"
 				(path "/0d433bab-64ac-46dd-8906-cd1b476f2235"
+					(reference "Q3")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/8c978a26-63bd-42ef-84db-2107e27041da/837a9c0d-b7a0-4105-85d5-9798010a27dd"
+					(reference "Q3")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/986b52ed-82cf-41a9-ad50-db87029ee716/3fbf3e3a-40ac-438d-ad9a-93da7f6d3cd8"
+					(reference "Q3")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/ba170158-4c4f-42cb-93c0-19f9db137efa/13d96d16-1294-4374-955d-2c3025a494f8"
 					(reference "Q3")
 					(unit 1)
 				)
@@ -2544,6 +2598,24 @@
 					(unit 1)
 				)
 			)
+			(project "TPDD_Cable"
+				(path "/8c978a26-63bd-42ef-84db-2107e27041da/837a9c0d-b7a0-4105-85d5-9798010a27dd"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/986b52ed-82cf-41a9-ad50-db87029ee716/3fbf3e3a-40ac-438d-ad9a-93da7f6d3cd8"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/ba170158-4c4f-42cb-93c0-19f9db137efa/13d96d16-1294-4374-955d-2c3025a494f8"
+					(reference "J2")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2606,6 +2678,24 @@
 		(instances
 			(project "TPDD_Cable"
 				(path "/0d433bab-64ac-46dd-8906-cd1b476f2235"
+					(reference "#PWR0104")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/8c978a26-63bd-42ef-84db-2107e27041da/837a9c0d-b7a0-4105-85d5-9798010a27dd"
+					(reference "#PWR0104")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/986b52ed-82cf-41a9-ad50-db87029ee716/3fbf3e3a-40ac-438d-ad9a-93da7f6d3cd8"
+					(reference "#PWR0104")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/ba170158-4c4f-42cb-93c0-19f9db137efa/13d96d16-1294-4374-955d-2c3025a494f8"
 					(reference "#PWR0104")
 					(unit 1)
 				)
@@ -2677,6 +2767,24 @@
 					(unit 1)
 				)
 			)
+			(project "TPDD_Cable"
+				(path "/8c978a26-63bd-42ef-84db-2107e27041da/837a9c0d-b7a0-4105-85d5-9798010a27dd"
+					(reference "#PWR0103")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/986b52ed-82cf-41a9-ad50-db87029ee716/3fbf3e3a-40ac-438d-ad9a-93da7f6d3cd8"
+					(reference "#PWR0103")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/ba170158-4c4f-42cb-93c0-19f9db137efa/13d96d16-1294-4374-955d-2c3025a494f8"
+					(reference "#PWR0103")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2740,6 +2848,24 @@
 		(instances
 			(project "TPDD_Cable"
 				(path "/0d433bab-64ac-46dd-8906-cd1b476f2235"
+					(reference "#PWR0101")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/8c978a26-63bd-42ef-84db-2107e27041da/837a9c0d-b7a0-4105-85d5-9798010a27dd"
+					(reference "#PWR0101")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/986b52ed-82cf-41a9-ad50-db87029ee716/3fbf3e3a-40ac-438d-ad9a-93da7f6d3cd8"
+					(reference "#PWR0101")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/ba170158-4c4f-42cb-93c0-19f9db137efa/13d96d16-1294-4374-955d-2c3025a494f8"
 					(reference "#PWR0101")
 					(unit 1)
 				)
@@ -2810,6 +2936,24 @@
 					(unit 1)
 				)
 			)
+			(project "TPDD_Cable"
+				(path "/8c978a26-63bd-42ef-84db-2107e27041da/837a9c0d-b7a0-4105-85d5-9798010a27dd"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/986b52ed-82cf-41a9-ad50-db87029ee716/3fbf3e3a-40ac-438d-ad9a-93da7f6d3cd8"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/ba170158-4c4f-42cb-93c0-19f9db137efa/13d96d16-1294-4374-955d-2c3025a494f8"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2872,6 +3016,24 @@
 		(instances
 			(project "TPDD_Cable"
 				(path "/0d433bab-64ac-46dd-8906-cd1b476f2235"
+					(reference "P5")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/8c978a26-63bd-42ef-84db-2107e27041da/837a9c0d-b7a0-4105-85d5-9798010a27dd"
+					(reference "P5")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/986b52ed-82cf-41a9-ad50-db87029ee716/3fbf3e3a-40ac-438d-ad9a-93da7f6d3cd8"
+					(reference "P5")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/ba170158-4c4f-42cb-93c0-19f9db137efa/13d96d16-1294-4374-955d-2c3025a494f8"
 					(reference "P5")
 					(unit 1)
 				)
@@ -2942,11 +3104,29 @@
 					(unit 1)
 				)
 			)
+			(project "TPDD_Cable"
+				(path "/8c978a26-63bd-42ef-84db-2107e27041da/837a9c0d-b7a0-4105-85d5-9798010a27dd"
+					(reference "P20")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/986b52ed-82cf-41a9-ad50-db87029ee716/3fbf3e3a-40ac-438d-ad9a-93da7f6d3cd8"
+					(reference "P20")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/ba170158-4c4f-42cb-93c0-19f9db137efa/13d96d16-1294-4374-955d-2c3025a494f8"
+					(reference "P20")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "000_LOCAL:TestPoint")
-		(at 177.8 99.06 270)
+		(at 177.8 96.52 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2954,7 +3134,7 @@
 		(dnp no)
 		(uuid "398b8bdd-ca53-47e2-8fac-c7dec5c70b84")
 		(property "Reference" "P6"
-			(at 181.864 98.044 90)
+			(at 181.864 95.504 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2963,7 +3143,7 @@
 			)
 		)
 		(property "Value" "DTR"
-			(at 186.182 98.044 90)
+			(at 186.182 95.504 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2972,7 +3152,7 @@
 			)
 		)
 		(property "Footprint" "000_LOCAL:PTH_0.65x1.2"
-			(at 177.8 104.14 0)
+			(at 177.8 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2981,7 +3161,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 177.8 104.14 0)
+			(at 177.8 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2990,7 +3170,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 177.8 99.06 0)
+			(at 177.8 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3004,6 +3184,24 @@
 		(instances
 			(project "TPDD_Cable"
 				(path "/0d433bab-64ac-46dd-8906-cd1b476f2235"
+					(reference "P6")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/8c978a26-63bd-42ef-84db-2107e27041da/837a9c0d-b7a0-4105-85d5-9798010a27dd"
+					(reference "P6")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/986b52ed-82cf-41a9-ad50-db87029ee716/3fbf3e3a-40ac-438d-ad9a-93da7f6d3cd8"
+					(reference "P6")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/ba170158-4c4f-42cb-93c0-19f9db137efa/13d96d16-1294-4374-955d-2c3025a494f8"
 					(reference "P6")
 					(unit 1)
 				)
@@ -3070,6 +3268,24 @@
 		(instances
 			(project "TPDD_Cable"
 				(path "/0d433bab-64ac-46dd-8906-cd1b476f2235"
+					(reference "P3")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/8c978a26-63bd-42ef-84db-2107e27041da/837a9c0d-b7a0-4105-85d5-9798010a27dd"
+					(reference "P3")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/986b52ed-82cf-41a9-ad50-db87029ee716/3fbf3e3a-40ac-438d-ad9a-93da7f6d3cd8"
+					(reference "P3")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/ba170158-4c4f-42cb-93c0-19f9db137efa/13d96d16-1294-4374-955d-2c3025a494f8"
 					(reference "P3")
 					(unit 1)
 				)
@@ -3141,6 +3357,24 @@
 					(unit 1)
 				)
 			)
+			(project "TPDD_Cable"
+				(path "/8c978a26-63bd-42ef-84db-2107e27041da/837a9c0d-b7a0-4105-85d5-9798010a27dd"
+					(reference "#PWR0102")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/986b52ed-82cf-41a9-ad50-db87029ee716/3fbf3e3a-40ac-438d-ad9a-93da7f6d3cd8"
+					(reference "#PWR0102")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/ba170158-4c4f-42cb-93c0-19f9db137efa/13d96d16-1294-4374-955d-2c3025a494f8"
+					(reference "#PWR0102")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3207,11 +3441,29 @@
 					(unit 1)
 				)
 			)
+			(project "TPDD_Cable"
+				(path "/8c978a26-63bd-42ef-84db-2107e27041da/837a9c0d-b7a0-4105-85d5-9798010a27dd"
+					(reference "P7")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/986b52ed-82cf-41a9-ad50-db87029ee716/3fbf3e3a-40ac-438d-ad9a-93da7f6d3cd8"
+					(reference "P7")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/ba170158-4c4f-42cb-93c0-19f9db137efa/13d96d16-1294-4374-955d-2c3025a494f8"
+					(reference "P7")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "000_LOCAL:TestPoint")
-		(at 177.8 96.52 270)
+		(at 177.8 99.06 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3219,7 +3471,7 @@
 		(dnp no)
 		(uuid "c19c67bc-1ffd-4a89-95f6-3daf75d16ad8")
 		(property "Reference" "P4"
-			(at 181.864 95.504 90)
+			(at 181.864 98.044 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3228,7 +3480,7 @@
 			)
 		)
 		(property "Value" "CTS"
-			(at 186.182 95.504 90)
+			(at 186.182 98.044 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3237,7 +3489,7 @@
 			)
 		)
 		(property "Footprint" "000_LOCAL:PTH_0.65x1.2"
-			(at 177.8 101.6 0)
+			(at 177.8 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3246,7 +3498,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 177.8 101.6 0)
+			(at 177.8 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3255,7 +3507,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 177.8 96.52 0)
+			(at 177.8 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3269,6 +3521,24 @@
 		(instances
 			(project "TPDD_Cable"
 				(path "/0d433bab-64ac-46dd-8906-cd1b476f2235"
+					(reference "P4")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/8c978a26-63bd-42ef-84db-2107e27041da/837a9c0d-b7a0-4105-85d5-9798010a27dd"
+					(reference "P4")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/986b52ed-82cf-41a9-ad50-db87029ee716/3fbf3e3a-40ac-438d-ad9a-93da7f6d3cd8"
+					(reference "P4")
+					(unit 1)
+				)
+			)
+			(project "TPDD_Cable"
+				(path "/ba170158-4c4f-42cb-93c0-19f9db137efa/13d96d16-1294-4374-955d-2c3025a494f8"
 					(reference "P4")
 					(unit 1)
 				)
@@ -3339,11 +3609,24 @@
 					(unit 1)
 				)
 			)
-		)
-	)
-	(sheet_instances
-		(path "/"
-			(page "1")
+			(project ""
+				(path "/8c978a26-63bd-42ef-84db-2107e27041da/837a9c0d-b7a0-4105-85d5-9798010a27dd"
+					(reference "P2")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/986b52ed-82cf-41a9-ad50-db87029ee716/3fbf3e3a-40ac-438d-ad9a-93da7f6d3cd8"
+					(reference "P2")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/ba170158-4c4f-42cb-93c0-19f9db137efa/13d96d16-1294-4374-955d-2c3025a494f8"
+					(reference "P2")
+					(unit 1)
+				)
+			)
 		)
 	)
 )

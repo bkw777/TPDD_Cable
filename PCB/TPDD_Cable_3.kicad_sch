@@ -1,0 +1,51 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "986b52ed-82cf-41a9-ad50-db87029ee716")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 101.6 63.5)
+		(size 63.5 50.8)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3fbf3e3a-40ac-438d-ad9a-93da7f6d3cd8")
+		(property "Sheetname" "TPDD_Cable"
+			(at 101.6 62.7884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "TPDD_Cable.kicad_sch"
+			(at 101.6 114.8846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "TPDD_Cable_3"
+				(path "/986b52ed-82cf-41a9-ad50-db87029ee716"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)

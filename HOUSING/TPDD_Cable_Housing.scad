@@ -1,11 +1,11 @@
 /*
  * Plug housing for TPDD_Cable
- * v004
+ * v005
  */
 
 // See DEBUGGING at the bottom to enable preview cut-aways.
-// They are down there instead of here at the top so that
-// you can use calculated values to set the cut plane position.
+// They are down there instead of up here so that you can
+// use calculated variables to set the cut plane position.
 
 // ==== CUSTOMIZABLE OPTIONS ====
 
@@ -40,10 +40,11 @@ style = "A"; // A B C D JIG TRAY
  Theoretical max cable sizes without deforming.
  For style A, a 5mm cable with one layer of heatshrink can
  be deformed enough to fit with crimper pliers.
- Cables2Go 03019 is only 3.8mm diameter.
- A - ECHO: "cable vertical gap", 4.33
+ Cables2Go #03019 & #02518 are only 3.8mm diameter.
+ 
+ A - ECHO: "cable vertical gap", 4.02
  B - ECHO: "cable vertical gap", 5.42
- C - ECHO: "cable vertical gap", 6.83
+ C - ECHO: "cable vertical gap", 6.07
  D - ECHO: "cable vertical gap", 6.22
 
 */
@@ -267,7 +268,7 @@ ohu = 9.4;       // outer height upper
 // and the rest of the housing grows up from there.
 //ohb = ih/2+1.1;
 // Original cables more like 3.7, but they actually rub.
-ohb = 3.6;
+ohb = 3.6;    // outer height bottom  z=0 to exterior bottom
 
 // Plug length/depth, ie the keyed part,
 // at the recessed surface immediately around the port.
@@ -294,6 +295,11 @@ id = 8.5;
 // so this tells where the pcb actually is relative to the
 // full connector depth dimension.
 pcb_inset = 0.5;
+// pcb v1 has no castellations
+// so it will push connector type b out
+connector_outset = (
+  (pm==1&&connector_model=="b")?pcb_inset:
+  0);
 
 hew = handle_extra_width;  // handle extra width
 hw = hew+owl+hew ;         // handle width
@@ -306,6 +312,7 @@ hh = (                     // handle height
   JIG ? ohl :
   ohu+heh);
 
+oht = hh-ohb; // outer height top     z=0 to exterior top
 hz = hh/2-ohb;             // handle center z
 
 cz = (
@@ -336,7 +343,7 @@ ztc = zfc+ztk+zfc;   // zip tie cube
 
 // prevents cable pocket from poking through or making
 // a thin wall in the front face of the handle block
-cew = 1; // cable end wall thickness
+cew = minimum_wall_thickness; // 1; // cable end wall thickness
 
 // cavity behind the 2x4 connector
 // is smaller than the connector
@@ -360,6 +367,9 @@ hd = (        // handle depth (length)
   is_num(handle_length) ? handle_length :
   hlft + ztc/2 + minimum_rear_wall); // "min"
 
+// total body length
+tl = od+hd;
+
 // grips
 // either pcw or ztr*2 might be the widest
 // interior cavity at the grip cut position
@@ -375,54 +385,73 @@ ccr = (
 
 use <inc/handy.scad>
 
-module cable_tie () {
-    ri = cor;         // nominal size
-    //ri = cpr;         // full possible size
-    ro = ri + zbt;
-    ch = ztk*0.75;
-    translate([ch/2+ri,ri,0]) rotate([0,90,0]) rounded_cube(w=ztk,d=ztk,h=ch,rh=0.9,rv=0.4);
-    difference() {
-      cylinder(r=ro,h=zbw,center=true);
-      union() {
-        cylinder(r=ri,h=o+zbw+o,center=true);
-        translate([0,0,-ro/2-o]) cube(o+ro+o);
-      }
-    }
-    difference() {
-      translate([0,0,-zbw/2]) cube([ro,ro,zbw]);
-      translate([-zbt,-zbt,-zbw/2-o]) cube([ro,ro,o+zbw+o]);
-    }
+module cutaway (on="z",at=0,dir="+") {
+    v = dir=="-"?-1:1;
+    w = hw;
+    wz = 0;
+    l = tl;
+    lz = -l/2;
+    h = hh;
+    //hz = hz;
+  
+    if (on=="x") translate([w/2*v+at,lz,hz]) cube([w,l+o,h+o],true);
+    if (on=="y") translate([wz,l/2*v+at,hz]) cube([w+o,l,h+o],true);
+    if (on=="z") translate([wz,lz,h/2*v+at]) cube([w+o,l+o,h],true);
 }
 
+module teardrop (h=1,r=10) {
+  translate([0,0,-h/2]) hull () {
+    cylinder(h=h,r=r);
+    cube([r,r,h]);
+  }
+}
+
+module cable_tie () {
+    //r = cir;     // min
+    r = cor;     // normal
+    //r = cpr;     // max
+    ch = ztk*0.75;
+
+    difference () {
+      teardrop(h=zbw,r=r+zbt);
+      teardrop(h=zbw+o,r=r);
+    }
+    translate([ch/2+r,r,0])
+      rotate([0,90,0])
+        rounded_cube(w=ztk,d=ztk,h=ch,rh=zbw/3,rv=0.2);
+
+}
+
+
 // FITMENT REFERENCE MODELS
-//if ($preview) translate([0,-pl/2-id,-ph/2]) %import("pcb.stl");
-if ($preview) {
+module fit_parts() {
   translate([0,-id,0]) {
-    // 2x4 CONNECTOR, 2 styles of flux wash standoff
+    // 2x4 connector, 2 styles of flux wash standoffs
     cstl = (
       connector_model=="b" ? "inc/2x4b.stl":
       "inc/2x4a.stl");
-    color("grey",0.5) %import(cstl);
-    // PCB
+    translate([0,connector_outset,0]) color("grey",0.5) import(cstl);
+    // pcb
     translate([0,pcb_inset,0]) {
       pstl = (
         pm==2 ? "inc/pcb2.stl":
         pm==3 ? "inc/pcb3.stl":
         "inc/pcb1.stl");
-      translate([0,0,-ph/2]) color("green",0.5) %import(pstl);
-      // ZIP TIE
-      if (!JIG) translate([0,-zty,cz]) rotate([90,0,0]) color("grey",0.5) %cable_tie();
+      translate([0,0,-ph/2]) color("green",0.5) import(pstl);
+      // zip-tie
+      if (!JIG) translate([0,-zty,cz]) rotate([90,0,0]) color("grey",0.5) cable_tie();
     }
   }
   if (!JIG) translate([0,-od-cew-1,cz]) rotate([90,0,0]) {
-    // CABLE
-    %cylinder(d=cable_diameter,h=25);
-    // HEAT SHRINK
-    if (heat_shrink_thickness) %cylinder(d=cable_diameter+heat_shrink_thickness*2,h=20);
+    // cable
+    cylinder(d=cable_diameter,h=25);
+    // heat-shrink
+    if (heat_shrink_thickness) cylinder(d=cable_diameter+heat_shrink_thickness*2,h=20);
   }
 }
 
 // HOUSING
+module housing () {
 difference() {
     // add
     union() {
@@ -481,21 +510,19 @@ difference() {
     // cable
     if (!JIG) translate([0,0,cz]) {
       // main cable pocket
-      translate([0,-od-cew,0]) rotate([90,0,0]) cylinder(h=hd,r=cpr);
+      translate([0,-od-max(cew,cz),0]) {
+        // cable
+        rotate([90,0,0]) cylinder(h=hd,r=cpr);
+        // chamfer to allow cable through nose during install
+        hull() {
+          // don't try to skip this cyl and hull with the main
+          // cable cyl. it reaches back and distorts the exit.
+          rotate([90,0,0]) cylinder(h=1,r=cpr);
+          translate([0,cir,-cir]) cylinder(h=1,r=cpr);
+        }
+      }
       // funnel
       translate([0,ccd/2-od-hd-0.001,0]) rotate([90,0,0]) cylinder(h=ccd,r1=cpr-o,r2=cpr-o+ccd,center=true);
-
-      // chamfer from main cavity into nose
-      // to ease the cable passing all the way through the nose
-      // during installation before soldering
-      translate([0,-od+cew,-cz+ich/2-o])
-        rotate([45,0,0])
-          translate([0,-cpr,-0.4])
-            difference() {
-              cylinder(h=cpr,r=cpr);
-              translate([-cpr-o,-cpr-o,-o])
-                cube([o+cpr*2+o,cpr+o+2,o+cpr+o]);
-            }
     }
 
     // grips
@@ -566,8 +593,8 @@ difference() {
       if (TRAY) {
 
         // simple open top tray
-        translate([0,-(od+hd)/2,hh/2])
-          cube([hw+o,od+hd+o,hh],true);
+        translate([0,-(tl)/2,hh/2])
+          cube([hw+o,tl+o,hh],true);
 
       } else {
 
@@ -576,10 +603,9 @@ difference() {
         r=1;    // some corners radius
         sw=e+5; // solder window
         t=1;    // top above pcb
-        csd=od+hd;
-        csh=hh-ohb+o;
-        translate([0,e-csd/2-id,csh/2])
-          cube([icw,csd,csh],true);
+        csh=oht+o;
+        translate([0,e-tl/2-id,csh/2])
+          cube([icw,tl,csh],true);
         translate([0,e-(hd+od)/2-id,hh/2+ph/2+t])
           cube([o+hw+o,hd+od,hh],true);
         translate([0,e-sw/2-id,hh/2])
@@ -603,7 +629,7 @@ difference() {
       assert(front_connector_floor_thickness>=minimum_wall_thickness);
       //
       // the zip-tie cannel doesn't matter at the top, just the cable
-      cable_ceiling_thickness = round((hh-ohb-cz-cpr)*10)/10;
+      cable_ceiling_thickness = round((oht-cz-cpr)*10)/10;
       echo("cable_ceiling_thickness",cable_ceiling_thickness);
       assert(cable_ceiling_thickness>=minimum_wall_thickness);
   
@@ -616,42 +642,15 @@ difference() {
       echo("cable vertical gap",cpr+cz-ph/2+pfc);
     }
 
-    preview_cut_side = false;
-    preview_cut_X = 0;//-cr;     // where to cut along X
-    //preview_cut_X = iw/2;
-
-    preview_cut_rear = false;
-    preview_cut_Y = zy;    // where to cut along Y
-
-    preview_cut_top = false;
-    preview_cut_Z = 0;     // where to cut along Z
-    //preview_cut_Z = ih/2;
-
-    // cut on X
-    if (preview_cut_side && $preview) {
-      csw=hw/2-preview_cut_X+o;
-      csd=o+od+hd+o;
-      csh=o+hh+o;
-      translate([-csw/2-preview_cut_X,-csd/2+o,hz]) cube([csw,csd,csh],true);
-    }
-
-    // cut on Y
-    if (preview_cut_rear && $preview) {
-      csw=o+hw+o;
-      csd=od+hd-preview_cut_Y+o;
-      csh=o+hh+o;
-      translate([0,-csd/2-preview_cut_Y,hz]) cube([csw,csd,csh],true);
-    }
-
-    // cut on Z
-    if (preview_cut_top && $preview) {
-      csw=o+hw+o;
-      csd=o+od+hd+o;
-      csh=hh-ohb-preview_cut_Z+o;
-      translate([0,-csd/2+o,csh/2+preview_cut_Z]) cube([csw,csd,csh],true);
-    }
+    //cutaway (on="x",at=0,dir="-"); //cr, iw/2
+    //cutaway (on="y",at=-zy,dir="-"); //-zy
+    //cutaway (on="z",at=0,dir="+");
 
     //===========================================================
 
   }
 }
+}
+
+if ($preview) %fit_parts();
+housing();

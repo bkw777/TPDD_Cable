@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 4.0,
-          "height": 4.0,
-          "width": 4.0
+          "drill": 0.889,
+          "height": 1.524,
+          "width": 1.524
         },
         "silk_line_width": 0.0508,
         "silk_text_italic": false,
@@ -49,7 +49,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.2
+          "min_clearance": 0.18
         }
       },
       "diff_pair_dimensions": [
@@ -123,9 +123,9 @@
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.2,
-        "min_connection": 0.2,
-        "min_copper_edge_clearance": 0.2,
+        "min_clearance": 0.0,
+        "min_connection": 0.0,
+        "min_copper_edge_clearance": 0.00635,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.5,
@@ -136,7 +136,7 @@
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.2,
-        "min_via_annular_width": 0.1,
+        "min_via_annular_width": 0.05,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
@@ -219,10 +219,6 @@
         {
           "diameter": 0.0,
           "drill": 0.0
-        },
-        {
-          "diameter": 0.5,
-          "drill": 0.3
         }
       ],
       "zones_allow_external_fillets": false,
@@ -458,7 +454,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "TPDD_Cable.kicad_pro",
+    "filename": "TPDD_Cable_1.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -496,7 +492,7 @@
       "plot": "GERBER_${TITLE}_${REVISION}",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "out/pcb3.step",
+      "step": "",
       "svg": "",
       "vrml": ""
     },
@@ -600,7 +596,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "out/",
+    "plot_directory": "out",
     "spice_adjust_passive_values": false,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -613,8 +609,12 @@
   },
   "sheets": [
     [
-      "0d433bab-64ac-46dd-8906-cd1b476f2235",
-      "Root"
+      "ba170158-4c4f-42cb-93c0-19f9db137efa",
+      ""
+    ],
+    [
+      "13d96d16-1294-4374-955d-2c3025a494f8",
+      "TPDD_Cable"
     ]
   ],
   "text_variables": {}
