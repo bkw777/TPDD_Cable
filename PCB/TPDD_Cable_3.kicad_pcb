@@ -8,9 +8,9 @@
 	)
 	(paper "USLetter")
 	(title_block
-		(title "TPDD Cable 3")
-		(date "2024-08-17")
-		(rev "3r03")
+		(title "TPDD_Cable_3")
+		(date "2024-08-18")
+		(rev "3r01")
 		(company "b.kenyon.w@gmail.com")
 	)
 	(layers
