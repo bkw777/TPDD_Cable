@@ -9,9 +9,9 @@
 
 // ==== CUSTOMIZABLE OPTIONS ====
 
-pcb_version = 3; // 1 2 3
+pcb_version = 2; // 1 2 3
 
-style = "A"; // A B C D JIG TRAY
+style = "C"; // A B C D JIG TRAY
 
 /*
  JIG - Fancy full-constraint jig to solder the pcb
@@ -44,7 +44,7 @@ style = "A"; // A B C D JIG TRAY
  
  A - ECHO: "cable vertical gap", 4.02
  B - ECHO: "cable vertical gap", 5.42
- C - ECHO: "cable vertical gap", 6.07
+ C - ECHO: "cable vertical gap", 6.52
  D - ECHO: "cable vertical gap", 6.22
 
 */
@@ -86,7 +86,7 @@ handle_extra_height = (
 // cable + heat shrink
 cable_extra_radius = (
         style=="B" ? 0.5 :
-        style=="C" ? 0.75 :
+        style=="C" ? 1.2 :
         style=="D" ? 0.5 :
         0.5);
 
@@ -103,7 +103,7 @@ cable_z_position = (
 
 cable_chamfer_depth = (
         style=="B" ? 1 :
-        style=="C" ? 2 :
+        style=="C" ? 1.5 :
         style=="D" ? 1 :
         1);
 
@@ -643,7 +643,7 @@ difference() {
     }
 
     //cutaway (on="x",at=0,dir="-"); //cr, iw/2
-    //cutaway (on="y",at=-zy,dir="-"); //-zy
+    //cutaway (on="y",at=-zy,dir="-");
     //cutaway (on="z",at=0,dir="+");
 
     //===========================================================
