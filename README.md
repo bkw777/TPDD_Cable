@@ -1,98 +1,19 @@
 # Cable for [Tandy Portable Disk Drive](http://tandy.wiki/TPDD)
 (and TPDD2)
 
-<!--
-![](PCB/out/TPDD_Cable.jpg)
-![](PCB/out/TPDD_Cable_2.jpg)
--->
-![](PCB/out/TPDD_Cable.1.jpg)
-![](PCB/out/TPDD_Cable.2.jpg)
-![](PCB/out/TPDD_Cable.3.jpg)
-![](PCB/out/TPDD_Cable.4.jpg)
-![](PCB/out/TPDD_Cable.5.jpg)
-![](PCB/out/TPDD_Cable.6.jpg)
-![](PCB/out/TPDD_Cable.top.jpg)
-![](PCB/out/TPDD_Cable.bottom.jpg)
-![](PCB/out/TPDD_Cable.svg)
+![](PCB/out/TPDD_Cable_3.1.jpg)
+![](PCB/out/TPDD_Cable_3.2.jpg)
+|![](HOUSING/out/TPDD_Cable_Housing.3A.1.png)
+|![](HOUSING/out/TPDD_Cable_Housing.3A.2.png)
+![](PCB/out/TPDD_Cable_3.top.jpg)
+![](PCB/out/TPDD_Cable_3.bottom.jpg)
+![](PCB/out/TPDD_Cable_3-TPDD_Cable.svg)
 ![](TPDD_Cable_complete.jpg)
 ![](TPDD_Cable_use.jpg)
 ![](TPDD_Cable_running.jpg)
 
-There are currently 3 slightly different versions of the pcb, not counting the "tiny" and "pita" versions. 
-
-## PCB 1
-v1 is the original design meant to be used with a M3 zip-tie.  
-The SCAD file generates a housing that fits this pcb, but this pcb was not designed originally to work with a housing, just heat-shrink.
-
-## PCB 2
-v2 is a new version that takes a M3 zip-tie and has a matching 3d-printable housing.  
-The board outline is simpler and the cable tie arrangement should be better, and the wire pads are re-arranged so that the cable can lay down the center with no wires directly under it.
-
-## PCB 3
-v3 accepts a M4 zip-tie, which is a lot stronger tha the tiny M3 size.
-
-There are also currently 4 versions of the housing.
-
-## HOUSING A
-The tiniest version.  
-Nominally only accepts a 4mm cable if you don't count deforming.  
-Most cables are thicker but at least C2G 03019 and C2G 02518 are both only 3.8mm and yet have all the wires for full handshaking.  
-It should also be possible to get 5mm cables to fit by just squeezing with crimper pliers a little. There is only 4mm of vertical gap between the pcb and the top of the hole, but there is plenty of horizontal space.
-
-## HOUSING B
-Compromize between A and C. Accepts cables over 5mm, still pretty small, and the cable is not centered vertically in the body.
-
-## HOUSING C
-Accepts cables over 6mm. Handle body is extended vertically enough to make the handle perfectly square from the back, and extended lengthwise enough so that the zip-tie lands in the center from front to back.
-
-## HOUSING D
-Accepts cables over 6mm. Handle is shortened vertically similar to B (taller to allow bigger cables, but not as tall as C, cable is not centered vertically), and lengthened and widened to make an intentionally larger handle that is easier to grab.
-
-## JIG & TRAY
-JIG & TRAY are two styles of soldering jig to hold the pcb and the 2x4 connector in perfect alignment when soldering, so that the board will fit in the housing without problems.
-
-Each of the different housing body styles is available for each of the pcb styles.
-
-In the HOUSING directory, the names indicate the body style and which pcb it supports.
-IE: TPDD_Cable.3B.stl is the "B" body size for the v3 pcb shape.
-
-<!-- 
-![](HOUSING/out/TPDD_Cable_Housing.A.1.png)
-![](HOUSING/out/TPDD_Cable_Housing.B.1.png)
-![](HOUSING/out/TPDD_Cable_Housing.C.1.png)
-![](HOUSING/out/TPDD_Cable_Housing.D.1.png)
-
-![](HOUSING/out/TPDD_Cable_Housing.A.2.png)
-![](HOUSING/out/TPDD_Cable_Housing.B.2.png)
-![](HOUSING/out/TPDD_Cable_Housing.C.2.png)
-![](HOUSING/out/TPDD_Cable_Housing.D.2.png)
-
-![](HOUSING/out/TPDD_Cable_Housing.A.3.png)
-![](HOUSING/out/TPDD_Cable_Housing.B.3.png)
-![](HOUSING/out/TPDD_Cable_Housing.C.3.png)
-![](HOUSING/out/TPDD_Cable_Housing.D.3.png)
-
-![](HOUSING/out/TPDD_Cable_Housing.A.4.png)
-![](HOUSING/out/TPDD_Cable_Housing.B.4.png)
-![](HOUSING/out/TPDD_Cable_Housing.C.4.png)
-![](HOUSING/out/TPDD_Cable_Housing.D.4.png)
--->
-
-## PCB 3, Housing A
-![](HOUSING/out/TPDD_Cable_Housing.3A.1.png)
-![](HOUSING/out/TPDD_Cable_Housing.3A.2.png)
-## PCB 3, Housing B
-![](HOUSING/out/TPDD_Cable_Housing.3B.1.png)
-![](HOUSING/out/TPDD_Cable_Housing.3B.2.png)
-## PCB 3, Housing C
-![](HOUSING/out/TPDD_Cable_Housing.3C.1.png)
-![](HOUSING/out/TPDD_Cable_Housing.3C.2.png)
-## PCB 3, Housing D
-![](HOUSING/out/TPDD_Cable_Housing.3D.1.png)
-![](HOUSING/out/TPDD_Cable_Housing.3D.2.png)
-Soldering jigs, full & tray
-![](HOUSING/out/TPDD_Cable_Housing.3JIG.png)
-![](HOUSING/out/TPDD_Cable_Housing.3TRAY.png)
+There are several different versions of pcb, but "3" is the main one,
+and 4 versions of a 3d-printable ![housing](HOUSING).
 
 # Parts
 <!-- PCB: [OSHPark](https://oshpark.com/shared_projects/Vseg3jxr) or [PCBWAY](https://www.pcbway.com/project/shareproject/TANDY_Portable_Disk_Drive_Cable.html) -->  
@@ -245,12 +166,14 @@ Delete the cable in the pre-loaded cart, and add [this one](https://www.digikey.
 <tr><td>TXD</td><td>2</td><td>3</td><td>RXD</td></tr>
 </table>
 
+<!-- 
 # Alternate "PITA" pcb
 **TPDD_Cable_PITA** is a version of the cable that uses a PCB that goes into a DB25 backshell instead of a tiny pcb on the TPDD end of the cable, and a "dupont" style connector is used for the TPDD end.
 
 It's called "PITA" because making the dupont end of the cable is a pain in the ass. All in all, the PITA version requires more parts, more tools, and more steps, ... but LESS skill. So if the tiny pcb looks intimidating, or if it's confusing about which wires need to go to which numbers on the tiny pcb, the PITA version is simpler and easier on both counts.
 
 The PITA version BOM.csv specifies a particular model/design of backshell for a reason. The common grey backshell like in Rick Shear's original version below, and almost all other backshell models, actually interferes with the case on the Model 100 and prevents the connector from inserting all the way. Molded cables and this particular backshell don't interfere and they insert all the way.
+-->
 
 # Credits / History
 In the beginning, there was the [Marty Goodman Document](https://raw.githubusercontent.com/LivingM100SIG/Living_M100SIG/main/M100SIG/Lib-09-PERIFERALS/TPDD.DO), and it was good.
