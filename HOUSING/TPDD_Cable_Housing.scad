@@ -9,9 +9,9 @@
 
 // ==== CUSTOMIZABLE OPTIONS ====
 
-pcb_version = 2; // 1 2 3
+pcb_version = 3; // 1 2 3
 
-style = "C"; // A B C D JIG TRAY
+style = "B"; // A B C D JIG TRAY
 
 /*
  JIG - Fancy full-constraint jig to solder the pcb
