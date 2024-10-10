@@ -1,6 +1,6 @@
 /*
  * Plug housing for TPDD_Cable
- * v005
+ * v006
  */
 
 // See DEBUGGING at the bottom to enable preview cut-aways.
@@ -9,9 +9,11 @@
 
 // ==== CUSTOMIZABLE OPTIONS ====
 
-pcb_version = 3; // 1 2 3
+// default pcb 2 style c
 
-style = "B"; // A B C D JIG TRAY
+pcb_version = 2; // 1 2 3
+
+style = "C"; // A B C D JIG TRAY
 
 /*
  JIG - Fancy full-constraint jig to solder the pcb
@@ -20,18 +22,15 @@ style = "B"; // A B C D JIG TRAY
  TRAY - Simple open-top tray solder jig
 
  A - smallest and neatest
-     use crimper pliers to squish the cable down to 4.4mm
+     Not actually usable except with thin (4mm) cable
+     and no heat shrink.
 
- B - compromize between A and C
-     small as possible but more vertical room for cable
+ B - attempt to compromize between A and C
+     small as possible but a bit more vertical room for cable
 
- C - most practical, should be the default but I just like A
-     full cable fit with no forcing or crimping
-     accepts a 2nd layer of heatshrink with slight effort
-     cable rests on top of pcb, mostly, if you pretend the heatshrink isn't there
-     handle body is tall enough to come out square with the width, and centered around the cable
-     larger cable chamfer
-     longer handle, long enough to make zip tie land in the middle
+ C - most practical
+     full cable fit with no forcing
+     even possibly a 2nd layer of heatshrink
 
  D - chonky boy, easy to grab
      handle shorter than C and cable not centered vertically
@@ -56,7 +55,7 @@ style = "B"; // A B C D JIG TRAY
 //       the cable tie lands in the center.
 handle_length = (
         style=="B" ? "min" :
-        style=="C" ? "tie" :
+        style=="C" ? "min" :
         style=="D" ? 20 :
         "min");
 
@@ -107,13 +106,23 @@ cable_chamfer_depth = (
         style=="D" ? 1 :
         1);
 
-// grip_cut_depth automatically adjusts itself
+// the vertical cylindrical cuts on the sides
+// grip_cut_depth tries for this,
+// but automatically adjusts itself
 // to avoid violating min-wall-thickness
-grip_cut_depth = 1;
+grip_cut_depth = (
+        style=="C" ? 0 :
+        1);
 
+// The conical cuts on the top & bottom corners.
+// This really depends on what grip_cut_depth actually
+// resolves to after adjusting itself to min_wall_thickness.
+// Maybe it should be an adjustment value added to grip_cut_depth?
 grip_chamfer_depth = (
         style=="B" ? 0.8 :
-        style=="C" ? 0.8 :
+        style=="C" && pcb_version == 1 ? 0.8 :
+        style=="C" && pcb_version == 2 ? 0 :
+        style=="C" && pcb_version == 3 ? 1.2 :
         style=="D" ? 1.3 :
         0.8);
 
@@ -123,17 +132,12 @@ grip_chamfer_depth = (
 // FDM = 0.2
 fitment_clearance = "SLS";
 
-// Add cylinder cuts to expand the inside corners around the
-// 2x4 connector. Should mostly be taken care of well enough
-// by fitment_clearance, so should not really be needed.
-connector_corner_relief = 0; // 0.35
-
 // "a" or "b"
 // Loads 2x4a.stl or 2x4b.stl in preview mode to show both types
 // of flux wash standoff shapes at the base of the 2x4 connector.
 connector_model = "a";
 
-corner_radius = 0.6;
+corner_radius = 0.8;
 
 // Commercial SLS/MJF often 0.8mm
 minimum_wall_thickness = 0.8;
@@ -155,9 +159,9 @@ cable_diameter = 5;
 heat_shrink_thickness = 0.5; //0;
 
 // curve smoothness
-$fa = 1;
-$fs = 0.1;
-//$fn = 72;
+$fa = 12;
+$fs = corner_radius/PI;
+//$fn = 36;
 
 // ===============================================================
 
@@ -166,6 +170,7 @@ JIG = (TRAY||style=="JIG")?true:false;
 
 t = 2.54; // tenth inch
 o = 0.1;  // overlap / overcut
+e = 0.001; // epsilon
 mw = minimum_wall_thickness;
 cr = JIG?0:corner_radius;
 
@@ -276,7 +281,11 @@ ohb = 3.6;    // outer height bottom  z=0 to exterior bottom
 // 1mm up, and 0mm down from the port. If the handle body is
 // wider or taller than that, then this gets 1mm added to it
 // automatically later.
-plug_len = 11.5; // length/depth of keyed part
+// 11.5 is from the insulator at the base of the pins
+// to the outside surface of the case, but the connector
+// can't actually go that deep
+//plug_len = 11.5; // length/depth of keyed part
+plug_len = 9; // length/depth of keyed part
 
 // cable
 cir = cable_diameter/2;            // cable inside radius
@@ -377,10 +386,6 @@ hwt = (hw-max(pcw,ztr*2))/2; // handle wall thickness at thinnest point
 gr = hd; // grip cut radius
 gd = hwt-mw>grip_cut_depth?grip_cut_depth:hwt-mw; // grip cut depth
 
-ccr = (
-  JIG ? max(connector_corner_relief,0.4):
-  connector_corner_relief);
-
 // =============================================================
 
 use <inc/handy.scad>
@@ -471,6 +476,7 @@ difference() {
       // handle
       translate([0,-od-hd/2,hz])
         rounded_cube(w=hw,d=hd,h=hh,rh=cr,rv=cr);
+
     }
 
   // cut
@@ -479,13 +485,6 @@ difference() {
     _id = id+fc; // connector pocket depth
     translate([0,o/2-_id/2,0])
       cube([fc+iw+fc,_id+o,fc+ih+fc],true);
-    // inside corners relief
-    if (ccr)
-      mirror_copy([0,0,1])
-        mirror_copy([1,0,0])
-          translate([iw/2+fc,o/2-_id/2,ih/2+fc-ccr])
-            rotate([90,0,0])
-              cylinder(r=ccr,h=_id+o,center=true);
 
     // main wiring/components interior cavity
     // TODO: replace ich with seperate top and bottom heights
@@ -508,27 +507,38 @@ difference() {
         rounded_cube(w=pfc+pw2+pfc,d=pcr+id+pl2+o+pfc,h=pfc+ph+pfc,rh=pcr+pfc,rv=pfc);
 
     // cable
-    if (!JIG) translate([0,0,cz]) {
-      // main cable pocket
-      translate([0,-od-max(cew,cz),0]) {
-        // cable
-        rotate([90,0,0]) cylinder(h=hd,r=cpr);
-        // chamfer to allow cable through nose during install
-        hull() {
-          // don't try to skip this cyl and hull with the main
-          // cable cyl. it reaches back and distorts the exit.
-          rotate([90,0,0]) cylinder(h=1,r=cpr);
-          translate([0,cir,-cir]) cylinder(h=1,r=cpr);
-        }
+    if (!JIG) {
+      _w = -od-max(cew,cz);
+
+      // nose - rear of connector up to cable head
+      fih = fc+ih+fc;
+      hull() {
+        mirror_copy([1,0,0])
+          translate([-fih/2+cpr,-id,0])
+            rotate([90,0,0])
+              cylinder(h=1,d=fih);
+        translate([0,_w,cz])
+          rotate([90,0,0])
+            cylinder(h=1,r=cpr);
       }
-      // funnel
-      translate([0,ccd/2-od-hd-0.001,0]) rotate([90,0,0]) cylinder(h=ccd,r1=cpr-o,r2=cpr-o+ccd,center=true);
-    }
+
+      // everything else at calculated cable height cz
+      translate([0,0,cz]) {
+        // main cable pocket
+        translate([0,_w,0])
+          rotate([90,0,0])
+            cylinder(h=hd,r=cpr);
+        // exit chamfer funnel
+        translate([0,ccd-tl-e,0])
+          rotate([90,0,0])
+            cylinder(h=ccd,r1=cpr-o,r2=cpr-o+ccd);
+      }
+  }
 
     // grips
     if (gd && !JIG) {
     go = gr+hw/2-gd; // offset
-    gcd = grip_chamfer_depth;
+    gcd = gd + grip_chamfer_depth;
     mirror_copy([1,0,0])
       translate([go,-od-hd/2,hz]) {
         cylinder(h=hh+o,r=gr,center=true);
@@ -578,8 +588,8 @@ difference() {
       // of the cable all the way out.
       
       // bottom of pocket at greater of cz or pcb+pfc+mw
-      // prevents at thin wall between pcb and pocket
-      // UGLY HACK: if M4 zip-tie, arbitrarily lower by 1mm
+      // prevents a thin wall between pcb and pocket
+      // hack: lower floor by 1mm if M4 tie
       _b = max(cz,ph/2+pfc+mw) - (cable_tie_size==4?1:0) ;
       translate([hw/2,0,hh/2+_b])
         rounded_cube(w=hw,d=ztc,h=hh,rh=cr,rv=cr);

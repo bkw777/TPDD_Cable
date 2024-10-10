@@ -1,0 +1,254 @@
+(footprint "TPDD_Cable_Housing"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9d43e163-a401-4154-87fd-60c8c262e96d")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "TPDD_Cable_Housing"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "95207a76-5fd1-437a-b21b-0c7e57a35450")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 -8 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6021a18d-3977-4337-874a-fac51e18bc66")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 -8 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "243dcff6-d3bc-493a-b118-f721f65df1e4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 -8 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d98a7ba3-dd4b-4cb5-8733-7867ee5d3fc7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_line
+		(start -5.15 0)
+		(end 5.15 0)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e0c6e0fe-55fb-43db-aed9-a46d8eb2fb1b")
+	)
+	(fp_line
+		(start -5.15 12.35)
+		(end -5.15 0)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0e52cf02-5360-4628-a66c-42ede8d99335")
+	)
+	(fp_line
+		(start -4.957134 9.192893)
+		(end -4.957134 0)
+		(stroke
+			(width 0.01)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "e6200f02-fd1a-4d3c-a655-23a4560243f2")
+	)
+	(fp_line
+		(start -4.05 10.1)
+		(end 4.05 10.1)
+		(stroke
+			(width 0.01)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "7afa837b-4818-46b8-a73d-98b796ca57b5")
+	)
+	(fp_line
+		(start -2.5 15)
+		(end 2.5 15)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "dbfdc9cb-7bc3-46c7-b60e-03784d6a3dd7")
+	)
+	(fp_line
+		(start -0.3 0)
+		(end 0.3 0)
+		(stroke
+			(width 0.01)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "2a3109b5-ee47-4bb1-b63a-6d242ae9451d")
+	)
+	(fp_line
+		(start 0 -0.3)
+		(end 0 0.3)
+		(stroke
+			(width 0.01)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "d5c1b169-4238-446f-baf2-f63a57148700")
+	)
+	(fp_line
+		(start 4.950027 9.192893)
+		(end 4.950027 0)
+		(stroke
+			(width 0.01)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "34549e9f-2122-4fad-9a0c-644541850100")
+	)
+	(fp_line
+		(start 5.15 12.35)
+		(end 5.15 0)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "ef7b8828-84f5-49fb-9d08-fe959927fc4d")
+	)
+	(fp_rect
+		(start -6.5 -8)
+		(end 6.5 16.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "f5116f35-0d38-4844-814b-4f5e30129d32")
+	)
+	(fp_arc
+		(start -4.05 10.100027)
+		(mid -4.691441 9.834334)
+		(end -4.957134 9.192893)
+		(stroke
+			(width 0.01)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "f28c68ac-d5d8-4439-baf4-ca4aafd232fc")
+	)
+	(fp_arc
+		(start -2.5 15)
+		(mid -4.373833 14.223833)
+		(end -5.15 12.35)
+		(stroke
+			(width 0.01)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "95332f0c-65c6-44c2-8fa9-39d01b6fa979")
+	)
+	(fp_arc
+		(start 4.950027 9.192893)
+		(mid 4.684336 9.834336)
+		(end 4.042893 10.100027)
+		(stroke
+			(width 0.01)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "edc0ac6d-4eee-4c01-8214-e8ac805344a6")
+	)
+	(fp_arc
+		(start 5.15 12.35)
+		(mid 4.373833 14.223833)
+		(end 2.5 15)
+		(stroke
+			(width 0.01)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "faa221e3-74d0-428e-a32b-e341e2eb519d")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 0.3 0)
+		(stroke
+			(width 0.01)
+			(type default)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "b3438afa-9613-4f79-b60c-f54254b4da9c")
+	)
+	(group ""
+		(uuid "618d9388-13fa-4d19-b8b2-d50ce391375d")
+		(members "2a3109b5-ee47-4bb1-b63a-6d242ae9451d" "b3438afa-9613-4f79-b60c-f54254b4da9c"
+			"d5c1b169-4238-446f-baf2-f63a57148700"
+		)
+	)
+	(model "${KIPRJMOD}/000_LOCAL.pretty/3dshapes/TPDD_Cable_Housing.step"
+		(offset
+			(xyz 0 8 -0.8)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "${KIPRJMOD}/000_LOCAL.pretty/3dshapes/CableTie_M3_head.step"
+		(offset
+			(xyz 3 -12.35 6)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 90 90)
+		)
+	)
+)

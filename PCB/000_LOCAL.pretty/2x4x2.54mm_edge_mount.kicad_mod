@@ -64,14 +64,45 @@
 	)
 	(attr smd)
 	(fp_line
-		(start 5.08 0)
-		(end -5.08 0)
+		(start -5.334 0)
+		(end -5.334 0.5)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(layer "F.Fab")
-		(uuid "386835f1-bcc7-48ad-84bd-736c232649b3")
+		(uuid "41fc15bb-b9f3-4adb-9320-45a9fdcd27fd")
+	)
+	(fp_line
+		(start -5.334 0.5)
+		(end 5.334 0.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "95b21d49-8856-443e-a9f3-bb0cd9dd1f30")
+	)
+	(fp_line
+		(start 5.334 0)
+		(end 5.334 0.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "7bbb7b05-a616-41c5-9e94-675b6f9dd205")
+	)
+	(fp_rect
+		(start -5.334 -8)
+		(end 5.334 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "2f7b6ae3-d0b6-42ae-b463-d6ec7d11de9b")
 	)
 	(fp_text user "2"
 		(at 4.826 2.032 0)
@@ -172,57 +203,57 @@
 		(uuid "2db0de90-0690-428f-a5db-4df765f25ac5")
 	)
 	(pad "1" smd roundrect
-		(at 3.81 2.032)
-		(size 1.5 4)
+		(at 3.81 2.0955)
+		(size 1.524 3.683)
 		(layers "F.Cu" "F.Mask")
 		(roundrect_rratio 0.1666666667)
 		(uuid "c5c28fd9-fe24-4e7e-94ee-6f6e9452e889")
 	)
 	(pad "2" smd oval
-		(at 3.81 2.032)
-		(size 1.5 4)
+		(at 3.81 2.0955)
+		(size 1.524 3.683)
 		(layers "B.Cu" "B.Mask")
 		(uuid "e2f85aa7-f2ef-484e-b34d-e597ab22f455")
 	)
 	(pad "3" smd oval
-		(at 1.27 2.032)
-		(size 1.5 4)
+		(at 1.27 2.0955)
+		(size 1.524 3.683)
 		(layers "F.Cu" "F.Mask")
 		(uuid "5e2922a9-f038-42ba-b73c-b78edd63f355")
 	)
 	(pad "4" smd oval
-		(at 1.27 2.032)
-		(size 1.5 4)
+		(at 1.27 2.0955)
+		(size 1.524 3.683)
 		(layers "B.Cu" "B.Mask")
 		(uuid "a90df25d-8aad-44b2-84fb-3daddf784eaa")
 	)
 	(pad "5" smd oval
-		(at -1.27 2.032)
-		(size 1.5 4)
+		(at -1.27 2.0955)
+		(size 1.524 3.683)
 		(layers "F.Cu" "F.Mask")
 		(uuid "13e8d378-48df-4bd7-8acb-3e0aec7989d5")
 	)
 	(pad "6" smd oval
-		(at -1.27 2.032)
-		(size 1.5 4)
+		(at -1.27 2.0955)
+		(size 1.524 3.683)
 		(layers "B.Cu" "B.Mask")
 		(uuid "a439b7c6-329e-4217-8741-44878a0db364")
 	)
 	(pad "7" smd oval
-		(at -3.81 2.032)
-		(size 1.5 4)
+		(at -3.809999 2.0955)
+		(size 1.523998 3.683)
 		(layers "F.Cu" "F.Mask")
 		(uuid "e9a94f43-b464-4ec5-a212-5f896e0771d0")
 	)
 	(pad "8" smd oval
-		(at -3.81 2.032)
-		(size 1.5 4)
+		(at -3.81 2.0955)
+		(size 1.524 3.683)
 		(layers "B.Cu" "B.Mask")
 		(uuid "fddcd636-3292-48ed-ba34-a39700e93c46")
 	)
-	(model "${KIPRJMOD}/000_LOCAL.pretty/3dshapes/PPPC042LFBN-RC.step"
+	(model "${KIPRJMOD}/000_LOCAL.pretty/3dshapes/PPPC042LFBN-RC_bkw.step"
 		(offset
-			(xyz 0 -0.635 -0.8382)
+			(xyz 0 -0.5 -0.8382)
 		)
 		(scale
 			(xyz 1 1 1)
@@ -234,7 +265,7 @@
 	(model "${KIPRJMOD}/000_LOCAL.pretty/3dshapes/SSW-104-01-F-D_bkw.step"
 		(hide yes)
 		(offset
-			(xyz 0 -0.635 -0.8382)
+			(xyz 0 -0.5 -0.8382)
 		)
 		(scale
 			(xyz 1 1 1)
