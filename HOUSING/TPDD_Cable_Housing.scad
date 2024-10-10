@@ -1,17 +1,19 @@
 /*
  * Plug housing for TPDD_Cable
- * v004
+ * v006
  */
 
 // See DEBUGGING at the bottom to enable preview cut-aways.
-// They are down there instead of here at the top so that
-// you can use calculated values to set the cut plane position.
+// They are down there instead of up here so that you can
+// use calculated variables to set the cut plane position.
 
 // ==== CUSTOMIZABLE OPTIONS ====
 
-pcb_version = 1; // 1 2 3
+// default pcb 2 style c
 
-style = "D"; // A B C D JIG TRAY
+pcb_version = 2; // 1 2 3
+
+style = "C"; // A B C D JIG TRAY
 
 /*
  JIG - Fancy full-constraint jig to solder the pcb
@@ -20,18 +22,15 @@ style = "D"; // A B C D JIG TRAY
  TRAY - Simple open-top tray solder jig
 
  A - smallest and neatest
-     use crimper pliers to squish the cable down to 4.4mm
+     Not actually usable except with thin (4mm) cable
+     and no heat shrink.
 
- B - compromize between A and C
-     small as possible but more vertical room for cable
+ B - attempt to compromize between A and C
+     small as possible but a bit more vertical room for cable
 
- C - most practical, should be the default but I just like A
-     full cable fit with no forcing or crimping
-     accepts a 2nd layer of heatshrink with slight effort
-     cable rests on top of pcb, mostly, if you pretend the heatshrink isn't there
-     handle body is tall enough to come out square with the width, and centered around the cable
-     larger cable chamfer
-     longer handle, long enough to make zip tie land in the middle
+ C - most practical
+     full cable fit with no forcing
+     even possibly a 2nd layer of heatshrink
 
  D - chonky boy, easy to grab
      handle shorter than C and cable not centered vertically
@@ -40,10 +39,11 @@ style = "D"; // A B C D JIG TRAY
  Theoretical max cable sizes without deforming.
  For style A, a 5mm cable with one layer of heatshrink can
  be deformed enough to fit with crimper pliers.
- Cables2Go 03019 is only 3.8mm diameter.
- A - ECHO: "cable vertical gap", 4.33
+ Cables2Go #03019 & #02518 are only 3.8mm diameter.
+ 
+ A - ECHO: "cable vertical gap", 4.02
  B - ECHO: "cable vertical gap", 5.42
- C - ECHO: "cable vertical gap", 6.83
+ C - ECHO: "cable vertical gap", 6.52
  D - ECHO: "cable vertical gap", 6.22
 
 */
@@ -55,7 +55,7 @@ style = "D"; // A B C D JIG TRAY
 //       the cable tie lands in the center.
 handle_length = (
         style=="B" ? "min" :
-        style=="C" ? "tie" :
+        style=="C" ? "min" :
         style=="D" ? 20 :
         "min");
 
@@ -82,12 +82,12 @@ handle_extra_height = (
         0);
 
 // make the cable pocket this much bigger than
-// cable_diameter + heat_shrink_thickness*2
+// cable + heat shrink
 cable_extra_radius = (
-        style=="B" ? 1 :
-        style=="C" ? 1.5 :
-        style=="D" ? 1 :
-        1);
+        style=="B" ? 0.5 :
+        style=="C" ? 1.2 :
+        style=="D" ? 0.5 :
+        0.5);
 
 // "center", "pcb", or arbitrary
 // center = Position the cable in the center of the handle height.
@@ -102,17 +102,27 @@ cable_z_position = (
 
 cable_chamfer_depth = (
         style=="B" ? 1 :
-        style=="C" ? 2 :
+        style=="C" ? 1.5 :
         style=="D" ? 1 :
         1);
 
-// grip_cut_depth automatically adjusts itself
+// the vertical cylindrical cuts on the sides
+// grip_cut_depth tries for this,
+// but automatically adjusts itself
 // to avoid violating min-wall-thickness
-grip_cut_depth = 1;
+grip_cut_depth = (
+        style=="C" ? 0 :
+        1);
 
+// The conical cuts on the top & bottom corners.
+// This really depends on what grip_cut_depth actually
+// resolves to after adjusting itself to min_wall_thickness.
+// Maybe it should be an adjustment value added to grip_cut_depth?
 grip_chamfer_depth = (
         style=="B" ? 0.8 :
-        style=="C" ? 0.8 :
+        style=="C" && pcb_version == 1 ? 0.8 :
+        style=="C" && pcb_version == 2 ? 0 :
+        style=="C" && pcb_version == 3 ? 1.2 :
         style=="D" ? 1.3 :
         0.8);
 
@@ -122,20 +132,15 @@ grip_chamfer_depth = (
 // FDM = 0.2
 fitment_clearance = "SLS";
 
-// Add cylinder cuts to expand the inside corners around the
-// 2x4 connector. Should mostly be taken care of well enough
-// by fitment_clearance, so should not really be needed.
-connector_corner_relief = 0; // 0.35
-
 // "a" or "b"
 // Loads 2x4a.stl or 2x4b.stl in preview mode to show both types
 // of flux wash standoff shapes at the base of the 2x4 connector.
 connector_model = "a";
 
-corner_radius = 0.6;
+corner_radius = 0.8;
 
-// Commercial SLS service like Shapeways 0.7mm
-minimum_wall_thickness = 0.7;
+// Commercial SLS/MJF often 0.8mm
+minimum_wall_thickness = 0.8;
 
 // Minimum material from cable tie to rear end
 // this sets the minimum overall handle length
@@ -154,9 +159,9 @@ cable_diameter = 5;
 heat_shrink_thickness = 0.5; //0;
 
 // curve smoothness
-$fa = 1;
-$fs = 0.1;
-//$fn = 72;
+$fa = 12;
+$fs = corner_radius/PI;
+//$fn = 36;
 
 // ===============================================================
 
@@ -165,6 +170,7 @@ JIG = (TRAY||style=="JIG")?true:false;
 
 t = 2.54; // tenth inch
 o = 0.1;  // overlap / overcut
+e = 0.001; // epsilon
 mw = minimum_wall_thickness;
 cr = JIG?0:corner_radius;
 
@@ -184,7 +190,7 @@ pw = (         // pcb width
   pm==3 ? 10.4:
   10.4);
 
-pw2 = (         // pcb width 2
+pw2 = (        // pcb width 2
   pm==1 ? 8.5:
   0);
 
@@ -194,7 +200,7 @@ pl = (         // pcb length
   pm==3 ? 16:
   7.8);
 
-pl2 = (         // pcb length 2
+pl2 = (        // pcb length 2
   pm==1 ? 13.25:
   0);
 
@@ -216,6 +222,8 @@ pcr = (        // pcb corner radius
 
 ptw = 9.3;     // pcb transistors width
 
+components_height = 1.4; // TO-236-3, SC-59, SOT-23-3
+
 h2h = (        // zip tie hole to hole
 //  pm==1 ? 0:
   pm==2 ? 5:
@@ -235,38 +243,72 @@ pfc = (     // extra fitment clearance for pcb
 pcw = pfc+pw+pfc;  // pcb slot full width
 
 // TPDD port dimensions
-owl = 13.5;      // outer width lower, horzontal part width
+owl = 13;      // outer width lower, horzontal part width
 
-ohl = (          // outer height lower, horizontal part height
+// Plug height, lower/horizontal part.
+// Measured original plug: 7.5 - centered on pins
+// Measured hole: 8.5 - not centered on pins, extra 1mm all on top
+// Allow for variability in male 2x4 pin header solder position
+ohl = (          // outer height lower
   JIG ? 7:
-  7.8);
+  8);
 
-owu = 5.5;       // outer width upper, vertical part width
-ohu = 9.5;       // outer height upper, vertical part height
-plug_len = 11.5; // length of keyed part
+// Plug width, upper/vertical part (the polarity key)
+// Measured original cable: 5.4
+// Measured hole: 6.5
+owu = 6;       // outer width upper
+
+// Plug height, upper/vertical part.
+// Measured original cable: 8.6
+// Measured hole: 10.0-10.2
+ohu = 9.4;       // outer height upper
+
+// Distance from center of 2x4 pins to exterior bottom.
+// The port opening is not centered vertically on the 2x4 pins.
+// It's the same on all drives not just a manufacturing variance
+// on one particular drive. All real original cables in all
+// drives have the cable lightly or firmly touching the bottom
+// and 1mm free space on top.
+// This establishes where the floor is relative to the pins,
+// and the rest of the housing grows up from there.
+//ohb = ih/2+1.1;
+// Original cables more like 3.7, but they actually rub.
+ohb = 3.6;    // outer height bottom  z=0 to exterior bottom
+
+// Plug length/depth, ie the keyed part,
+// at the recessed surface immediately around the port.
+// The recessed surface extends 3mm left & right,
+// 1mm up, and 0mm down from the port. If the handle body is
+// wider or taller than that, then this gets 1mm added to it
+// automatically later.
+// 11.5 is from the insulator at the base of the pins
+// to the outside surface of the case, but the connector
+// can't actually go that deep
+//plug_len = 11.5; // length/depth of keyed part
+plug_len = 9; // length/depth of keyed part
 
 // cable
-cor = cable_diameter/2 + heat_shrink_thickness; // cable outside radius
-cpd = cable_diameter + cable_extra_radius*2;    // cable pocket diameter
-ccd = cable_chamfer_depth; // cable chamfer
+cir = cable_diameter/2;            // cable inside radius
+cor = cir + heat_shrink_thickness; // cable outside radius
+cpr = cor + cable_extra_radius;    // cable pocket radius
+ccd = cable_chamfer_depth;         // cable chamfer depth
 
 // 2x4 connector body
-iw = t*4+0.5;  // inner width, width of 2x4 connector
-ih = t*2;      // inner height, height of 2x4 connector
-id = 8.5;      // inner depth, depth of 2x4 connector
+iw = t*4+0.5;//10.6; // 2.54 * 4 + 0.4
+ih = t*2;//5.1;  // 2.54 * 2
+id = 8.5;
 
 // Height of the flux wash standoffs on the 2x4 connector.
+// The 2x4 connector depth dimension includes the standoffs,
+// but the pcb soldered on edge does not stop at the standoffs,
+// so this tells where the pcb actually is relative to the
+// full connector depth dimension.
 pcb_inset = 0.5;
-
-// Add a tiny bit more to the depth of the connector pocket
-// to account for inability to print sharp inside corners.
-// We don't want to cut corner relief cylinders on the rear wall
-// because we need the very edge of the connector
-// (the flux wash standoffs) to hit the rear wall.
-idx = 0; //fc/2;
-
-// distance from z=0 (center of pcb) to outside bottom
-ohb = ih/2+ph/2;   // outer height bottom, 0 to exterior floor
+// pcb v1 has no castellations
+// so it will push connector type b out
+connector_outset = (
+  (pm==1&&connector_model=="b")?pcb_inset:
+  0);
 
 hew = handle_extra_width;  // handle extra width
 hw = hew+owl+hew ;         // handle width
@@ -279,6 +321,7 @@ hh = (                     // handle height
   JIG ? ohl :
   ohu+heh);
 
+oht = hh-ohb; // outer height top     z=0 to exterior top
 hz = hh/2-ohb;             // handle center z
 
 cz = (
@@ -303,16 +346,16 @@ ztk = (               // zip tie knot cube
 
 zfc = fc + 0.1; // zip tie extra fitment clearance
 zy = id + zty - pcb_inset; // zip tie absolute Y position
-ztr = cpd/2+zbt+zfc; // zip tie outside radius
+ztr = cpr+zbt+zfc; // zip tie outside radius
 ztl = zfc+zbw+zfc;   // zip tie cylinder length
 ztc = zfc+ztk+zfc;   // zip tie cube
 
 // prevents cable pocket from poking through or making
 // a thin wall in the front face of the handle block
-cew = 1; // cable end wall thickness
+cew = minimum_wall_thickness; // 1; // cable end wall thickness
 
 // cavity behind the 2x4 connector
-// is this much smaller than the 2x4 connector
+// is smaller than the connector
 ihr = 0.5; // interior height reduction to create a step
 
 ich = ih-ihr ;          // main interior cavity height
@@ -333,6 +376,9 @@ hd = (        // handle depth (length)
   is_num(handle_length) ? handle_length :
   hlft + ztc/2 + minimum_rear_wall); // "min"
 
+// total body length
+tl = od+hd;
+
 // grips
 // either pcw or ztr*2 might be the widest
 // interior cavity at the grip cut position
@@ -340,62 +386,77 @@ hwt = (hw-max(pcw,ztr*2))/2; // handle wall thickness at thinnest point
 gr = hd; // grip cut radius
 gd = hwt-mw>grip_cut_depth?grip_cut_depth:hwt-mw; // grip cut depth
 
-ccr = (
-  JIG ? max(connector_corner_relief,0.4):
-  connector_corner_relief);
-
 // =============================================================
 
 use <inc/handy.scad>
 
-module cable_tie () {
-    ri = cor;         // nominal size
-    //ri = cpd/2;     // full possible size
-    ro = ri + zbt;
-    ch = ztk*0.75;
-    translate([ch/2+ri,ri,0]) rotate([0,90,0]) rounded_cube(w=ztk,d=ztk,h=ch,rh=0.9,rv=0.4);
-    difference() {
-      cylinder(r=ro,h=zbw,center=true);
-      union() {
-        cylinder(r=ri,h=o+zbw+o,center=true);
-        translate([0,0,-ro/2-o]) cube(o+ro+o);
-      }
-    }
-    difference() {
-      translate([0,0,-zbw/2]) cube([ro,ro,zbw]);
-      translate([-zbt,-zbt,-zbw/2-o]) cube([ro,ro,o+zbw+o]);
-    }
+module cutaway (on="z",at=0,dir="+") {
+    v = dir=="-"?-1:1;
+    w = hw;
+    wz = 0;
+    l = tl;
+    lz = -l/2;
+    h = hh;
+    //hz = hz;
+  
+    if (on=="x") translate([w/2*v+at,lz,hz]) cube([w,l+o,h+o],true);
+    if (on=="y") translate([wz,l/2*v+at,hz]) cube([w+o,l,h+o],true);
+    if (on=="z") translate([wz,lz,h/2*v+at]) cube([w+o,l+o,h],true);
 }
 
+module teardrop (h=1,r=10) {
+  translate([0,0,-h/2]) hull () {
+    cylinder(h=h,r=r);
+    cube([r,r,h]);
+  }
+}
+
+module cable_tie () {
+    //r = cir;     // min
+    r = cor;     // normal
+    //r = cpr;     // max
+    ch = ztk*0.75;
+
+    difference () {
+      teardrop(h=zbw,r=r+zbt);
+      teardrop(h=zbw+o,r=r);
+    }
+    translate([ch/2+r,r,0])
+      rotate([0,90,0])
+        rounded_cube(w=ztk,d=ztk,h=ch,rh=zbw/3,rv=0.2);
+
+}
+
+
 // FITMENT REFERENCE MODELS
-//if ($preview) translate([0,-pl/2-id,-ph/2]) %import("pcb.stl");
-if ($preview) {
+module fit_parts() {
   translate([0,-id,0]) {
-    // 2x4 CONNECTOR, 2 styles of flux wash standoff
+    // 2x4 connector, 2 styles of flux wash standoffs
     cstl = (
       connector_model=="b" ? "inc/2x4b.stl":
       "inc/2x4a.stl");
-    color("grey",0.5) %import(cstl);
-    // PCB
+    translate([0,connector_outset,0]) color("grey",0.5) import(cstl);
+    // pcb
     translate([0,pcb_inset,0]) {
       pstl = (
         pm==2 ? "inc/pcb2.stl":
         pm==3 ? "inc/pcb3.stl":
-        "inc/pcb.stl");
-      translate([0,0,-ph/2]) color("green",0.5) %import(pstl);
-      // ZIP TIE
-      if (!JIG) translate([0,-zty,cz]) rotate([90,0,0]) color("grey",0.5) %cable_tie();
+        "inc/pcb1.stl");
+      translate([0,0,-ph/2]) color("green",0.5) import(pstl);
+      // zip-tie
+      if (!JIG) translate([0,-zty,cz]) rotate([90,0,0]) color("grey",0.5) cable_tie();
     }
   }
   if (!JIG) translate([0,-od-cew-1,cz]) rotate([90,0,0]) {
-    // CABLE
-    %cylinder(d=cable_diameter,h=25);
-    // HEAT SHRINK
-    if (heat_shrink_thickness) %cylinder(d=cable_diameter+heat_shrink_thickness*2,h=20);
+    // cable
+    cylinder(d=cable_diameter,h=25);
+    // heat-shrink
+    if (heat_shrink_thickness) cylinder(d=cable_diameter+heat_shrink_thickness*2,h=20);
   }
 }
 
 // HOUSING
+module housing () {
 difference() {
     // add
     union() {
@@ -415,32 +476,28 @@ difference() {
       // handle
       translate([0,-od-hd/2,hz])
         rounded_cube(w=hw,d=hd,h=hh,rh=cr,rv=cr);
+
     }
 
   // cut
   union() {
     // connector cavity
-    _id = id+idx+fc; // connector pocket depth
+    _id = id+fc; // connector pocket depth
     translate([0,o/2-_id/2,0])
       cube([fc+iw+fc,_id+o,fc+ih+fc],true);
-    // inside corners relief
-    if (ccr)
-      mirror_copy([0,0,1])
-        mirror_copy([1,0,0])
-          translate([iw/2+fc,o/2-_id/2,ih/2+fc-ccr])
-            rotate([90,0,0])
-              cylinder(r=ccr,h=_id+o,center=true);
 
     // main wiring/components interior cavity
     // TODO: replace ich with seperate top and bottom heights
     // where the bottom is the actual components height
     // to garantee we keep a minimum distance from the transistors
-    translate([0,-icd/2,0]) rounded_cube(w=icw,d=icd,h=ich,rh=cr,rv=cr);
+    translate([0,-icd/2,0])
+      rounded_cube(w=icw,d=icd,h=ich,rh=cr,rv=cr);
 
     // transistors
-    _th = ph/2+1.6;
+    _th = ph/2+components_height+pfc; // transistor height
     _cr = min(0.2,cr); // sharper corner to clear the transistors
-    translate([0,-id-pty+pcb_inset,-_th/2]) rounded_cube(w=icw,d=4,h=_th,rh=cr,rv=_cr);
+    translate([0,-id-pty+pcb_inset,-_th/2])
+      rounded_cube(w=icw,d=4,h=_th,rh=cr,rv=_cr);
 
     // pcb slot
     translate([0,o/2+pcb_inset+pcr/2-id/2-pl/2-pfc/2,0])
@@ -450,31 +507,38 @@ difference() {
         rounded_cube(w=pfc+pw2+pfc,d=pcr+id+pl2+o+pfc,h=pfc+ph+pfc,rh=pcr+pfc,rv=pfc);
 
     // cable
-    if (!JIG) translate([0,0,cz]) {
-      translate([0,-hd/2-od-cew,0]) rotate([90,0,0]) cylinder(h=hd,r=cpd/2,center=true);
-      // funnel
-      fr1 = cpd/2-o;  // truncated cone small end is cable diam
-      fr2 = fr1+ccd; // big end is small end plus length to make 45 degrees
-      translate([0,ccd/2-od-hd-0.001,0]) rotate([90,0,0]) cylinder(h=ccd,r1=fr1,r2=fr2,center=true);
+    if (!JIG) {
+      _w = -od-max(cew,cz);
 
-      // chamfer from main cavity into nose
-      // to ease the cable passing all the way through the nose
-      // during installation before soldering
-      _r=cpd/2;
-      translate([0,-od+cew,-cz+ich/2-o])
-        rotate([45,0,0])
-          translate([0,-_r,-0.4])
-            difference() {
-              cylinder(h=_r,r=_r);
-              translate([-_r-o,-_r-o,-o])
-                cube([o+_r*2+o,_r+o+2,o+_r+o]);
-            }
-    }
+      // nose - rear of connector up to cable head
+      fih = fc+ih+fc;
+      hull() {
+        mirror_copy([1,0,0])
+          translate([-fih/2+cpr,-id,0])
+            rotate([90,0,0])
+              cylinder(h=1,d=fih);
+        translate([0,_w,cz])
+          rotate([90,0,0])
+            cylinder(h=1,r=cpr);
+      }
+
+      // everything else at calculated cable height cz
+      translate([0,0,cz]) {
+        // main cable pocket
+        translate([0,_w,0])
+          rotate([90,0,0])
+            cylinder(h=hd,r=cpr);
+        // exit chamfer funnel
+        translate([0,ccd-tl-e,0])
+          rotate([90,0,0])
+            cylinder(h=ccd,r1=cpr-o,r2=cpr-o+ccd);
+      }
+  }
 
     // grips
     if (gd && !JIG) {
     go = gr+hw/2-gd; // offset
-    gcd = grip_chamfer_depth;
+    gcd = gd + grip_chamfer_depth;
     mirror_copy([1,0,0])
       translate([go,-od-hd/2,hz]) {
         cylinder(h=hh+o,r=gr,center=true);
@@ -524,8 +588,8 @@ difference() {
       // of the cable all the way out.
       
       // bottom of pocket at greater of cz or pcb+pfc+mw
-      // prevents at thin wall between pcb and pocket
-      // UGLY HACK: if M4 zip-tie, arbitrarily lower by 1mm
+      // prevents a thin wall between pcb and pocket
+      // hack: lower floor by 1mm if M4 tie
       _b = max(cz,ph/2+pfc+mw) - (cable_tie_size==4?1:0) ;
       translate([hw/2,0,hh/2+_b])
         rounded_cube(w=hw,d=ztc,h=hh,rh=cr,rv=cr);
@@ -539,8 +603,8 @@ difference() {
       if (TRAY) {
 
         // simple open top tray
-        translate([0,-(od+hd)/2,hh/2])
-          cube([hw+o,od+hd+o,hh],true);
+        translate([0,-(tl)/2,hh/2])
+          cube([hw+o,tl+o,hh],true);
 
       } else {
 
@@ -549,10 +613,9 @@ difference() {
         r=1;    // some corners radius
         sw=e+5; // solder window
         t=1;    // top above pcb
-        csd=od+hd;
-        csh=hh-ohb+o;
-        translate([0,e-csd/2-id,csh/2])
-          cube([icw,csd,csh],true);
+        csh=oht+o;
+        translate([0,e-tl/2-id,csh/2])
+          cube([icw,tl,csh],true);
         translate([0,e-(hd+od)/2-id,hh/2+ph/2+t])
           cube([o+hw+o,hd+od,hh],true);
         translate([0,e-sw/2-id,hh/2])
@@ -566,50 +629,38 @@ difference() {
 
     //===========================================================
     // DEBUGGING
-    
-    echo("handle height",hh);
-    echo("handle width",hw);
-    echo("handle length",hd);
-    // distance from top of pcb to ceiling of cable pocket
-    // with pcb pushed to bottom of pcb fitment clearance
-    echo("cable vertical gap",cpd/2+cz-ph/2+pfc);
 
-    preview_cut_side = false;
-    preview_cut_X = 0;//-cr;     // where to cut along X
-    //preview_cut_X = iw/2;
-
-    preview_cut_rear = false;
-    preview_cut_Y = zy;    // where to cut along Y
-
-    preview_cut_top = false;
-    preview_cut_Z = 0;     // where to cut along Z
-    //preview_cut_Z = ih/2;
-
-    // cut on X
-    if (preview_cut_side && $preview) {
-      csw=hw/2-preview_cut_X+o;
-      csd=o+od+hd+o;
-      csh=o+hh+o;
-      translate([-csw/2-preview_cut_X,-csd/2+o,hz]) cube([csw,csd,csh],true);
+    if (!JIG) {
+      // ensure minimum wall thickness
+      echo("minimum_wall_thickness",minimum_wall_thickness);
+      //
+      front_connector_floor_thickness = round((ohb-ih/2-fc)*10)/10;
+      echo("front_connector_floor_thickness",front_connector_floor_thickness);
+      assert(front_connector_floor_thickness>=minimum_wall_thickness);
+      //
+      // the zip-tie cannel doesn't matter at the top, just the cable
+      cable_ceiling_thickness = round((oht-cz-cpr)*10)/10;
+      echo("cable_ceiling_thickness",cable_ceiling_thickness);
+      assert(cable_ceiling_thickness>=minimum_wall_thickness);
+  
+      // derived final dimesions
+      echo("handle height",hh);
+      echo("handle width",hw);
+      echo("handle length",hd);
+      // distance from top of pcb to ceiling of cable pocket
+      // with pcb pushed to bottom of pcb fitment clearance
+      echo("cable vertical gap",cpr+cz-ph/2+pfc);
     }
 
-    // cut on Y
-    if (preview_cut_rear && $preview) {
-      csw=o+hw+o;
-      csd=od+hd-preview_cut_Y+o;
-      csh=o+hh+o;
-      translate([0,-csd/2-preview_cut_Y,hz]) cube([csw,csd,csh],true);
-    }
-
-    // cut on Z
-    if (preview_cut_top && $preview) {
-      csw=o+hw+o;
-      csd=o+od+hd+o;
-      csh=hh-ohb-preview_cut_Z+o;
-      translate([0,-csd/2+o,csh/2+preview_cut_Z]) cube([csw,csd,csh],true);
-    }
+    //cutaway (on="x",at=0,dir="-"); //cr, iw/2
+    //cutaway (on="y",at=-zy,dir="-");
+    //cutaway (on="z",at=0,dir="+");
 
     //===========================================================
 
   }
 }
+}
+
+if ($preview) %fit_parts();
+housing();
