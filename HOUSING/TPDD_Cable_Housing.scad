@@ -13,9 +13,9 @@
 part = "housing";
 //part = "jig";
 
-// 1 = original dog bone shape, M3 tie
-// 2 = holes for M3 tie, smt wire pads
-// 3 = clipped holes for M4 tie, smt wire pads
+// 1 = original dog bone shape, M3 ziptie, tht wire pads
+// 2 = holes for M3 ziptie, smt wire pads
+// 3 = clipped holes for M4 ziptie, smt wire pads
 pcb_version = 2;
 
 // Cable diameter including heat-shrink.

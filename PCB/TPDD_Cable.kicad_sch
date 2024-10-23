@@ -6,8 +6,8 @@
 	(paper "USLetter")
 	(title_block
 		(title "TPDD-RS-232")
-		(date "2024-10-10")
-		(rev "4")
+		(date "2024-10-23")
+		(rev "5")
 		(company "Brian K. White")
 	)
 	(lib_symbols
@@ -2292,7 +2292,18 @@
 		)
 		(uuid "575bb816-539a-4d6a-8c8e-5375fea82ffa")
 	)
-	(text "Pin/Net names are relative to the TPDD.\nex: Pin \"RX\" is the drives RX.\nConnect to the computers TX.\n\nFor GND, DTR, TX\nsolder to the pads on the 2x4 connector\n"
+	(text "TPDD service manual labels the RS-232 pins\nafter the DTE (computer) side of the connection.\n\nWhat the service manual calls \"RX\" at the drives RS-232 port\nis actually TX out from the drive, RX in to the computer.\n\nSo all signal names are the DTE-side meanings,\nand the drive's \"TX\" connects to the computers TX not RX,\nRTS connects to RTS not CTS, etc.\n"
+		(exclude_from_sim no)
+		(at 63.5 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "7f9ed729-7fac-4f6f-9de6-c28d7cebfb55")
+	)
+	(text "Pin/Net names are relative to the computer.\nex: Pin \"RX\" is the computers RX.\nConnect PCB pad RX to the computers RX.\n\nFor GND, DTR, TX\nsolder to the pads on the 2x4 connector\n"
 		(exclude_from_sim no)
 		(at 171.45 102.362 0)
 		(effects
@@ -2303,7 +2314,7 @@
 		)
 		(uuid "9f7e4697-0c16-4234-8f20-3a64469c259a")
 	)
-	(text "PC or WP-2\nDE9 Female\n\n5 GND\n4 DTR\n8 CTS\n7 RTS\n6 DSR\n3 TX\n2 RX"
+	(text "PC or WP-2\nDE9 Female\n\n5 GND\n6 DSR\n7 RTS\n8 CTS\n4 DTR\n2 RX\n3 TX"
 		(exclude_from_sim no)
 		(at 212.598 85.344 0)
 		(effects
@@ -2325,7 +2336,7 @@
 		)
 		(uuid "bff036ed-42c1-4f79-b8d9-1907e9b0e1fd")
 	)
-	(text "\"Model T\"\nDB25 Male\n\n7 GND\n6 DTR\n4 CTS\n5 RTS\n20 DSR\n3 TX\n2 RX"
+	(text "\"Model T\"\nDB25 Male\n\n7 GND\n6 DSR\n4 RTS\n5 CTS\n20 DTR\n3 RX\n2 TX"
 		(exclude_from_sim no)
 		(at 194.818 85.344 0)
 		(effects
