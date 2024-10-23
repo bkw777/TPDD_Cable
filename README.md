@@ -141,7 +141,7 @@ To verify the final result, check the following with a DMM in Continuity and Dio
 </table>
 
 ## Cambridge Z88
-*UNTESTED*
+*UNTESTED*  
 *The Cambridge Z88 RS-232 port has a non-standard pinout.*  
 *Do not connect this cable to anything but a Cambridge Z88.*
 
