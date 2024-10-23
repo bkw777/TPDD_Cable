@@ -157,7 +157,7 @@ Delete the cable in the pre-loaded cart, and add [this one](https://www.digikey.
 <tr><td>RXD</td><td>3</td></tr>
 <tr><td>TXD</td><td>2</td></tr>
 </table>
-
+<!--
 This Z88 cable pinout is un-verified. It might need to be reversed, IE:
 
 |SIGNAL|Z88|
@@ -169,7 +169,7 @@ This Z88 cable pinout is un-verified. It might need to be reversed, IE:
 |DTR|8|
 |RXD|2|
 |TXD|3|
-
+-->
 
 # Credits / History
 In the beginning, there was the [Marty Goodman Document](https://raw.githubusercontent.com/LivingM100SIG/Living_M100SIG/main/M100SIG/Lib-09-PERIFERALS/TPDD.DO), and it was good.
