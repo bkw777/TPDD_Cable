@@ -7,7 +7,7 @@
 	(title_block
 		(title "TPDD-RS-232")
 		(date "2024-10-23")
-		(rev "5")
+		(rev "6")
 		(company "Brian K. White")
 	)
 	(lib_symbols
@@ -1781,7 +1781,7 @@
 	)
 	(polyline
 		(pts
-			(xy 204.47 96.52) (xy 211.455 96.52)
+			(xy 194.31 96.52) (xy 208.28 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1801,7 +1801,7 @@
 	)
 	(polyline
 		(pts
-			(xy 204.47 86.36) (xy 211.455 86.36)
+			(xy 194.31 86.36) (xy 208.28 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1811,13 +1811,33 @@
 	)
 	(polyline
 		(pts
-			(xy 176.53 86.36) (xy 193.802 86.36)
+			(xy 213.36 88.9) (xy 227.33 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "101a1d32-a3df-42e3-8496-00c5538eae99")
+	)
+	(polyline
+		(pts
+			(xy 176.53 86.36) (xy 189.23 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "171e2425-8fde-4a75-85d1-aa278a48200f")
+	)
+	(polyline
+		(pts
+			(xy 213.36 96.52) (xy 227.33 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "185b259d-12b3-4808-8f15-d85afa2f4b39")
 	)
 	(wire
 		(pts
@@ -1831,7 +1851,7 @@
 	)
 	(polyline
 		(pts
-			(xy 176.53 93.98) (xy 193.802 93.98)
+			(xy 176.53 93.98) (xy 189.23 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1851,7 +1871,7 @@
 	)
 	(polyline
 		(pts
-			(xy 204.47 81.28) (xy 211.455 81.28)
+			(xy 194.31 81.28) (xy 208.28 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1871,7 +1891,7 @@
 	)
 	(polyline
 		(pts
-			(xy 176.53 88.9) (xy 193.802 88.9)
+			(xy 176.53 88.9) (xy 189.23 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1919,6 +1939,16 @@
 		)
 		(uuid "4a03b906-101c-40e2-9806-7f1c1d8d56b1")
 	)
+	(polyline
+		(pts
+			(xy 213.36 86.36) (xy 227.33 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4dfffd9f-a907-41fb-97fb-f76eba2de0c7")
+	)
 	(wire
 		(pts
 			(xy 69.85 92.71) (xy 76.2 92.71)
@@ -1928,6 +1958,16 @@
 			(type default)
 		)
 		(uuid "54bd355c-9cf4-449f-a1db-aed6763f2039")
+	)
+	(polyline
+		(pts
+			(xy 213.36 91.44) (xy 227.33 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5768698f-ef78-4595-8385-bfeb63859ac1")
 	)
 	(wire
 		(pts
@@ -1971,7 +2011,7 @@
 	)
 	(polyline
 		(pts
-			(xy 204.47 88.9) (xy 211.455 88.9)
+			(xy 194.31 88.9) (xy 208.28 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1981,7 +2021,17 @@
 	)
 	(polyline
 		(pts
-			(xy 176.53 81.28) (xy 193.802 81.28)
+			(xy 213.36 83.82) (xy 227.33 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b464246-42f0-4e7d-bfb7-222ba4bcb88f")
+	)
+	(polyline
+		(pts
+			(xy 176.53 81.28) (xy 189.23 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2121,7 +2171,7 @@
 	)
 	(polyline
 		(pts
-			(xy 204.47 93.98) (xy 211.455 93.98)
+			(xy 194.31 93.98) (xy 208.28 93.98)
 		)
 		(stroke
 			(width 0)
@@ -2131,7 +2181,7 @@
 	)
 	(polyline
 		(pts
-			(xy 176.53 91.44) (xy 193.802 91.44)
+			(xy 176.53 91.44) (xy 189.23 91.44)
 		)
 		(stroke
 			(width 0)
@@ -2141,7 +2191,7 @@
 	)
 	(polyline
 		(pts
-			(xy 176.53 96.52) (xy 193.802 96.52)
+			(xy 176.53 96.52) (xy 189.23 96.52)
 		)
 		(stroke
 			(width 0)
@@ -2161,7 +2211,7 @@
 	)
 	(polyline
 		(pts
-			(xy 204.47 91.44) (xy 211.455 91.44)
+			(xy 194.31 91.44) (xy 208.28 91.44)
 		)
 		(stroke
 			(width 0)
@@ -2171,13 +2221,33 @@
 	)
 	(polyline
 		(pts
-			(xy 176.53 83.82) (xy 193.802 83.82)
+			(xy 176.53 83.82) (xy 189.23 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e694af1e-7836-41b7-993c-13242ed586a0")
+	)
+	(polyline
+		(pts
+			(xy 213.36 81.28) (xy 227.33 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e846ce20-d645-436b-99b3-50dbb1bac61a")
+	)
+	(polyline
+		(pts
+			(xy 213.36 93.98) (xy 227.33 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efd2ec67-f21f-410e-aa84-e86e3ea60587")
 	)
 	(wire
 		(pts
@@ -2201,7 +2271,7 @@
 	)
 	(polyline
 		(pts
-			(xy 204.47 83.82) (xy 211.455 83.82)
+			(xy 194.31 83.82) (xy 208.28 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2239,6 +2309,17 @@
 		)
 		(uuid "fffa24df-ed8a-4a9a-b254-22dca719a7c6")
 	)
+	(text "Z88\nDE9 Male\n\n7\n8\n4\n5\n9\n3\n2"
+		(exclude_from_sim no)
+		(at 229.87 73.152 0)
+		(effects
+			(font
+				(size 1.5748 1.5748)
+			)
+			(justify top)
+		)
+		(uuid "1f0efa68-9918-4fd1-9b84-b11f97488d15")
+	)
 	(text "TPDD_Cable\nPCB pads"
 		(exclude_from_sim no)
 		(at 170.942 75.184 0)
@@ -2249,7 +2330,7 @@
 		)
 		(uuid "2fe7eda1-02c1-4360-92c7-fac9b0140cb6")
 	)
-	(text "(1) Pin 8\n\nTPDD1: N/C\n\nTPDD2: External Battery\n        4.8-6v"
+	(text "(1) TPDD Pin 8\n\nTPDD1: N/C\n\nTPDD2: External Battery\n        4.8-6V DC in"
 		(exclude_from_sim no)
 		(at 101.6 152.4 0)
 		(effects
@@ -2284,7 +2365,7 @@
 	)
 	(text "cable"
 		(exclude_from_sim no)
-		(at 184.404 87.884 0)
+		(at 182.88 87.884 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2292,18 +2373,7 @@
 		)
 		(uuid "575bb816-539a-4d6a-8c8e-5375fea82ffa")
 	)
-	(text "TPDD service manual labels the RS-232 pins\nafter the DTE (computer) side of the connection.\n\nWhat the service manual calls \"RX\" at the drives RS-232 port\nis actually TX out from the drive, RX in to the computer.\n\nSo all signal names are the DTE-side meanings,\nand the drive's \"TX\" connects to the computers TX not RX,\nRTS connects to RTS not CTS, etc.\n"
-		(exclude_from_sim no)
-		(at 63.5 38.1 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "7f9ed729-7fac-4f6f-9de6-c28d7cebfb55")
-	)
-	(text "Pin/Net names are relative to the computer.\nex: Pin \"RX\" is the computers RX.\nConnect PCB pad RX to the computers RX.\n\nFor GND, DTR, TX\nsolder to the pads on the 2x4 connector\n"
+	(text "Pin/Net names are relative to the DTE (computer) side.\nConnect PCB pad RX to the computers RX,\nconnect PCB pad CTS to the computers CTS, etc.\n\nFor GND, DTR, TX\nsolder to the pads on the 2x4 connector\n"
 		(exclude_from_sim no)
 		(at 171.45 102.362 0)
 		(effects
@@ -2314,14 +2384,14 @@
 		)
 		(uuid "9f7e4697-0c16-4234-8f20-3a64469c259a")
 	)
-	(text "PC or WP-2\nDE9 Female\n\n5 GND\n6 DSR\n7 RTS\n8 CTS\n4 DTR\n2 RX\n3 TX"
+	(text "PC or WP-2\nDE9 Female\n\n5\n6\n7\n8\n4\n2\n3"
 		(exclude_from_sim no)
-		(at 212.598 85.344 0)
+		(at 210.82 73.152 0)
 		(effects
 			(font
 				(size 1.5748 1.5748)
 			)
-			(justify left)
+			(justify top)
 		)
 		(uuid "b52f2110-e25e-42c9-b52b-577d052611ab")
 	)
@@ -2336,14 +2406,14 @@
 		)
 		(uuid "bff036ed-42c1-4f79-b8d9-1907e9b0e1fd")
 	)
-	(text "\"Model T\"\nDB25 Male\n\n7 GND\n6 DSR\n4 RTS\n5 CTS\n20 DTR\n3 RX\n2 TX"
+	(text "\"Model T\"\nDB25 Male\n\n7\n6\n4\n5\n20\n3\n2"
 		(exclude_from_sim no)
-		(at 194.818 85.344 0)
+		(at 191.77 73.152 0)
 		(effects
 			(font
 				(size 1.5748 1.5748)
 			)
-			(justify left)
+			(justify top)
 		)
 		(uuid "de98f2ce-92ab-485a-bd8e-f4e872181b11")
 	)
