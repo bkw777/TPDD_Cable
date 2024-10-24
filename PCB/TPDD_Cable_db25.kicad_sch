@@ -2412,7 +2412,7 @@
 		)
 		(uuid "ba624a1a-5e3b-477a-a800-6e52930bf3a6")
 	)
-	(text "Pin numbers match\npin numbers on TPDD.\n\npin 1 here goes to pin 1 on TPDD\n"
+	(text "Pin numbers on PCB match\npin numbers on TPDD.\n\npin 1 on PCB goes to pin 1 on TPDD\n"
 		(exclude_from_sim no)
 		(at 87.122 116.332 0)
 		(effects

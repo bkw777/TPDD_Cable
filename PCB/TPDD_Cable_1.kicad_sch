@@ -1859,7 +1859,7 @@
 		)
 		(uuid "5b830e2d-1b06-4e0d-a9bc-b17c3a5475f2")
 	)
-	(text "\"Model T\"\nDB25 Male\n\n7 GND\n6 DTR\n4 CTS\n5 RTS\n20 DSR\n3 TX\n2 RX"
+	(text "\"Model T\"\nDB25 Male\n\n7\n6\n4\n5\n20\n3\n2"
 		(exclude_from_sim no)
 		(at 194.818 72.644 0)
 		(effects
@@ -1870,7 +1870,7 @@
 		)
 		(uuid "600790cd-43fa-4843-80ad-e3817de597fc")
 	)
-	(text "PC or WP-2\nDE9 Female\n\n5 GND\n4 DTR\n8 CTS\n7 RTS\n6 DSR\n3 TX\n2 RX"
+	(text "PC or WP-2\nDE9 Female\n\n5\n6\n7\n8\n4\n2\n3"
 		(exclude_from_sim no)
 		(at 212.598 72.644 0)
 		(effects

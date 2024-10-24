@@ -2179,6 +2179,16 @@
 		)
 		(uuid "b4d0b327-0a25-4319-b34c-46f841ed56df")
 	)
+	(wire
+		(pts
+			(xy 167.64 81.28) (xy 171.45 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b89b6986-785b-42c7-a3ca-595cd2076c04")
+	)
 	(polyline
 		(pts
 			(xy 176.53 91.44) (xy 189.23 91.44)
@@ -2340,17 +2350,6 @@
 			(justify left top)
 		)
 		(uuid "4449de76-1aaf-458a-8d19-37a11cf18841")
-	)
-	(text "GND"
-		(exclude_from_sim no)
-		(at 171.45 81.28 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "48b9cf13-026e-4e3f-9d32-ba41b8842aa1")
 	)
 	(text "(1)"
 		(exclude_from_sim no)
@@ -2559,6 +2558,17 @@
 			(justify right bottom)
 		)
 		(uuid "d63a5341-5fff-4e66-831b-6851ad2f4141")
+	)
+	(label "GND"
+		(at 171.45 81.28 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e4783273-85d3-4557-ba63-4d44f7a4209b")
 	)
 	(label "RX_TTL"
 		(at 90.17 90.17 0)
@@ -3181,6 +3191,72 @@
 			(project ""
 				(path "/8c978a26-63bd-42ef-84db-2107e27041da/837a9c0d-b7a0-4105-85d5-9798010a27dd"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "000_LOCAL:GND")
+		(at 167.64 81.28 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2a00a9b3-4966-4c02-9f6a-0fc9350e5c70")
+		(property "Reference" "#PWR01"
+			(at 161.29 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 164.592 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 167.64 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e465db81-01cd-41f0-95a6-46967fbf3a21")
+		)
+		(instances
+			(project "TPDD_Cable"
+				(path "/0d433bab-64ac-46dd-8906-cd1b476f2235"
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)

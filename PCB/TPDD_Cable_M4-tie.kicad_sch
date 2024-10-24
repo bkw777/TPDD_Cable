@@ -1813,16 +1813,6 @@
 		)
 		(uuid "1bfee610-a01d-44c7-9752-4b4930efff96")
 	)
-	(polyline
-		(pts
-			(xy 217.17 83.82) (xy 224.155 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d54ac8f-8908-48b9-8f1d-8b729b4dc69e")
-	)
 	(wire
 		(pts
 			(xy 114.3 69.85) (xy 128.27 69.85)
@@ -1855,13 +1845,33 @@
 	)
 	(polyline
 		(pts
-			(xy 217.17 71.12) (xy 224.155 71.12)
+			(xy 189.23 81.28) (xy 201.93 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "29a8ea22-146f-4684-9a61-7681f64ae01d")
+		(uuid "252dae11-e32b-4dae-8235-b3edcdf0a2c2")
+	)
+	(polyline
+		(pts
+			(xy 189.23 76.2) (xy 201.93 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "381782cc-6667-4ea5-b21c-1b4216e5259c")
+	)
+	(polyline
+		(pts
+			(xy 207.01 81.28) (xy 220.98 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3857b5e7-18db-4ee5-b794-5c693ab70492")
 	)
 	(wire
 		(pts
@@ -1875,23 +1885,33 @@
 	)
 	(polyline
 		(pts
-			(xy 189.23 83.82) (xy 206.502 83.82)
+			(xy 226.06 73.66) (xy 240.03 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "40b3ba58-bf19-48a6-a231-f7e15df329d1")
+		(uuid "4e254b8c-f9ce-418c-87d2-42505700b3f6")
 	)
 	(polyline
 		(pts
-			(xy 189.23 78.74) (xy 206.502 78.74)
+			(xy 207.01 73.66) (xy 220.98 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4e2c4692-cbdb-4584-9b6a-151aab50310e")
+		(uuid "5028650f-7c92-48fc-84ba-2e2ac0254b30")
+	)
+	(polyline
+		(pts
+			(xy 189.23 68.58) (xy 201.93 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5382da4c-8d53-471b-a059-981531ed3e90")
 	)
 	(wire
 		(pts
@@ -1973,6 +1993,16 @@
 		)
 		(uuid "682d733a-9609-4e1f-b0fb-53922dbac2bf")
 	)
+	(polyline
+		(pts
+			(xy 189.23 71.12) (xy 201.93 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ff230c1-0b62-4815-898f-e7770a16d803")
+	)
 	(wire
 		(pts
 			(xy 180.34 68.58) (xy 184.15 68.58)
@@ -1985,23 +2015,13 @@
 	)
 	(polyline
 		(pts
-			(xy 189.23 76.2) (xy 206.502 76.2)
+			(xy 207.01 71.12) (xy 220.98 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "75b9d72f-502a-4c21-8e23-eb4c436c5d7c")
-	)
-	(polyline
-		(pts
-			(xy 217.17 68.58) (xy 224.155 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75f60fc4-1f1d-42cc-9979-b6c7ee0eec96")
+		(uuid "7511a6c3-f3e0-4f84-9338-29c956ae6c78")
 	)
 	(wire
 		(pts
@@ -2015,13 +2035,23 @@
 	)
 	(polyline
 		(pts
-			(xy 217.17 78.74) (xy 224.155 78.74)
+			(xy 226.06 83.82) (xy 240.03 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "81a330aa-4ea8-4022-8a43-542ddc486cd6")
+		(uuid "849483d7-a8db-45c5-ad01-f3cd5af8d202")
+	)
+	(polyline
+		(pts
+			(xy 226.06 81.28) (xy 240.03 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85ad7013-2af7-4611-9248-00988e9341b0")
 	)
 	(wire
 		(pts
@@ -2035,13 +2065,13 @@
 	)
 	(polyline
 		(pts
-			(xy 189.23 71.12) (xy 206.502 71.12)
+			(xy 207.01 78.74) (xy 220.98 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "92bc61ba-3bbc-454e-8b3c-1ccb47ee429b")
+		(uuid "93fa2b9d-372f-4a70-a5d2-9c1ab1672d8c")
 	)
 	(wire
 		(pts
@@ -2052,6 +2082,26 @@
 			(type default)
 		)
 		(uuid "99caed22-bd0d-4b3d-8eb9-49c365512710")
+	)
+	(polyline
+		(pts
+			(xy 207.01 68.58) (xy 220.98 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a48ddca8-075e-45dd-9cb5-2acfd1144b1b")
+	)
+	(polyline
+		(pts
+			(xy 189.23 78.74) (xy 201.93 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9dd9e12-041b-4f1d-8251-25bce87ec67f")
 	)
 	(wire
 		(pts
@@ -2093,16 +2143,6 @@
 		)
 		(uuid "b2638cfe-54eb-4330-a90c-1a9916647b80")
 	)
-	(polyline
-		(pts
-			(xy 189.23 68.58) (xy 206.502 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b5ba3fa0-39f3-437b-8cce-3cf442f5a8c9")
-	)
 	(wire
 		(pts
 			(xy 76.2 74.93) (xy 88.9 74.93)
@@ -2123,6 +2163,26 @@
 		)
 		(uuid "ba46e7ed-9be6-44a9-b57b-b4b8dad2a39e")
 	)
+	(polyline
+		(pts
+			(xy 189.23 83.82) (xy 201.93 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bee9fed5-c5be-4530-ab16-090e49f21b24")
+	)
+	(polyline
+		(pts
+			(xy 189.23 73.66) (xy 201.93 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0117ea0-5482-4bb6-a16f-474287ff52e7")
+	)
 	(wire
 		(pts
 			(xy 102.87 72.39) (xy 107.95 72.39)
@@ -2133,6 +2193,16 @@
 		)
 		(uuid "c055d37f-6c46-4920-88fa-199555d4d98e")
 	)
+	(polyline
+		(pts
+			(xy 207.01 83.82) (xy 220.98 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c17eee1e-5911-418c-990f-65d6138dc55a")
+	)
 	(wire
 		(pts
 			(xy 171.45 81.28) (xy 184.15 81.28)
@@ -2142,6 +2212,16 @@
 			(type default)
 		)
 		(uuid "c2d02772-6853-4e69-b4d1-ba256cedeed9")
+	)
+	(polyline
+		(pts
+			(xy 207.01 76.2) (xy 220.98 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c36a8991-c2bc-4b62-8d8b-93e42ff249c1")
 	)
 	(wire
 		(pts
@@ -2155,23 +2235,13 @@
 	)
 	(polyline
 		(pts
-			(xy 217.17 76.2) (xy 224.155 76.2)
+			(xy 226.06 78.74) (xy 240.03 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c85b61f4-c14f-4478-8619-d4d9625c92fd")
-	)
-	(polyline
-		(pts
-			(xy 217.17 73.66) (xy 224.155 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c9971511-3cad-4879-a992-8584f3b5b92c")
+		(uuid "d0c62ce1-ef1a-432d-a77b-3baf4389589b")
 	)
 	(wire
 		(pts
@@ -2195,33 +2265,23 @@
 	)
 	(polyline
 		(pts
-			(xy 217.17 81.28) (xy 224.155 81.28)
+			(xy 226.06 68.58) (xy 240.03 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e23d4e8f-07b7-4015-9993-0102aa523915")
+		(uuid "e8e3dc67-7651-4e83-8504-a786f8298513")
 	)
 	(polyline
 		(pts
-			(xy 189.23 81.28) (xy 206.502 81.28)
+			(xy 226.06 76.2) (xy 240.03 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e520434c-4026-4f41-9fd3-80ab9093e7af")
-	)
-	(polyline
-		(pts
-			(xy 189.23 73.66) (xy 206.502 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb0213d2-fa2d-4e20-95cc-d08785df8ac8")
+		(uuid "f8f86113-816e-4f7c-83b5-70cbd1846b84")
 	)
 	(wire
 		(pts
@@ -2243,6 +2303,16 @@
 		)
 		(uuid "fd040697-09c7-4d2e-a1d9-6d5c7d8bbd96")
 	)
+	(polyline
+		(pts
+			(xy 226.06 71.12) (xy 240.03 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd71d0eb-0fcf-4ef0-b364-05d3560f68b3")
+	)
 	(text "TPDD_Cable\nPCB pads"
 		(exclude_from_sim no)
 		(at 183.642 62.484 0)
@@ -2253,16 +2323,16 @@
 		)
 		(uuid "0c8838a2-434e-4aa4-a65c-e99a3650dbcd")
 	)
-	(text "PC or WP-2\nDE9 Female\n\n5 GND\n4 DTR\n8 CTS\n7 RTS\n6 DSR\n3 TX\n2 RX"
+	(text "Z88\nDE9 Male\n\n7\n8\n4\n5\n9\n3\n2"
 		(exclude_from_sim no)
-		(at 225.298 72.644 0)
+		(at 242.57 60.452 0)
 		(effects
 			(font
 				(size 1.5748 1.5748)
 			)
-			(justify left)
+			(justify top)
 		)
-		(uuid "216b4681-b57a-4c93-94df-45c6d4b91cb3")
+		(uuid "0feea7f6-51b4-4a39-8a3f-386d9f87f658")
 	)
 	(text "(1) Pin 8\n\nTPDD1: N/C\n\nTPDD2: External Battery\n        4.8-6v"
 		(exclude_from_sim no)
@@ -2286,17 +2356,6 @@
 		)
 		(uuid "3e1669d6-dbe4-4752-a737-579f662557db")
 	)
-	(text "\"Model T\"\nDB25 Male\n\n7 GND\n6 DTR\n4 CTS\n5 RTS\n20 DSR\n3 TX\n2 RX"
-		(exclude_from_sim no)
-		(at 207.518 72.644 0)
-		(effects
-			(font
-				(size 1.5748 1.5748)
-			)
-			(justify left)
-		)
-		(uuid "79d8a5c5-ba41-47eb-bc7c-0a89e55c4a60")
-	)
 	(text "(1)"
 		(exclude_from_sim no)
 		(at 107.315 80.01 0)
@@ -2308,17 +2367,18 @@
 		)
 		(uuid "7e57bc59-4028-4a6f-92e7-578c2ed866f6")
 	)
-	(text "cable"
+	(text "\"Model T\"\nDB25 Male\n\n7\n6\n4\n5\n20\n3\n2"
 		(exclude_from_sim no)
-		(at 196.85 75.184 0)
+		(at 204.47 60.452 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1.5748 1.5748)
 			)
+			(justify top)
 		)
-		(uuid "9fd4e251-0268-463f-a094-5ca9b1d6d17e")
+		(uuid "cb62ca8a-7211-4d4f-b143-12e41016a744")
 	)
-	(text "Pin/Net names are relative to the TPDD.\nex: Pin \"RX\" is the drives RX.\nConnect to the computers TX.\n\nFor GND, DTR, TX\nsolder to the pads on the 2x4 connector\n"
+	(text "Pin/Net names are relative to the DTE (computer) side.\nConnect PCB pad RX to the computers RX,\nconnect PCB pad CTS to the computers CTS, etc.\n\nFor GND, DTR, TX\nsolder to the pads on the 2x4 connector\n"
 		(exclude_from_sim no)
 		(at 184.15 89.662 0)
 		(effects
@@ -2327,7 +2387,28 @@
 			)
 			(justify left top)
 		)
-		(uuid "a1ae88fe-6c15-4467-b6a8-8b9bbe7b34d5")
+		(uuid "cdebeabc-ffec-4309-8266-08ddd0629808")
+	)
+	(text "cable"
+		(exclude_from_sim no)
+		(at 195.58 75.184 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ce6498af-25ac-4dc9-9ec5-3c37f3754660")
+	)
+	(text "PC or WP-2\nDE9 Female\n\n5\n6\n7\n8\n4\n2\n3"
+		(exclude_from_sim no)
+		(at 223.52 60.452 0)
+		(effects
+			(font
+				(size 1.5748 1.5748)
+			)
+			(justify top)
+		)
+		(uuid "ddf60cf6-087c-4489-889f-666c35000e02")
 	)
 	(text "TPDD"
 		(exclude_from_sim no)
