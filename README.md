@@ -22,7 +22,7 @@ If using Elecrow, PCBWAY, or JLCPCB, you can upload the [housing](HOUSING/out) S
 
 # Directions
 
-[pictures of build process](build_pics)
+[pictures of build process](build_pics/build_pics.md)
 <!--
 Assembly pictures: <https://photos.app.goo.gl/TdYxGhzK94KT9rS78>
 (old method before the 3d-printed housing)

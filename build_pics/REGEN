@@ -1,0 +1,2 @@
+#/bin/sh
+ls -1v *.jpg |while read i ;do printf '![](%s)\n' "$i" ;done >build_pics.md
