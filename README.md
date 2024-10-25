@@ -22,11 +22,14 @@ If using Elecrow, PCBWAY, or JLCPCB, you can upload the [housing](HOUSING/out) S
 
 # Directions
 
+[pictures of build process](build_pics)
+<!--
 Assembly pictures: <https://photos.app.goo.gl/TdYxGhzK94KT9rS78>
 (old method before the 3d-printed housing)
+-->
 
-If you want to make 2 cables, one for "Model T" clones and one for PC & WP-2, then cut the cable in half in the middle. (and buy double the transistors and connectors)  
-Otherwise just cut the 9-pn plug off the cable to make one longer cable for Model 100 & clones.
+If you want to make 2 cables, one for Model 100 & clones and one for PC & WP-2, then buy double the transistors & connectors and cut the cable in half right in the middle.  
+Otherwise just cut the 9-pin plug off the cable to make one long cable for Model 100 & clones.
 
 ## prepare the cable
 Strip about 40mm of the the cable jacket.  
@@ -43,14 +46,17 @@ Solder the center transistor first, then the left & right transistors to minimiz
 Then solder the 2x4 connector, optionally using the 3d-printed jig to hold the 2x4 connector in the perfect alignment.  
 
 ## solder the wires to the pcb
-Refer to one of the tables below.  
+Use a DMM in continuity mode to beep out the wires to find which color wire is connected to DB25 pin 2, 3, 4, 5, 6, 7, and 20.  
+Any other wires are not used and can be cut short right at the jacket.  
+Refer to one of the tables below to find which wires to solder to which pcb pads.  
 The signal names on the PCB are relative to the computer, aka the DTE side.  
 Ex: The pad labelled RTS on the PCB connects to the computers RTS.  
 The tables below show the computer-side pinouts for a few different computers.
 
 ## assemble the housing
 Slide the heat-shrink 2mm past the end of the end of the cable jacket, just enough to cover the unused cut wires and shielding, and shrink it.  
-Slide the housing up over the pcb. *Make sure the transistors face DOWN, and the polarity key points UP*.  
+Slide the housing up over the pcb.  
+**Make sure the transistors face DOWN, and the polarity key points UP**.  
 Push the cable into the pocket as far as possible. Make sure the jacket goes far enough in to be grabbed by the cable tie.  
 Put a small 2mm bend at the very tip of the cable tie in the same direction it's already bent (the direction it will bend to wrap around the cable), to help it make the transition from the bottom up into the 2nd hole in the PCB.  
 Insert a cable tie from above down into in the opening, with the inside of the strap facing the cable.  
@@ -58,8 +64,8 @@ Push the tie down and in so that it fishes under the pcb, up the other side, bac
 It is generally impossible to pull the cable tie from the tip, as the sharp pcb edges bite into the strap. You must push the strap in with needle nose pliars about 1 cm at a time, and don't try to thread the tip into the head until the strap is mostly all the way in.  
 Seat the cable as far in as possible and cinch the cable tie tight. Flush-cut the cable tie at the head.
 
-The cable tie not only strain-relieves the cable to the pcb, it also locks the pcb from pulling back out of the housing.  
-Once you have tested the cable and are sure the connections are correct, it won't hurt to inject some glue into the housing. Almost any kind will do. C-A glue (superglue), vynil glue (goop, e6000), hot-glue, etc. 
+The cable tie does double duty, clamping the cable to the pcb and also locking the pcb in the housing.
+Once you have tested the cable and are sure the connections are correct, it won't hurt to inject some glue into the housing to immobilize the wires so they don't break, and to prevent the cable from pulling out of the cable tie. Almost any kind will do. C-A glue (superglue), vynil glue (goop, e6000), hot-glue, etc. 
 
 
 # Standard Wiring, for a "Model T"
