@@ -88,7 +88,7 @@ It supports the following machines:
  NEC PC-8201, PC-8300, PC-8401, PC-8500  
  Olivetti M10  
 
-[PRINTABLE WIRE COLOR WORKSHEET for KC-85 CLONES](DB25M_DTE_Wire_Chart.html)
+[PRINTABLE WIRE COLOR WORKSHEET for KC-85 CLONES](DB25M_DTE_Wire_Chart.md)
 
 <table border=1 cellspacing=0>
 	<caption>TPDD to Model 100</caption>
@@ -140,7 +140,7 @@ For modern PCs and usb-serial adapters, TANDY WP-2, Atari Portfolio, and anythin
 
 The cable in the BOM has a DE9 Female on one end which supports this option.
 
-[PRINTABLE WIRE COLOR WORKSHEET for PC/WP-2](DE9F_DTE_Wire_Chart.html)
+[PRINTABLE WIRE COLOR WORKSHEET for PC/WP-2](DE9F_DTE_Wire_Chart.md)
 
 <table border=1 cellspacing=0>
 	<caption>TPDD to PC</caption>
