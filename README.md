@@ -91,24 +91,21 @@ It supports the following machines:
 [PRINTABLE WIRE COLOR WORKSHEET for KC-85 CLONES](DB25M_DTE_Wire_Chart.html)
 
 <table border=1 cellspacing=0>
-	<caption>TPDD to Model 100</caption>
-
-	<tr>
-	 <th colspan=2 width=35%>PCB PAD</th>
-	 <th><a href="https://www.digikey.com/short/w8zz83q5">GREY CABLE</a></th>
-	 <th><a href="https://www.digikey.com/short/wbpp81nt">BLACK CABLE</a></th>
-	 <th colspan=2 width=35%>DB25 PIN</th>
-	</tr>
-
-	<tr>
-	 <td rowspan=99 cellpadding=0><img src=TPDD_Cable_PCB_pads.jpg width=100%></td>
-	 <td>TX</td>
-	 <td>Orange</td>
-	 <td>Red</td>
-	 <td>2</td>
-	 <td rowspan=99 cellpadding=0><img src=DB25M_to_Model_T.jpg width=100%></td>
-	</tr>
-
+<caption>TPDD to Model 100</caption>
+<tr>
+<th colspan=2 width=35%>PCB PAD</th>
+<th><a href="https://www.digikey.com/short/w8zz83q5">GREY CABLE</a></th>
+<th><a href="https://www.digikey.com/short/wbpp81nt">BLACK CABLE</a></th>
+<th colspan=2 width=35%>DB25 PIN</th>
+</tr>
+<tr>
+<td rowspan=99 cellpadding=0><img src=TPDD_Cable_PCB_pads.jpg width=100%></td>
+<td>TX</td>
+<td>Orange</td>
+<td>Red</td>
+<td>2</td>
+<td rowspan=99 cellpadding=0><img src=DB25M_to_Model_T.jpg width=100%></td>
+</tr>
 <!--<tr><td>TX</td><td>Orange</td><td>Red</td><td>2</td></tr>-->
 <tr><td>RX</td><td>Red</td><td>Brown</td><td>3</td></tr>
 <tr><td>RTS</td><td>Purple</td><td>Blue</td><td>4</td></tr>
@@ -122,9 +119,9 @@ To verify the final result, check the following with a DMM in Continuity and Dio
 
 <table border=1 cellspacing=0>
 <tr>
-  <th rowspan=99 width=35%><img src="TPDD_plug.jpg" width=100%></th>
-  <th>BLACK</th><th>CONT</th><th>DIODE</th><th>RED</th>
-  <th rowspan=99 width=35%><img src="DB25M_to_Model_T.jpg" width=100%></th>
+<th rowspan=99 width=35%><img src="TPDD_plug.jpg" width=100%></th>
+<th>BLACK</th><th>CONT</th><th>DIODE</th><th>RED</th>
+<th rowspan=99 width=35%><img src="DB25M_to_Model_T.jpg" width=100%></th>
 </tr>
 <tr><td>1</td><td>BEEP</td><td></td><td>7</td></tr>
 <tr><td>2</td><td>BEEP</td><td></td><td>4</td></tr>
@@ -143,20 +140,17 @@ The cable in the BOM has a DE9 Female on one end which supports this option.
 [PRINTABLE WIRE COLOR WORKSHEET for PC/WP-2](DE9F_DTE_Wire_Chart.html)
 
 <table border=1 cellspacing=0>
-	<caption>TPDD to PC</caption>
-
-	<tr>
-	 <th colspan=2 width=35%>PCB PAD</th>
-	 <th colspan=2 width=35%>DE9 PIN</th>
-	</tr>
-
-	<tr>
-	 <td rowspan=99 cellpadding=0><img src=TPDD_Cable_PCB_pads.jpg width=100%></td>
-	 <td>RX</td>
-	 <td>2</td>
-	 <td rowspan=99 cellpadding=0><img src=DE9F_to_PC.jpg width=100%></td>
-	</tr>
-
+<caption>TPDD to PC</caption>
+<tr>
+<th colspan=2 width=35%>PCB PAD</th>
+<th colspan=2 width=35%>DE9 PIN</th>
+</tr>
+<tr>
+<td rowspan=99 cellpadding=0><img src=TPDD_Cable_PCB_pads.jpg width=100%></td>
+<td>RX</td>
+<td>2</td>
+<td rowspan=99 cellpadding=0><img src=DE9F_to_PC.jpg width=100%></td>
+</tr>
 <!--<tr><td>RXD</td><td>2</td></tr>-->
 <tr><td>TX</td><td>3</td></tr>
 <tr><td>DTR</td><td>4</td></tr>
@@ -170,9 +164,9 @@ To verify the final result, check the following with a DMM in Continuity and Dio
 
 <table border=1 cellspacing=0>
 <tr>
-  <th rowspan=99 width=35%><img src="TPDD_plug.jpg" width=100%></th>
-  <th>BLACK</th><th>CONT</th><th>DIODE</th><th>RED</th>
-  <th rowspan=99 width=35%><img src="DE9F_to_PC.jpg" width=100%></th>
+<th rowspan=99 width=35%><img src="TPDD_plug.jpg" width=100%></th>
+<th>BLACK</th><th>CONT</th><th>DIODE</th><th>RED</th>
+<th rowspan=99 width=35%><img src="DE9F_to_PC.jpg" width=100%></th>
 </tr>
 <tr><td>1</td><td>BEEP</td><td></td><td>5</td></tr>
 <tr><td>2</td><td>BEEP</td><td></td><td>7</td></tr>
@@ -192,20 +186,17 @@ You need a different cable than what's in the BOM above.
 Delete the cable in the pre-loaded cart, and add [this one](https://www.digikey.com/short/mrf9n7nh) instead.  
 
 <table border=1 cellspacing=0>
-	<caption>TPDD to Z88</caption>
-
-	<tr>
-	 <th colspan=2 width=35%>PCB PAD</th>
-	 <th colspan=2 width=35%>DE9 PIN</th>
-	</tr>
-
-	<tr>
-	 <td rowspan=99 cellpadding=0><img src=TPDD_Cable_PCB_pads.jpg width=100%></td>
-	 <td>RX</td>
-	 <td>2</td>
-	 <td rowspan=99 cellpadding=0><img src=DE9M_to_Z88.jpg width=100%></td>
-	</tr>
-
+<caption>TPDD to Z88</caption>
+<tr>
+<th colspan=2 width=35%>PCB PAD</th>
+<th colspan=2 width=35%>DE9 PIN</th>
+</tr>
+<tr>
+<td rowspan=99 cellpadding=0><img src=TPDD_Cable_PCB_pads.jpg width=100%></td>
+<td>RX</td>
+<td>2</td>
+<td rowspan=99 cellpadding=0><img src=DE9M_to_Z88.jpg width=100%></td>
+</tr>
 <!--<tr><td>TX</td><td>2</td></tr>-->
 <tr><td>RX</td><td>3</td></tr>
 <tr><td>RTS</td><td>4</td></tr>
