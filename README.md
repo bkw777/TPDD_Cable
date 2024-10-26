@@ -68,41 +68,65 @@ The cable tie does double duty, clamping the cable to the pcb and also locking t
 Once you have tested the cable and are sure the connections are correct, it won't hurt to inject some glue into the housing to immobilize the wires so they don't break, and to prevent the cable from pulling out of the cable tie. Almost any kind will do. C-A glue (superglue), vynil glue (goop, e6000), hot-glue, etc. 
 
 
-# Standard Wiring, for a "Model T"
-The standard version of the cable ends in a male 25-pin plug to connect to the female 25-pin DTE RS-232 port on any of the following machines:  
+# Cable Wiring Options
+
+For convenience, the tables below show the wire colors for the specific cables linked here.  
+If you buy one of these exact specific cables, then your cable should match one of the tables below, but still verify the wire colors to pin numbers before soldering.
+
+If you use any other cable that isn't specifically from one of the links here, then ignore the colors in the tables below and map out your cables wire colors yourself with a DMM continuity beeper.
+
+The grey cable in the BOM, and the alternative black cable, has both a DB25M on one end and a DE9F on the other end, so you can use the same BOM to make either a "Model T" cable, or a PC cable, or one of each if you double up the other components.
+
+## DB25 Male cable for TRS-80 Model 100 and other KC-85 clones
+This is the standard version of the cable that replicates the cable that originally shipped with the TPDD and TPDD2 drives.
+
+The cable in the BOM has a DB25 Male on one end which supports this option.
+
+It supports the following machines:
+
  Kyotronic KC-85  
  TRS-80/TANDY Model 100, 102, 200, 600  
  NEC PC-8201, PC-8300, PC-8401, PC-8500  
  Olivetti M10  
-This is the same as the original cable that came with the drive.
 
-For convenience, the table below also shows the colors for a couple of specific cable options from DigiKey from the BOM links above. If you buy one of these exact specific cables, then your cable should match this table. But don't trust the colors without verifying. If you buy any other cable that isn't specifically exactly the one from one of these BOM links, then ignore the colors and map out your cable yourself to find out which color goes to DB25M pin 3 etc.
+[PRINTABLE WIRE COLOR WORKSHEET for KC-85 CLONES](DB25M_DTE_Wire_Chart.html)
 
-<table>
-<tr>
-<td rowspan="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><img src="TPDD_Cable_PCB_pads.jpg"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<table border=1 cellspacing=0>
+	<caption>TPDD to Model 100</caption>
 
-<th>Signal (DTE/Computer-side)</th>
-<th><a href="https://www.digikey.com/short/w8zz83q5">GREY CABLE</a></th>
-<th><a href="https://www.digikey.com/short/wbpp81nt">BLACK CABLE</a></th>
-<th>DB25M pin</th>
+	<tr>
+	 <th colspan=2 width=35%>PCB PAD</th>
+	 <th><a href="https://www.digikey.com/short/w8zz83q5">GREY CABLE</a></th>
+	 <th><a href="https://www.digikey.com/short/wbpp81nt">BLACK CABLE</a></th>
+	 <th colspan=2 width=35%>DB25 PIN</th>
+	</tr>
 
-<td rowspan="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><img src="DB25M_to_Model_T.jpg"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-</tr>
+	<tr>
+	 <td rowspan=99 cellpadding=0><img src=TPDD_Cable_PCB_pads.jpg width=100%></td>
+	 <td>TX</td>
+	 <td>Orange</td>
+	 <td>Red</td>
+	 <td>2</td>
+	 <td rowspan=99 cellpadding=0><img src=DB25M_to_Model_T.jpg width=100%></td>
+	</tr>
 
-<tr><td>GND</td><td>Green</td><td>Yellow</td><td>7</td></tr>
+<!--<tr><td>TX</td><td>Orange</td><td>Red</td><td>2</td></tr>-->
+<tr><td>RX</td><td>Red</td><td>Brown</td><td>3</td></tr>
 <tr><td>RTS</td><td>Purple</td><td>Blue</td><td>4</td></tr>
-<tr><td>DSR</td><td>Blue</td><td>Green</td><td>6</td></tr>
 <tr><td>CTS</td><td>Grey</td><td>Purple</td><td>5</td></tr>
+<tr><td>DSR</td><td>Blue</td><td>Green</td><td>6</td></tr>
+<tr><td>GND</td><td>Green</td><td>Yellow</td><td>7</td></tr>
 <tr><td>DTR</td><td>Yellow</td><td>Orange</td><td>20</td></tr>
-<tr><td>RXD</td><td>Red</td><td>Brown</td><td>3</td></tr>
-<tr><td>TXD</td><td>Orange</td><td>Red</td><td>2</td></tr>
 </table>
 
 To verify the final result, check the following with a DMM in Continuity and Diode modes.
 
-<table>
-<tr><td rowspan="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><img src="TPDD_plug.jpg"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><th>BLACK</th><th>CONT</th><th>DIODE</th><th>RED</th><td rowspan="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><img src="DB25M_to_Model_T.jpg"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<table border=1 cellspacing=0>
+<tr>
+  <th rowspan=99 width=35%><img src="TPDD_plug.jpg" width=100%></th>
+  <th>BLACK</th><th>CONT</th><th>DIODE</th><th>RED</th>
+  <th rowspan=99 width=35%><img src="DB25M_to_Model_T.jpg" width=100%></th>
+</tr>
 <tr><td>1</td><td>BEEP</td><td></td><td>7</td></tr>
 <tr><td>2</td><td>BEEP</td><td></td><td>4</td></tr>
 <tr><td>3</td><td></td><td>1.7v</td><td>6</td></tr>
@@ -112,31 +136,45 @@ To verify the final result, check the following with a DMM in Continuity and Dio
 <tr><td>7</td><td>BEEP</td><td></td><td>2</td></tr>
 </table>
 
-# Alternate Wiring
-Other machines besides "Model T"'s like the TRS-80 Model 100 can use a TPDD, but their serial ports are different and usually need one or more adapters to work with the 25-pin cable for Model 100/200.  
-You can make a custom cable that won't need any extra adapters using one of these other pinout tables.
+## DE9 Female cable for Standard PC 9-pin COM port
+For modern PCs and usb-serial adapters, TANDY WP-2, Atari Portfolio, and anything else with a standard DE9M DTE port.
 
+The cable in the BOM has a DE9 Female on one end which supports this option.
 
-## PC / TANDY WP-2 / Atari Portfolio
-For Modern PCs and usb-serial adapters, TANDY WP-2, Atari Portfolio, and anything else with a standard DE9M DTE port.  
-You need a cable with a DE9F on the end instead of DB25M.  
-The cable in the BOM has both a DB25M on one end and a DE9F on the other end, so you can use the same BOM to make either a "Model T" cable, or a PC cable, or both.
+[PRINTABLE WIRE COLOR WORKSHEET for PC/WP-2](DE9F_DTE_Wire_Chart.html)
 
-<table>
-<tr><td rowspan="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><img src="TPDD_Cable_PCB_pads.jpg"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><th>Signal (DTE/Computer-side)</th><th>DE9F pin</th><td rowspan="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><img src="DE9F_to_PC.jpg"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
-<tr><td>GND</td><td>5</td></tr>
-<tr><td>RTS</td><td>7</td></tr>
-<tr><td>DSR</td><td>6</td></tr>
-<tr><td>CTS</td><td>8</td></tr>
+<table border=1 cellspacing=0>
+	<caption>TPDD to PC</caption>
+
+	<tr>
+	 <th colspan=2 width=35%>PCB PAD</th>
+	 <th colspan=2 width=35%>DE9 PIN</th>
+	</tr>
+
+	<tr>
+	 <td rowspan=99 cellpadding=0><img src=TPDD_Cable_PCB_pads.jpg width=100%></td>
+	 <td>RX</td>
+	 <td>2</td>
+	 <td rowspan=99 cellpadding=0><img src=DE9F_to_PC.jpg width=100%></td>
+	</tr>
+
+<!--<tr><td>RXD</td><td>2</td></tr>-->
+<tr><td>TX</td><td>3</td></tr>
 <tr><td>DTR</td><td>4</td></tr>
-<tr><td>RXD</td><td>2</td></tr>
-<tr><td>TXD</td><td>3</td></tr>
+<tr><td>GND</td><td>5</td></tr>
+<tr><td>DSR</td><td>6</td></tr>
+<tr><td>RTS</td><td>7</td></tr>
+<tr><td>CTS</td><td>8</td></tr>
 </table>
 
 To verify the final result, check the following with a DMM in Continuity and Diode modes.
 
-<table>
-<tr><td rowspan="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><img src="TPDD_plug.jpg"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><th>BLACK</th><th>CONT</th><th>DIODE</th><th>RED</th><td rowspan="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><img src="DE9F_to_PC.jpg"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<table border=1 cellspacing=0>
+<tr>
+  <th rowspan=99 width=35%><img src="TPDD_plug.jpg" width=100%></th>
+  <th>BLACK</th><th>CONT</th><th>DIODE</th><th>RED</th>
+  <th rowspan=99 width=35%><img src="DE9F_to_PC.jpg" width=100%></th>
+</tr>
 <tr><td>1</td><td>BEEP</td><td></td><td>5</td></tr>
 <tr><td>2</td><td>BEEP</td><td></td><td>7</td></tr>
 <tr><td>3</td><td></td><td>1.7v</td><td>6</td></tr>
@@ -147,35 +185,36 @@ To verify the final result, check the following with a DMM in Continuity and Dio
 </table>
 
 ## Cambridge Z88
-*UNTESTED*  
+**UNTESTED**  
 *The Cambridge Z88 RS-232 port has a non-standard pinout.*  
 *Do not connect this cable to anything but a Cambridge Z88.*
 
-You need a different cable than what's in the BOM links above.  
+You need a different cable than what's in the BOM above.  
 Delete the cable in the pre-loaded cart, and add [this one](https://www.digikey.com/short/mrf9n7nh) instead.  
-<table>
-<tr><td rowspan="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><img src="TPDD_Cable_PCB_pads.jpg"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><th>Signal (DTE/Computer-side)</th><th>DE9M pin</th><td rowspan="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><img src="DE9M_to_Z88.jpg"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
-<tr><td>GND</td><td>7</td></tr>
-<tr><td>RTS</td><td>4</td></tr>
-<tr><td>DSR</td><td>8</td></tr>
-<tr><td>CTS</td><td>5</td></tr>
-<tr><td>DTR</td><td>9</td></tr>
-<tr><td>RXD</td><td>3</td></tr>
-<tr><td>TXD</td><td>2</td></tr>
-</table>
-<!--
-This Z88 cable pinout is un-verified. It might need to be reversed, IE:
 
-|SIGNAL|Z88|
-|---|---|
-|GND|7|
-|RTS|5|
-|DSR|9|
-|CTS|4|
-|DTR|8|
-|RXD|2|
-|TXD|3|
--->
+<table border=1 cellspacing=0>
+	<caption>TPDD to Z88</caption>
+
+	<tr>
+	 <th colspan=2 width=35%>PCB PAD</th>
+	 <th colspan=2 width=35%>DE9 PIN</th>
+	</tr>
+
+	<tr>
+	 <td rowspan=99 cellpadding=0><img src=TPDD_Cable_PCB_pads.jpg width=100%></td>
+	 <td>RX</td>
+	 <td>2</td>
+	 <td rowspan=99 cellpadding=0><img src=DE9M_to_Z88.jpg width=100%></td>
+	</tr>
+
+<!--<tr><td>TX</td><td>2</td></tr>-->
+<tr><td>RX</td><td>3</td></tr>
+<tr><td>RTS</td><td>4</td></tr>
+<tr><td>CTS</td><td>5</td></tr>
+<tr><td>GND</td><td>7</td></tr>
+<tr><td>DSR</td><td>8</td></tr>
+<tr><td>DTR</td><td>9</td></tr>
+</table>
 
 # Credits / History
 In the beginning, there was the [Marty Goodman Document](https://raw.githubusercontent.com/LivingM100SIG/Living_M100SIG/main/M100SIG/Lib-09-PERIFERALS/TPDD.DO), and it was good.

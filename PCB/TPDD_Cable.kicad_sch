@@ -2321,7 +2321,7 @@
 	)
 	(text "Z88\nDE9 Male\n\n7\n8\n4\n5\n9\n3\n2"
 		(exclude_from_sim no)
-		(at 229.87 73.152 0)
+		(at 229.87 72.136 0)
 		(effects
 			(font
 				(size 1.5748 1.5748)
@@ -2342,7 +2342,7 @@
 	)
 	(text "(1) TPDD Pin 8\n\nTPDD1: N/C\n\nTPDD2: External Battery\n        4.8-6V DC in"
 		(exclude_from_sim no)
-		(at 101.6 152.4 0)
+		(at 43.688 157.226 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -2362,22 +2362,12 @@
 		)
 		(uuid "4d1d62d4-2570-4ce3-a005-de48b0e74ee3")
 	)
-	(text "cable"
-		(exclude_from_sim no)
-		(at 182.88 87.884 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "575bb816-539a-4d6a-8c8e-5375fea82ffa")
-	)
 	(text "Pin/Net names are relative to the DTE (computer) side.\nConnect PCB pad RX to the computers RX,\nconnect PCB pad CTS to the computers CTS, etc.\n\nFor GND, DTR, TX\nsolder to the pads on the 2x4 connector\n"
 		(exclude_from_sim no)
-		(at 171.45 102.362 0)
+		(at 146.05 135.382 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 2.54 2.54)
 			)
 			(justify left top)
 		)
@@ -2385,7 +2375,7 @@
 	)
 	(text "PC or WP-2\nDE9 Female\n\n5\n6\n7\n8\n4\n2\n3"
 		(exclude_from_sim no)
-		(at 210.82 73.152 0)
+		(at 210.82 72.136 0)
 		(effects
 			(font
 				(size 1.5748 1.5748)
@@ -2407,7 +2397,7 @@
 	)
 	(text "\"Model T\"\nDB25 Male\n\n7\n6\n4\n5\n20\n3\n2"
 		(exclude_from_sim no)
-		(at 191.77 73.152 0)
+		(at 191.516 72.136 0)
 		(effects
 			(font
 				(size 1.5748 1.5748)
@@ -2982,7 +2972,7 @@
 	)
 	(symbol
 		(lib_id "000_LOCAL:Housing")
-		(at 63.5 165.1 0)
+		(at 114.3 165.1 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -2991,7 +2981,7 @@
 		(fields_autoplaced yes)
 		(uuid "039546fc-3f1d-4dcf-b721-721d8f14e958")
 		(property "Reference" "N1"
-			(at 67.31 164.1474 0)
+			(at 118.11 164.1474 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3000,7 +2990,7 @@
 			)
 		)
 		(property "Value" "TPDD_Cable Housing"
-			(at 67.31 166.6874 0)
+			(at 118.11 166.6874 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3009,7 +2999,7 @@
 			)
 		)
 		(property "Footprint" "000_LOCAL:TPDD_Cable_Housing"
-			(at 64.77 163.83 0)
+			(at 115.57 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3018,7 +3008,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 64.77 163.83 0)
+			(at 115.57 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3027,7 +3017,7 @@
 			)
 		)
 		(property "Description" "Housing"
-			(at 63.5 165.1 0)
+			(at 114.3 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3049,7 +3039,7 @@
 		(at 171.45 88.9 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "1bbbdfbb-6b33-49f4-afee-9e2d67a33fb7")
@@ -3163,6 +3153,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "M20-7830442"
+			(at 82.55 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "5a4e3dae-73c9-42d9-9122-4d211b65eb2c")
 		)
@@ -3188,6 +3187,12 @@
 			(uuid "90ee0b3a-dc9a-40a4-a05c-3721fb6cf591")
 		)
 		(instances
+			(project ""
+				(path "/0d433bab-64ac-46dd-8906-cd1b476f2235"
+					(reference "J1")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/8c978a26-63bd-42ef-84db-2107e27041da/837a9c0d-b7a0-4105-85d5-9798010a27dd"
 					(reference "J1")
@@ -3267,7 +3272,7 @@
 		(at 171.45 83.82 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "398b8bdd-ca53-47e2-8fac-c7dec5c70b84")
@@ -3334,7 +3339,7 @@
 		(at 171.45 93.98 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "90b41068-f06a-4bde-aade-4b3be203106e")
@@ -3534,7 +3539,7 @@
 		(at 171.45 86.36 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "c19c67bc-1ffd-4a89-95f6-3daf75d16ad8")

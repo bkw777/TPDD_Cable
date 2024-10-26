@@ -3229,7 +3229,7 @@
 		(pin_names
 			(offset 0.762) hide)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(property "Reference" "TP"
 			(at 0 6.858 0)
