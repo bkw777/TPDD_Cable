@@ -18,7 +18,7 @@
 ![](1040_cable_tin_tips.jpg)
 ![](1050_cable_map_colors.jpg)
 ![](1060_cable_map_colors.jpg)
-![](1070_cable_cut_unused.jpg)
+![](1070_cable_map_colors.jpg)
 ![](1075_cable_thread_housing_and_heatshrink_before_solder.jpg)
 ![](1080_cable_solder_first_4.jpg)
 ![](1090_cable_solder_final_3.jpg)
