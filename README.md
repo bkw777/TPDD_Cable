@@ -7,7 +7,7 @@
 ![](PCB/out/TPDD_Cable.top.jpg)
 ![](PCB/out/TPDD_Cable.bottom.jpg)
 ![](PCB/out/TPDD_Cable.svg)
-![](TPDD_Cable_complete.jpg)
+![](build_pics/1540_complete.jpg)
 ![](TPDD_Cable_use.jpg)
 ![](TPDD_Cable_running.jpg)
 
