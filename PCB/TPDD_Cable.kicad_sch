@@ -2975,7 +2975,7 @@
 		(at 114.3 165.1 0)
 		(unit 1)
 		(exclude_from_sim yes)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -3026,6 +3026,12 @@
 			)
 		)
 		(instances
+			(project ""
+				(path "/0d433bab-64ac-46dd-8906-cd1b476f2235"
+					(reference "N1")
+					(unit 1)
+				)
+			)
 			(project "TPDD_Cable_2"
 				(path "/8c978a26-63bd-42ef-84db-2107e27041da/837a9c0d-b7a0-4105-85d5-9798010a27dd"
 					(reference "N1")
@@ -3135,7 +3141,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "datasheets/M20-783.pdf"
 			(at 85.09 87.63 0)
 			(effects
 				(font
