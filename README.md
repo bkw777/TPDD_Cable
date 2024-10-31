@@ -193,7 +193,7 @@ Delete the cable in the pre-loaded cart, and add [this one](https://www.digikey.
 </tr>
 <tr>
 <td rowspan=99 cellpadding=0><img src=TPDD_Cable_PCB_pads.jpg width=100%></td>
-<td>RX</td>
+<td>TX</td>
 <td>2</td>
 <td rowspan=99 cellpadding=0><img src=DE9M_to_Z88.jpg width=100%></td>
 </tr>
