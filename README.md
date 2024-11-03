@@ -62,9 +62,14 @@ Write the color of the wire for that pin number on the worksheet.
 Repeat for all wires.
 
 Cut the un-used wires short.
-For the exact cable in the BOM, and most others, there will be 3 wires with no place on the PCB: a bare wire connected to both the DB25 shell and pin 1, a wire on pin 8, and a wire on pin 22.  
+For the exact cable in the BOM and probably most cables, there will be 3 wires with no place on the PCB: a bare wire connected to both the DB25 shell and pin 1, a wire on pin 8, and a wire on pin 22.  
 Cut all of those as short as possible right at the end of the cable jacket.
 
+
+## prepare the pcb
+Sand the edge of the pcb as neccessary to flatten any pointy bits left from the edge routing. The front edge is supposed to be castellated, so don't try to grind those away, but the front edge is supposed to be straight, so sand flat anything that sticks out from the rest.
+
+Blunt or chamfer the rim of the drill holes on the bottom side of the pcb (the side with the chips). Use a countersink bit if you have one, or a drill bit. If nothing else a phillips screwdriver will barely work. You just want to blunt the sharp edge of the hole so the zip tie can be pulled through, don't grind a deep chamfer.
 
 ## solder the pcb
 Solder the transistors onto the pcb.
@@ -83,39 +88,41 @@ Ex: The pad labelled RTS on the PCB connects to the computers RTS.
 
 Follow your worksheet to match wire colors to the pads on the PCB.
 
-Start with the cable pointing the "wrong" way on the pcb, with cut end pointing towards the zip tie end of the pcb, ie the opposite direction from how it must be in the end, and solder the 4 pads closest to the holes.
+Add solder to the 4 oval wire pads first so that you only need to touch the wire to solder it.
 
-Then fold the cable over and solder the remaining 3 wires to pads on the 2x4 connector.
+Start with the cable pointing the "wrong" way on the pcb, with the ends of the wires pointing towards the zip tie holes, ie the opposite direction from how it must be in the end, and solder the 4 wires that go to the 4 oval pads.
+
+Then fold the cable over and fish the remaining 3 wires in between the 4 soldered wires towards their respective pins on the 2x4 connector. Keep all 3 of these wires inside of the first 4, ie the 2 outside wires of the 1st 4 remain the outermost wires when done. It's annoying but results in the least pinching & crossing of wires later.
 
 Wash all flux from the pcb and wires.
 
 ## assemble the housing
-Slide the heat-shrink 2mm past the end of the end of the cable jacket, just enough to cover the unused cut wires and shielding, and shrink it. Don't leave any more heat shrink in front of the jacket than necessary, just enough to cover the cut wires. You need to push the cable into the plug body as far as possible later, and excess heat-shrink will prevent the cable from inserting as far.
+Clean the end of the cable with alcohol where the heat-shrink will go if not done already.
 
-Slide the housing up over the pcb, or in other words pull the pcb into the housing.  
-The heat-shrink will want to catch on the front edge of the housing, so squeeze and twist to get the heat-shrink started into the rectangular opening at the front of the housing. If the housing still digs up the heat-shrink, you can usually smooth it back out by just heating it again.
+Slide the heat-shrink 2mm past the end of the end of the cable jacket, just enough to cover the unused cut wires and shielding, and shrink it. Don't leave any more heat shrink in front of the jacket than necessary to cover the cut wires. You need to push the cable into the plug body as far as possible later, and excess heat-shrink will prevent the cable from inserting as far as it could.
 
 **Make sure the transistors face DOWN, and the polarity key points UP**.
 
-Once the pcb is all the way in, push the cable forward into the housing as far as possible.  
-Make sure the jacket end goes past the cable tie area.
+Slide the housing up over the pcb, or in other words pull the pcb into the housing.
 
-Use pliers to put a small extra bend at the very tip of the cable tie, in the same direction it's already bent (the direction it will bend to wrap around the cable).
+The heat-shrink will want to catch on the front edge of the housing on the way in, and also on an internal lip at the rear of the housing on the way out.  
+Squeeze and angle the cable to get the heat-shrink started into front of the housing, and pull the cable on the back 45 degrees up towards the top of the housing before pulling the heat-shrink all the way through so the heat-shrink doesn't catch on a lip at the bottom rear inside the housing.  
+Regardless, if the heat-shrink gets dug up on the way through, just heat it again and it will smooth back out.
 
-Insert the zip tie from above down into the one exposed hole in the pcb you can see, and push in with pilers.
+Once the pcb is all the way in, push the cable forward into the housing as far as possible while holding the pcb in with a finger over the front.  
+Make sure the end of the jacket goes past the zip tie area.
 
-With some wiggling, the zip tie will thread itself under the pcb and back up the other side and come out the top.
+Use pliers to put a small extra bend at the very tip of the zip tie, just the last 1-2mm right at the tip, in the same direction it's already bent (the direction it will bend to wrap around the cable).
 
-Keep pushing the zip tie in a few mm at a time for the whole length of the zip tie. You won't be able to pull it from the top, you'll have to push it the whole way.
+Insert the zip tie pointing down into the one exposed hole in the pcb you can see, and push in with needle nose pliers until the tip comes out the top. Then you should be able to pull the tie out some more, thread it through the head and pull it the rest of the way. Stop before going all the way tight and jam the cable in as far as possible before cinching down tight.
 
-Once the tie is almost all the way in, you can thread the tip into the head and pull it most of the way but not all the way tight yet.
+If you didn't chamfer or blunt the bottom side of the drill holes, then you may have to push the zip tie in with pliers the whole way instead of pulling.
 
-Push the head all the way down with the plier tips and wiggle/twist the cable a little to push the cable in as far as it can go before pulling the zip tie all the way tight.
+The zip tie does double duty. It both clamps the cable to the pcb and is also what locks the pcb into the housing so the pcb can't pull back out the front.
 
-The zip tie does double duty. It both clamps the cable to the pcb and also locks the pcb into the housing so it can't pull back out the front the same way it went in.
+Once you have tested the cable and are sure the connections are correct, it would be best to inject some glue (C-A/super glue, vynil e6000/goop/etc) into the housing to immobilize the wires and to prevent the cable from working back out of the zip tie. If you're careful you could probably use hot glue by applying some just before inserting the cable, but you'll need to be careful to definitely get some on the pcb all the way back between the holes so that it grabs the heat shrink well, yet not plug up the holes where you will need to push the zip tie through.
 
-Once you have tested the cable and are sure the connections are correct, it would be best to inject some glue into the housing to immobilize the wires so they don't flex and break at the solder joints eventually, and to prevent the cable from pulling back out of the zip tie. Almost any kind will do. C-A glue (superglue), vynil glue (goop, e6000), hot glue gun, etc. 
-
+## DONE
 
 # Cable Wiring Options
 
