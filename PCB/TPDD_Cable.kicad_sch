@@ -1781,7 +1781,7 @@
 	)
 	(polyline
 		(pts
-			(xy 194.31 96.52) (xy 208.28 96.52)
+			(xy 195.58 96.52) (xy 209.55 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1789,19 +1789,9 @@
 		)
 		(uuid "07971d9f-7e27-48a5-b857-e99b9754d8e9")
 	)
-	(wire
-		(pts
-			(xy 152.4 91.44) (xy 171.45 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0995c7d5-3aa7-4804-b25d-7aa339acac9d")
-	)
 	(polyline
 		(pts
-			(xy 194.31 86.36) (xy 208.28 86.36)
+			(xy 195.58 86.36) (xy 209.55 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1811,7 +1801,7 @@
 	)
 	(polyline
 		(pts
-			(xy 213.36 88.9) (xy 227.33 88.9)
+			(xy 214.63 88.9) (xy 228.6 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1821,7 +1811,7 @@
 	)
 	(polyline
 		(pts
-			(xy 176.53 86.36) (xy 189.23 86.36)
+			(xy 177.8 86.36) (xy 190.5 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1831,7 +1821,7 @@
 	)
 	(polyline
 		(pts
-			(xy 213.36 96.52) (xy 227.33 96.52)
+			(xy 214.63 96.52) (xy 228.6 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1851,7 +1841,7 @@
 	)
 	(polyline
 		(pts
-			(xy 176.53 93.98) (xy 189.23 93.98)
+			(xy 177.8 93.98) (xy 190.5 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1861,7 +1851,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 96.52) (xy 171.45 96.52)
+			(xy 152.4 93.98) (xy 171.45 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1871,7 +1861,7 @@
 	)
 	(polyline
 		(pts
-			(xy 194.31 81.28) (xy 208.28 81.28)
+			(xy 195.58 81.28) (xy 209.55 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1891,7 +1881,7 @@
 	)
 	(polyline
 		(pts
-			(xy 176.53 88.9) (xy 189.23 88.9)
+			(xy 177.8 88.9) (xy 190.5 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1941,7 +1931,7 @@
 	)
 	(polyline
 		(pts
-			(xy 213.36 86.36) (xy 227.33 86.36)
+			(xy 214.63 86.36) (xy 228.6 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1961,7 +1951,7 @@
 	)
 	(polyline
 		(pts
-			(xy 213.36 91.44) (xy 227.33 91.44)
+			(xy 214.63 91.44) (xy 228.6 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1991,6 +1981,16 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 96.52) (xy 171.45 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "633b185d-37d4-4092-99b6-af578e62b7ae")
+	)
+	(wire
+		(pts
 			(xy 69.85 92.71) (xy 69.85 120.65)
 		)
 		(stroke
@@ -2011,7 +2011,7 @@
 	)
 	(polyline
 		(pts
-			(xy 194.31 88.9) (xy 208.28 88.9)
+			(xy 195.58 88.9) (xy 209.55 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2021,7 +2021,7 @@
 	)
 	(polyline
 		(pts
-			(xy 213.36 83.82) (xy 227.33 83.82)
+			(xy 214.63 83.82) (xy 228.6 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2031,7 +2031,7 @@
 	)
 	(polyline
 		(pts
-			(xy 176.53 81.28) (xy 189.23 81.28)
+			(xy 177.8 81.28) (xy 190.5 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2041,7 +2041,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 127) (xy 152.4 127)
+			(xy 63.5 127) (xy 158.75 127)
 		)
 		(stroke
 			(width 0)
@@ -2071,7 +2071,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 96.52) (xy 165.1 120.65)
+			(xy 152.4 93.98) (xy 152.4 120.65)
 		)
 		(stroke
 			(width 0)
@@ -2101,7 +2101,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 93.98) (xy 158.75 101.6)
+			(xy 146.05 91.44) (xy 146.05 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2121,7 +2121,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 101.6) (xy 158.75 101.6)
+			(xy 125.73 101.6) (xy 146.05 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2141,7 +2141,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 91.44) (xy 152.4 127)
+			(xy 158.75 96.52) (xy 158.75 127)
 		)
 		(stroke
 			(width 0)
@@ -2171,7 +2171,7 @@
 	)
 	(polyline
 		(pts
-			(xy 194.31 93.98) (xy 208.28 93.98)
+			(xy 195.58 93.98) (xy 209.55 93.98)
 		)
 		(stroke
 			(width 0)
@@ -2191,7 +2191,7 @@
 	)
 	(polyline
 		(pts
-			(xy 176.53 91.44) (xy 189.23 91.44)
+			(xy 177.8 91.44) (xy 190.5 91.44)
 		)
 		(stroke
 			(width 0)
@@ -2201,7 +2201,7 @@
 	)
 	(polyline
 		(pts
-			(xy 176.53 96.52) (xy 189.23 96.52)
+			(xy 177.8 96.52) (xy 190.5 96.52)
 		)
 		(stroke
 			(width 0)
@@ -2221,7 +2221,7 @@
 	)
 	(polyline
 		(pts
-			(xy 194.31 91.44) (xy 208.28 91.44)
+			(xy 195.58 91.44) (xy 209.55 91.44)
 		)
 		(stroke
 			(width 0)
@@ -2231,7 +2231,7 @@
 	)
 	(polyline
 		(pts
-			(xy 176.53 83.82) (xy 189.23 83.82)
+			(xy 177.8 83.82) (xy 190.5 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2241,7 +2241,7 @@
 	)
 	(polyline
 		(pts
-			(xy 213.36 81.28) (xy 227.33 81.28)
+			(xy 214.63 81.28) (xy 228.6 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2251,7 +2251,7 @@
 	)
 	(polyline
 		(pts
-			(xy 213.36 93.98) (xy 227.33 93.98)
+			(xy 214.63 93.98) (xy 228.6 93.98)
 		)
 		(stroke
 			(width 0)
@@ -2261,7 +2261,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 93.98) (xy 171.45 93.98)
+			(xy 146.05 91.44) (xy 171.45 91.44)
 		)
 		(stroke
 			(width 0)
@@ -2281,7 +2281,7 @@
 	)
 	(polyline
 		(pts
-			(xy 194.31 83.82) (xy 208.28 83.82)
+			(xy 195.58 83.82) (xy 209.55 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2301,7 +2301,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 120.65) (xy 165.1 120.65)
+			(xy 69.85 120.65) (xy 152.4 120.65)
 		)
 		(stroke
 			(width 0)
@@ -2319,9 +2319,9 @@
 		)
 		(uuid "fffa24df-ed8a-4a9a-b254-22dca719a7c6")
 	)
-	(text "Z88\nDE9 Male\n\n7\n8\n4\n5\n9\n3\n2"
+	(text "Z88\nDE9 Male\n\n7\n8\n4\n5\n3\n2\n9"
 		(exclude_from_sim no)
-		(at 229.87 72.136 0)
+		(at 231.14 72.136 0)
 		(effects
 			(font
 				(size 1.5748 1.5748)
@@ -2373,9 +2373,9 @@
 		)
 		(uuid "9f7e4697-0c16-4234-8f20-3a64469c259a")
 	)
-	(text "PC or WP-2\nDE9 Female\n\n5\n6\n7\n8\n4\n2\n3"
+	(text "PC or WP-2\nDE9 Female\n\n5\n6\n7\n8\n2\n3\n4"
 		(exclude_from_sim no)
-		(at 210.82 72.136 0)
+		(at 212.09 72.136 0)
 		(effects
 			(font
 				(size 1.5748 1.5748)
@@ -2395,9 +2395,9 @@
 		)
 		(uuid "bff036ed-42c1-4f79-b8d9-1907e9b0e1fd")
 	)
-	(text "\"Model T\"\nDB25 Male\n\n7\n6\n4\n5\n20\n3\n2"
+	(text "\"Model T\"\nDB25 Male\n\n7\n6\n4\n5\n3\n2\n20"
 		(exclude_from_sim no)
-		(at 191.516 72.136 0)
+		(at 192.786 72.136 0)
 		(effects
 			(font
 				(size 1.5748 1.5748)
@@ -2506,7 +2506,7 @@
 		(uuid "87d6bbff-6e00-4dbe-a608-0c172e71bf06")
 	)
 	(label "DTR"
-		(at 171.45 91.44 180)
+		(at 171.45 96.52 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2572,7 +2572,7 @@
 		(uuid "ee2ad46e-2bcb-414d-89e3-a9c308e4804f")
 	)
 	(label "TX"
-		(at 171.45 96.52 180)
+		(at 171.45 93.98 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3342,7 +3342,7 @@
 	)
 	(symbol
 		(lib_id "000_LOCAL:TestPoint")
-		(at 171.45 93.98 270)
+		(at 171.45 91.44 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -3350,7 +3350,7 @@
 		(dnp no)
 		(uuid "90b41068-f06a-4bde-aade-4b3be203106e")
 		(property "Reference" "P3"
-			(at 175.514 92.964 90)
+			(at 175.514 90.424 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3360,7 +3360,7 @@
 			)
 		)
 		(property "Value" "RX"
-			(at 171.45 93.726 90)
+			(at 171.45 91.186 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3369,7 +3369,7 @@
 			)
 		)
 		(property "Footprint" "000_LOCAL:SMD_1.2x3"
-			(at 171.45 99.06 0)
+			(at 171.45 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3378,7 +3378,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 171.45 99.06 0)
+			(at 171.45 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3387,7 +3387,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 171.45 93.98 0)
+			(at 171.45 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
