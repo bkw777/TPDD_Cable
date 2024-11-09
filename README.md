@@ -134,6 +134,11 @@ If you use any other cable that isn't specifically from one of the links here, t
 The grey cable in the BOM, and the alternative black cable, has both a DB25M on one end and a DE9F on the other end, so you can use the same BOM to make either a "Model T" cable, or a PC cable, or one of each if you double up the other components.
 
 ## DB25 Male cable for TRS-80 Model 100 and other KC-85 clones
+
+![](build_pics/1540_complete.jpg)
+![](build_pics/1590_complete.jpg)
+![](build_pics/1580_complete.jpg)
+
 This is the standard version of the cable that replicates the cable that originally shipped with the TPDD and TPDD2.
 
 The cable in the BOM supports this option.
@@ -194,6 +199,12 @@ To verify the final result, check the following with a DMM in Continuity and Dio
 </table>
 
 ## DE9 Female cable for Standard PC 9-pin COM port
+
+![](build_pics/1600_pc_wp2_complete.jpg)
+![](build_pics/1610_wp2.jpg)
+![](build_pics/1620_wp2.jpg)
+![](build_pics/1700_pc.jpg)
+
 This version supports:
 <ul>
 Most PCs with 9-pin com ports<br>
